@@ -1,0 +1,1819 @@
+{
+    "allocation_id": {
+        "type": "STRING",
+        "description": "Unique identifier for the job"
+    },
+    "timestamp": {
+        "type": "TIMESTAMP",
+        "description": "Time of the measurement, floored to 15 sec"
+    },
+    "reporting_node_count": {
+        "type": "BIGINT",
+        "description": "Number of nodes reporting metrics during the measurement. Note this can be different than the job node count, and can vary throughout a job if some nodes don't report telemetry reliably.",
+        "min": 1,
+        "mean": 215.5119477006312,
+        "median": 5.0,
+        "max": 8998,
+        "stddev": 1340.7175587049417
+    },
+    "min_node_power": {
+        "type": "DOUBLE",
+        "description": "Min of node_power across all nodes in the job",
+        "min": 39.0,
+        "mean": 1369.2119200588234,
+        "median": 1158.375,
+        "max": 3049.714285714286,
+        "stddev": 730.8576682773017
+    },
+    "max_node_power": {
+        "type": "DOUBLE",
+        "description": "Max of node_power across all nodes in the job",
+        "min": 608.1428571428571,
+        "mean": 1564.6999358602775,
+        "median": 1232.732142857143,
+        "max": 64205.0,
+        "stddev": 2021.1963552280877
+    },
+    "mean_node_power": {
+        "type": "DOUBLE",
+        "description": "Mean of node_power across all nodes in the job",
+        "min": 593.3177655677655,
+        "mean": 1419.8268702265136,
+        "median": 1175.1803571428572,
+        "max": 3049.714285714286,
+        "stddev": 716.6234084681435
+    },
+    "stddev_node_power": {
+        "type": "DOUBLE",
+        "description": "Population standard deviation of node_power across all nodes in the job",
+        "min": 0.0,
+        "mean": 21.510343236034654,
+        "median": 12.847036785031923,
+        "max": 673.847627024687,
+        "stddev": 41.08667930246427
+    },
+    "sum_node_power": {
+        "type": "DOUBLE",
+        "description": "Total node_power summed across all nodes in the job",
+        "min": 608.1428571428571,
+        "mean": 136634.545423,
+        "median": 5803.678571428572,
+        "max": 6043099.945238088,
+        "stddev": 816722.3639721031
+    },
+    "quantile_25_node_power": {
+        "type": "DOUBLE",
+        "description": "25th percentile of node_power across all nodes in the job",
+        "min": 577.7142857142857,
+        "mean": 1407.298656957143,
+        "median": 1166.267857142857,
+        "max": 3049.714285714286,
+        "stddev": 713.6456511632576
+    },
+    "quantile_50_node_power": {
+        "type": "DOUBLE",
+        "description": "50th percentile of node_power across all nodes in the job",
+        "min": 597.25,
+        "mean": 1419.5538324155164,
+        "median": 1174.5982142857142,
+        "max": 3049.714285714286,
+        "stddev": 717.6115418740308
+    },
+    "quantile_75_node_power": {
+        "type": "DOUBLE",
+        "description": "75th percentile of node_power across all nodes in the job",
+        "min": 604.1428571428571,
+        "mean": 1430.1710537968572,
+        "median": 1184.8035714285716,
+        "max": 3049.714285714286,
+        "stddev": 718.6712912521759
+    },
+    "quantile_99_node_power": {
+        "type": "DOUBLE",
+        "description": "99th percentile of node_power across all nodes in the job",
+        "min": 608.1428571428571,
+        "mean": 1453.5923316801939,
+        "median": 1200.669642857143,
+        "max": 3053.8571428571427,
+        "stddev": 721.9797213002812
+    },
+    "min_cpu0_power": {
+        "type": "DOUBLE",
+        "description": "Min of cpu0_power across all nodes in the job",
+        "min": 18.0,
+        "mean": 77.15633453561767,
+        "median": 73.0,
+        "max": 304.0,
+        "stddev": 30.202204347199817
+    },
+    "max_cpu0_power": {
+        "type": "DOUBLE",
+        "description": "Max of cpu0_power across all nodes in the job",
+        "min": 25.0,
+        "mean": 91.8638412984671,
+        "median": 86.0,
+        "max": 355.0,
+        "stddev": 34.44780738677867
+    },
+    "mean_cpu0_power": {
+        "type": "DOUBLE",
+        "description": "Mean of cpu0_power across all nodes in the job",
+        "min": 25.0,
+        "mean": 82.1372800126084,
+        "median": 79.25,
+        "max": 304.0,
+        "stddev": 27.83393782796533
+    },
+    "stddev_cpu0_power": {
+        "type": "DOUBLE",
+        "description": "Population standard deviation of cpu0_power across all nodes in the job",
+        "min": 0.0,
+        "mean": 3.234085655894763,
+        "median": 2.227777535118155,
+        "max": 64.3170027223961,
+        "stddev": 5.308313848862131
+    },
+    "sum_cpu0_power": {
+        "type": "DOUBLE",
+        "description": "Total cpu0_power summed across all nodes in the job",
+        "min": 25.0,
+        "mean": 7780.658701532912,
+        "median": 382.0,
+        "max": 646139.0,
+        "stddev": 46613.155681993216
+    },
+    "quantile_25_cpu0_power": {
+        "type": "DOUBLE",
+        "description": "25th percentile of cpu0_power across all nodes in the job",
+        "min": 25.0,
+        "mean": 79.78381424706943,
+        "median": 77.0,
+        "max": 304.0,
+        "stddev": 28.914478067203092
+    },
+    "quantile_50_cpu0_power": {
+        "type": "DOUBLE",
+        "description": "50th percentile of cpu0_power across all nodes in the job",
+        "min": 25.0,
+        "mean": 81.67927186654644,
+        "median": 79.0,
+        "max": 304.0,
+        "stddev": 28.139500806634008
+    },
+    "quantile_75_cpu0_power": {
+        "type": "DOUBLE",
+        "description": "75th percentile of cpu0_power across all nodes in the job",
+        "min": 25.0,
+        "mean": 84.24915464382326,
+        "median": 81.0,
+        "max": 304.0,
+        "stddev": 27.755287909692733
+    },
+    "quantile_99_cpu0_power": {
+        "type": "DOUBLE",
+        "description": "99th percentile of cpu0_power across all nodes in the job",
+        "min": 25.0,
+        "mean": 87.84163660955817,
+        "median": 86.0,
+        "max": 304.0,
+        "stddev": 27.833368541282777
+    },
+    "min_cpu_memory_power": {
+        "type": "DOUBLE",
+        "description": "Min of cpu_memory_power across all nodes in the job",
+        "min": 18.0,
+        "mean": 77.15633453561767,
+        "median": 73.0,
+        "max": 304.0,
+        "stddev": 30.202204347199817
+    },
+    "max_cpu_memory_power": {
+        "type": "DOUBLE",
+        "description": "Max of cpu_memory_power across all nodes in the job",
+        "min": 25.0,
+        "mean": 91.8638412984671,
+        "median": 86.0,
+        "max": 355.0,
+        "stddev": 34.44780738677867
+    },
+    "mean_cpu_memory_power": {
+        "type": "DOUBLE",
+        "description": "Mean of cpu_memory_power across all nodes in the job",
+        "min": 25.0,
+        "mean": 82.1372800126084,
+        "median": 79.25,
+        "max": 304.0,
+        "stddev": 27.83393782796533
+    },
+    "stddev_cpu_memory_power": {
+        "type": "DOUBLE",
+        "description": "Population standard deviation of cpu_memory_power across all nodes in the job",
+        "min": 0.0,
+        "mean": 3.234085655894763,
+        "median": 2.227777535118155,
+        "max": 64.3170027223961,
+        "stddev": 5.308313848862131
+    },
+    "sum_cpu_memory_power": {
+        "type": "DOUBLE",
+        "description": "Total cpu_memory_power summed across all nodes in the job",
+        "min": 25.0,
+        "mean": 7780.658701532912,
+        "median": 382.0,
+        "max": 646139.0,
+        "stddev": 46613.155681993216
+    },
+    "quantile_25_cpu_memory_power": {
+        "type": "DOUBLE",
+        "description": "25th percentile of cpu_memory_power across all nodes in the job",
+        "min": 25.0,
+        "mean": 79.78381424706943,
+        "median": 77.0,
+        "max": 304.0,
+        "stddev": 28.914478067203092
+    },
+    "quantile_50_cpu_memory_power": {
+        "type": "DOUBLE",
+        "description": "50th percentile of cpu_memory_power across all nodes in the job",
+        "min": 25.0,
+        "mean": 81.67927186654644,
+        "median": 79.0,
+        "max": 304.0,
+        "stddev": 28.139500806634008
+    },
+    "quantile_75_cpu_memory_power": {
+        "type": "DOUBLE",
+        "description": "75th percentile of cpu_memory_power across all nodes in the job",
+        "min": 25.0,
+        "mean": 84.24915464382326,
+        "median": 81.0,
+        "max": 304.0,
+        "stddev": 27.755287909692733
+    },
+    "quantile_99_cpu_memory_power": {
+        "type": "DOUBLE",
+        "description": "99th percentile of cpu_memory_power across all nodes in the job",
+        "min": 25.0,
+        "mean": 87.84163660955817,
+        "median": 86.0,
+        "max": 304.0,
+        "stddev": 27.833368541282777
+    },
+    "min_gpu_power": {
+        "type": "DOUBLE",
+        "description": "Min of gpu_power across all nodes in the job",
+        "min": 7.242,
+        "mean": 159.15628099639278,
+        "median": 99.408,
+        "max": 624.098,
+        "stddev": 110.075699907831
+    },
+    "max_gpu_power": {
+        "type": "DOUBLE",
+        "description": "Max of gpu_power across all nodes in the job",
+        "min": 87.558,
+        "mean": 390.3438598963035,
+        "median": 424.9525,
+        "max": 889.16,
+        "stddev": 246.07145435160822
+    },
+    "mean_gpu_power": {
+        "type": "DOUBLE",
+        "description": "Mean of gpu_power across all nodes in the job",
+        "min": 84.5955,
+        "mean": 261.51528880842466,
+        "median": 198.9747375,
+        "max": 692.7615499999999,
+        "stddev": 168.36686801389374
+    },
+    "stddev_gpu_power": {
+        "type": "DOUBLE",
+        "description": "Population standard deviation of gpu_power across all nodes in the job",
+        "min": 0.284922357845074,
+        "mean": 75.87362358709977,
+        "median": 47.32341745656403,
+        "max": 292.1436138779821,
+        "stddev": 75.0494610113833
+    },
+    "sum_gpu_power": {
+        "type": "DOUBLE",
+        "description": "Total gpu_power summed across all nodes in the job",
+        "min": 338.382,
+        "mean": 86416.85410465514,
+        "median": 2998.099,
+        "max": 3585966.909999999,
+        "stddev": 510004.6565290635
+    },
+    "quantile_25_gpu_power": {
+        "type": "DOUBLE",
+        "description": "25th percentile of gpu_power across all nodes in the job",
+        "min": 64.516,
+        "mean": 189.57300135257057,
+        "median": 107.89,
+        "max": 693.842,
+        "stddev": 126.73201756456729
+    },
+    "quantile_50_gpu_power": {
+        "type": "DOUBLE",
+        "description": "50th percentile of gpu_power across all nodes in the job",
+        "min": 82.95,
+        "mean": 242.9732848286746,
+        "median": 132.324,
+        "max": 740.347,
+        "stddev": 175.91970326537228
+    },
+    "quantile_75_gpu_power": {
+        "type": "DOUBLE",
+        "description": "75th percentile of gpu_power across all nodes in the job",
+        "min": 85.583,
+        "mean": 299.95297926059504,
+        "median": 180.383,
+        "max": 766.389,
+        "stddev": 217.27503983540373
+    },
+    "quantile_99_gpu_power": {
+        "type": "DOUBLE",
+        "description": "99th percentile of gpu_power across all nodes in the job",
+        "min": 87.558,
+        "mean": 386.70694589720534,
+        "median": 405.517,
+        "max": 889.16,
+        "stddev": 246.22674392536965
+    },
+    "min_gpu0_power": {
+        "type": "DOUBLE",
+        "description": "Min of gpu0_power across all nodes in the job",
+        "min": 48.058,
+        "mean": 209.3508376916147,
+        "median": 108.82,
+        "max": 759.055,
+        "stddev": 165.9964512109876
+    },
+    "max_gpu0_power": {
+        "type": "DOUBLE",
+        "description": "Max of gpu0_power across all nodes in the job",
+        "min": 82.95,
+        "mean": 332.6065882551843,
+        "median": 257.078,
+        "max": 889.16,
+        "stddev": 235.52239573671386
+    },
+    "mean_gpu0_power": {
+        "type": "DOUBLE",
+        "description": "Mean of gpu0_power across all nodes in the job",
+        "min": 82.95,
+        "mean": 265.09807905972355,
+        "median": 176.28979999999999,
+        "max": 759.055,
+        "stddev": 184.62303553755598
+    },
+    "stddev_gpu0_power": {
+        "type": "DOUBLE",
+        "description": "Population standard deviation of gpu0_power across all nodes in the job",
+        "min": 0.0,
+        "mean": 42.39230710626835,
+        "median": 5.917309443406483,
+        "max": 324.28153638158307,
+        "stddev": 71.31652651359768
+    },
+    "sum_gpu0_power": {
+        "type": "DOUBLE",
+        "description": "Total gpu0_power summed across all nodes in the job",
+        "min": 82.95,
+        "mean": 21876.187655094684,
+        "median": 667.5475,
+        "max": 904395.5220000008,
+        "stddev": 129112.52783213742
+    },
+    "quantile_25_gpu0_power": {
+        "type": "DOUBLE",
+        "description": "25th percentile of gpu0_power across all nodes in the job",
+        "min": 82.95,
+        "mean": 234.88743327321905,
+        "median": 124.631,
+        "max": 759.055,
+        "stddev": 178.72718795085413
+    },
+    "quantile_50_gpu0_power": {
+        "type": "DOUBLE",
+        "description": "50th percentile of gpu0_power across all nodes in the job",
+        "min": 82.95,
+        "mean": 260.3567459422907,
+        "median": 133.641,
+        "max": 763.599,
+        "stddev": 196.1490357802367
+    },
+    "quantile_75_gpu0_power": {
+        "type": "DOUBLE",
+        "description": "75th percentile of gpu0_power across all nodes in the job",
+        "min": 82.95,
+        "mean": 290.90973275473397,
+        "median": 146.808,
+        "max": 791.501,
+        "stddev": 215.63054573533964
+    },
+    "quantile_99_gpu0_power": {
+        "type": "DOUBLE",
+        "description": "99th percentile of gpu0_power across all nodes in the job",
+        "min": 82.95,
+        "mean": 332.48147227231664,
+        "median": 257.078,
+        "max": 889.16,
+        "stddev": 235.6374962108688
+    },
+    "min_gpu1_power": {
+        "type": "DOUBLE",
+        "description": "Min of gpu1_power across all nodes in the job",
+        "min": 7.242,
+        "mean": 203.2350509467997,
+        "median": 108.82,
+        "max": 728.114,
+        "stddev": 161.35566746601754
+    },
+    "max_gpu1_power": {
+        "type": "DOUBLE",
+        "description": "Max of gpu1_power across all nodes in the job",
+        "min": 64.516,
+        "mean": 328.3467256537416,
+        "median": 256.091,
+        "max": 818.305,
+        "stddev": 231.4551105820708
+    },
+    "mean_gpu1_power": {
+        "type": "DOUBLE",
+        "description": "Mean of gpu1_power across all nodes in the job",
+        "min": 64.516,
+        "mean": 259.40188097717714,
+        "median": 179.50625000000002,
+        "max": 737.3184,
+        "stddev": 179.61545522004522
+    },
+    "stddev_gpu1_power": {
+        "type": "DOUBLE",
+        "description": "Population standard deviation of gpu1_power across all nodes in the job",
+        "min": 0.0,
+        "mean": 43.1018829256485,
+        "median": 6.185377396359275,
+        "max": 291.80715232056946,
+        "stddev": 71.43388870876798
+    },
+    "sum_gpu1_power": {
+        "type": "DOUBLE",
+        "description": "Total gpu1_power summed across all nodes in the job",
+        "min": 64.516,
+        "mean": 21520.598502592376,
+        "median": 671.168,
+        "max": 894775.5430000004,
+        "stddev": 126957.39265562438
+    },
+    "quantile_25_gpu1_power": {
+        "type": "DOUBLE",
+        "description": "25th percentile of gpu1_power across all nodes in the job",
+        "min": 64.516,
+        "mean": 228.1465102569892,
+        "median": 124.0955,
+        "max": 732.722,
+        "stddev": 173.27110130311755
+    },
+    "quantile_50_gpu1_power": {
+        "type": "DOUBLE",
+        "description": "50th percentile of gpu1_power across all nodes in the job",
+        "min": 64.516,
+        "mean": 254.5552057033366,
+        "median": 133.641,
+        "max": 752.438,
+        "stddev": 191.20356468929174
+    },
+    "quantile_75_gpu1_power": {
+        "type": "DOUBLE",
+        "description": "75th percentile of gpu1_power across all nodes in the job",
+        "min": 64.516,
+        "mean": 285.42985651487794,
+        "median": 146.808,
+        "max": 773.83,
+        "stddev": 211.5457007539202
+    },
+    "quantile_99_gpu1_power": {
+        "type": "DOUBLE",
+        "description": "99th percentile of gpu1_power across all nodes in the job",
+        "min": 64.516,
+        "mean": 328.2222622858428,
+        "median": 256.091,
+        "max": 818.305,
+        "stddev": 231.5702551036062
+    },
+    "min_gpu2_power": {
+        "type": "DOUBLE",
+        "description": "Min of gpu2_power across all nodes in the job",
+        "min": 26.992,
+        "mean": 207.8915068755643,
+        "median": 107.308,
+        "max": 744.572,
+        "stddev": 162.3615717896189
+    },
+    "max_gpu2_power": {
+        "type": "DOUBLE",
+        "description": "Max of gpu2_power across all nodes in the job",
+        "min": 81.633,
+        "mean": 330.1239737376022,
+        "median": 262.016,
+        "max": 824.23,
+        "stddev": 232.3570810281642
+    },
+    "mean_gpu2_power": {
+        "type": "DOUBLE",
+        "description": "Mean of gpu2_power across all nodes in the job",
+        "min": 81.633,
+        "mean": 261.9857621889996,
+        "median": 177.17090000000002,
+        "max": 766.7572,
+        "stddev": 181.53983422767956
+    },
+    "stddev_gpu2_power": {
+        "type": "DOUBLE",
+        "description": "Population standard deviation of gpu2_power across all nodes in the job",
+        "min": 0.0,
+        "mean": 41.535469589308796,
+        "median": 6.254000000000005,
+        "max": 297.8298134622523,
+        "stddev": 68.57868004413608
+    },
+    "sum_gpu2_power": {
+        "type": "DOUBLE",
+        "description": "Total gpu2_power summed across all nodes in the job",
+        "min": 81.633,
+        "mean": 21590.516299650524,
+        "median": 664.5525,
+        "max": 902485.9625000001,
+        "stddev": 127419.02823140497
+    },
+    "quantile_25_gpu2_power": {
+        "type": "DOUBLE",
+        "description": "25th percentile of gpu2_power across all nodes in the job",
+        "min": 80.975,
+        "mean": 231.8380499323723,
+        "median": 124.631,
+        "max": 758.948,
+        "stddev": 174.22354965905203
+    },
+    "quantile_50_gpu2_power": {
+        "type": "DOUBLE",
+        "description": "50th percentile of gpu2_power across all nodes in the job",
+        "min": 80.975,
+        "mean": 257.228914562668,
+        "median": 133.641,
+        "max": 766.389,
+        "stddev": 191.8416516026845
+    },
+    "quantile_75_gpu2_power": {
+        "type": "DOUBLE",
+        "description": "75th percentile of gpu2_power across all nodes in the job",
+        "min": 81.633,
+        "mean": 286.2962390667267,
+        "median": 146.149,
+        "max": 786.047,
+        "stddev": 210.91979088639062
+    },
+    "quantile_99_gpu2_power": {
+        "type": "DOUBLE",
+        "description": "99th percentile of gpu2_power across all nodes in the job",
+        "min": 81.633,
+        "mean": 329.6475266005416,
+        "median": 262.016,
+        "max": 824.23,
+        "stddev": 232.78478063626952
+    },
+    "min_gpu3_power": {
+        "type": "DOUBLE",
+        "description": "Min of gpu3_power across all nodes in the job",
+        "min": 26.333,
+        "mean": 204.1656819206504,
+        "median": 105.099,
+        "max": 724.822,
+        "stddev": 161.30998202921828
+    },
+    "max_gpu3_power": {
+        "type": "DOUBLE",
+        "description": "Max of gpu3_power across all nodes in the job",
+        "min": 75.708,
+        "mean": 328.77651837240853,
+        "median": 258.724,
+        "max": 824.889,
+        "stddev": 233.29948012092098
+    },
+    "mean_gpu3_power": {
+        "type": "DOUBLE",
+        "description": "Mean of gpu3_power across all nodes in the job",
+        "min": 75.708,
+        "mean": 259.57543199892524,
+        "median": 171.1365,
+        "max": 745.6784,
+        "stddev": 180.318365598325
+    },
+    "stddev_gpu3_power": {
+        "type": "DOUBLE",
+        "description": "Population standard deviation of gpu3_power across all nodes in the job",
+        "min": 0.0,
+        "mean": 42.49625036018964,
+        "median": 5.877498021484155,
+        "max": 286.98021817679347,
+        "stddev": 70.91223285161738
+    },
+    "sum_gpu3_power": {
+        "type": "DOUBLE",
+        "description": "Total gpu3_power summed across all nodes in the job",
+        "min": 75.708,
+        "mean": 21429.55164731737,
+        "median": 650.431,
+        "max": 890206.3450000002,
+        "stddev": 126518.12455323494
+    },
+    "quantile_25_gpu3_power": {
+        "type": "DOUBLE",
+        "description": "25th percentile of gpu3_power across all nodes in the job",
+        "min": 75.708,
+        "mean": 228.49779993237252,
+        "median": 123.108,
+        "max": 759.878,
+        "stddev": 172.8387344110411
+    },
+    "quantile_50_gpu3_power": {
+        "type": "DOUBLE",
+        "description": "50th percentile of gpu3_power across all nodes in the job",
+        "min": 75.708,
+        "mean": 255.13633802975727,
+        "median": 132.983,
+        "max": 769.179,
+        "stddev": 191.3140598745353
+    },
+    "quantile_75_gpu3_power": {
+        "type": "DOUBLE",
+        "description": "75th percentile of gpu3_power across all nodes in the job",
+        "min": 75.708,
+        "mean": 285.27063007213667,
+        "median": 144.833,
+        "max": 782.2,
+        "stddev": 211.34441891330644
+    },
+    "quantile_99_gpu3_power": {
+        "type": "DOUBLE",
+        "description": "99th percentile of gpu3_power across all nodes in the job",
+        "min": 75.708,
+        "mean": 328.2614043056817,
+        "median": 258.724,
+        "max": 824.889,
+        "stddev": 233.75393197121892
+    },
+    "min_node_temp": {
+        "type": "DOUBLE",
+        "description": "Min of node_temp across all nodes in the job",
+        "min": 0.0,
+        "mean": 53.675439585211905,
+        "median": 49.5,
+        "max": 74.0,
+        "stddev": 9.423059245305314
+    },
+    "max_node_temp": {
+        "type": "DOUBLE",
+        "description": "Max of node_temp across all nodes in the job",
+        "min": 41.0,
+        "mean": 57.569417831379624,
+        "median": 54.5,
+        "max": 78.0,
+        "stddev": 9.11280239310757
+    },
+    "mean_node_temp": {
+        "type": "DOUBLE",
+        "description": "Mean of node_temp across all nodes in the job",
+        "min": 41.0,
+        "mean": 55.410931140392755,
+        "median": 50.8,
+        "max": 74.6,
+        "stddev": 9.076664069479687
+    },
+    "stddev_node_temp": {
+        "type": "DOUBLE",
+        "description": "Population standard deviation of node_temp across all nodes in the job",
+        "min": 0.0,
+        "mean": 1.086054607803434,
+        "median": 1.0,
+        "max": 6.932232656898857,
+        "stddev": 1.1220941103689983
+    },
+    "quantile_25_node_temp": {
+        "type": "DOUBLE",
+        "description": "25th percentile of node_temp across all nodes in the job",
+        "min": 40.0,
+        "mean": 54.62098455816051,
+        "median": 50.0,
+        "max": 74.0,
+        "stddev": 9.150210428597312
+    },
+    "quantile_50_node_temp": {
+        "type": "DOUBLE",
+        "description": "50th percentile of node_temp across all nodes in the job",
+        "min": 41.0,
+        "mean": 55.2271331154193,
+        "median": 50.75,
+        "max": 74.0,
+        "stddev": 9.053289691838028
+    },
+    "quantile_75_node_temp": {
+        "type": "DOUBLE",
+        "description": "75th percentile of node_temp across all nodes in the job",
+        "min": 41.0,
+        "mean": 56.07206661406673,
+        "median": 52.0,
+        "max": 77.0,
+        "stddev": 9.220220280401112
+    },
+    "quantile_99_node_temp": {
+        "type": "DOUBLE",
+        "description": "99th percentile of node_temp across all nodes in the job",
+        "min": 41.0,
+        "mean": 57.473441726780884,
+        "median": 54.0,
+        "max": 78.0,
+        "stddev": 9.17708399446985
+    },
+    "min_cpu0_temp": {
+        "type": "DOUBLE",
+        "description": "Min of cpu0_temp across all nodes in the job",
+        "min": 35.0,
+        "mean": 49.267400247971146,
+        "median": 48.375,
+        "max": 63.375,
+        "stddev": 6.234819126060066
+    },
+    "max_cpu0_temp": {
+        "type": "DOUBLE",
+        "description": "Max of cpu0_temp across all nodes in the job",
+        "min": 38.125,
+        "mean": 51.99388525698828,
+        "median": 51.25,
+        "max": 63.375,
+        "stddev": 5.581322883428208
+    },
+    "mean_cpu0_temp": {
+        "type": "DOUBLE",
+        "description": "Mean of cpu0_temp across all nodes in the job",
+        "min": 38.088541666666664,
+        "mean": 50.347354481518785,
+        "median": 49.25,
+        "max": 63.375,
+        "stddev": 5.7486497745174425
+    },
+    "stddev_cpu0_temp": {
+        "type": "DOUBLE",
+        "description": "Population standard deviation of cpu0_temp across all nodes in the job",
+        "min": 0.0,
+        "mean": 0.7010412022536884,
+        "median": 0.6,
+        "max": 5.178298056431831,
+        "stddev": 0.8189091764640805
+    },
+    "quantile_25_cpu0_temp": {
+        "type": "DOUBLE",
+        "description": "25th percentile of cpu0_temp across all nodes in the job",
+        "min": 37.5,
+        "mean": 49.82657518034265,
+        "median": 48.75,
+        "max": 63.375,
+        "stddev": 5.92978259418301
+    },
+    "quantile_50_cpu0_temp": {
+        "type": "DOUBLE",
+        "description": "50th percentile of cpu0_temp across all nodes in the job",
+        "min": 38.0,
+        "mean": 50.2441388638413,
+        "median": 49.125,
+        "max": 63.375,
+        "stddev": 5.821790053735196
+    },
+    "quantile_75_cpu0_temp": {
+        "type": "DOUBLE",
+        "description": "75th percentile of cpu0_temp across all nodes in the job",
+        "min": 38.125,
+        "mean": 50.71674932371506,
+        "median": 49.5,
+        "max": 63.375,
+        "stddev": 5.657884699319646
+    },
+    "quantile_99_cpu0_temp": {
+        "type": "DOUBLE",
+        "description": "99th percentile of cpu0_temp across all nodes in the job",
+        "min": 38.125,
+        "mean": 51.830379283137965,
+        "median": 51.125,
+        "max": 63.375,
+        "stddev": 5.707666169240648
+    },
+    "min_gpu_temp": {
+        "type": "DOUBLE",
+        "description": "Min of gpu_temp across all nodes in the job",
+        "min": 0.0,
+        "mean": 42.91197024346258,
+        "median": 42.0,
+        "max": 62.0,
+        "stddev": 12.561006443074376
+    },
+    "max_gpu_temp": {
+        "type": "DOUBLE",
+        "description": "Max of gpu_temp across all nodes in the job",
+        "min": 40.0,
+        "mean": 56.10268259693417,
+        "median": 52.0,
+        "max": 78.0,
+        "stddev": 10.375542269413055
+    },
+    "mean_gpu_temp": {
+        "type": "DOUBLE",
+        "description": "Mean of gpu_temp across all nodes in the job",
+        "min": 38.25,
+        "mean": 50.00660706211373,
+        "median": 46.4,
+        "max": 67.75,
+        "stddev": 8.951313830648333
+    },
+    "stddev_gpu_temp": {
+        "type": "DOUBLE",
+        "description": "Population standard deviation of gpu_temp across all nodes in the job",
+        "min": 0.4330127018922193,
+        "mean": 3.3469436783313187,
+        "median": 2.9474565306378997,
+        "max": 12.05197079319395,
+        "stddev": 1.4747157184443127
+    },
+    "quantile_25_gpu_temp": {
+        "type": "DOUBLE",
+        "description": "25th percentile of gpu_temp across all nodes in the job",
+        "min": 32.0,
+        "mean": 46.6488954012624,
+        "median": 44.0,
+        "max": 62.0,
+        "stddev": 7.588264136951406
+    },
+    "quantile_50_gpu_temp": {
+        "type": "DOUBLE",
+        "description": "50th percentile of gpu_temp across all nodes in the job",
+        "min": 38.0,
+        "mean": 49.07980162308386,
+        "median": 46.0,
+        "max": 66.0,
+        "stddev": 8.405319902644177
+    },
+    "quantile_75_gpu_temp": {
+        "type": "DOUBLE",
+        "description": "75th percentile of gpu_temp across all nodes in the job",
+        "min": 38.0,
+        "mean": 52.0179215509468,
+        "median": 48.0,
+        "max": 74.0,
+        "stddev": 9.92307058601228
+    },
+    "quantile_99_gpu_temp": {
+        "type": "DOUBLE",
+        "description": "99th percentile of gpu_temp across all nodes in the job",
+        "min": 40.0,
+        "mean": 55.87556357078449,
+        "median": 52.0,
+        "max": 78.0,
+        "stddev": 10.440201906361667
+    },
+    "min_gpu0_temp": {
+        "type": "DOUBLE",
+        "description": "Min of gpu0_temp across all nodes in the job",
+        "min": 0.0,
+        "mean": 49.68688007213706,
+        "median": 47.0,
+        "max": 74.0,
+        "stddev": 13.221052531156685
+    },
+    "max_gpu0_temp": {
+        "type": "DOUBLE",
+        "description": "Max of gpu0_temp across all nodes in the job",
+        "min": 38.0,
+        "mean": 55.327321911632104,
+        "median": 52.0,
+        "max": 76.0,
+        "stddev": 10.430917582386039
+    },
+    "mean_gpu0_temp": {
+        "type": "DOUBLE",
+        "description": "Mean of gpu0_temp across all nodes in the job",
+        "min": 38.0,
+        "mean": 52.86867639130492,
+        "median": 49.0,
+        "max": 74.0,
+        "stddev": 10.518465152292986
+    },
+    "stddev_gpu0_temp": {
+        "type": "DOUBLE",
+        "description": "Population standard deviation of gpu0_temp across all nodes in the job",
+        "min": 0.0,
+        "mean": 1.3347701597324158,
+        "median": 1.2990381056766567,
+        "max": 14.428492849070953,
+        "stddev": 1.3460452982482862
+    },
+    "quantile_25_gpu0_temp": {
+        "type": "DOUBLE",
+        "description": "25th percentile of gpu0_temp across all nodes in the job",
+        "min": 38.0,
+        "mean": 52.016794409377816,
+        "median": 48.0,
+        "max": 74.0,
+        "stddev": 10.712576657889072
+    },
+    "quantile_50_gpu0_temp": {
+        "type": "DOUBLE",
+        "description": "50th percentile of gpu0_temp across all nodes in the job",
+        "min": 38.0,
+        "mean": 52.703223624887286,
+        "median": 48.0,
+        "max": 74.0,
+        "stddev": 10.620362923854909
+    },
+    "quantile_75_gpu0_temp": {
+        "type": "DOUBLE",
+        "description": "75th percentile of gpu0_temp across all nodes in the job",
+        "min": 38.0,
+        "mean": 53.68101893597836,
+        "median": 50.0,
+        "max": 76.0,
+        "stddev": 10.621178480995416
+    },
+    "quantile_99_gpu0_temp": {
+        "type": "DOUBLE",
+        "description": "99th percentile of gpu0_temp across all nodes in the job",
+        "min": 38.0,
+        "mean": 55.23940486925158,
+        "median": 52.0,
+        "max": 76.0,
+        "stddev": 10.476160751930216
+    },
+    "min_gpu1_temp": {
+        "type": "DOUBLE",
+        "description": "Min of gpu1_temp across all nodes in the job",
+        "min": 0.0,
+        "mean": 44.44420649233544,
+        "median": 43.0,
+        "max": 68.0,
+        "stddev": 13.099554565927455
+    },
+    "max_gpu1_temp": {
+        "type": "DOUBLE",
+        "description": "Max of gpu1_temp across all nodes in the job",
+        "min": 32.0,
+        "mean": 50.50383228133454,
+        "median": 50.0,
+        "max": 68.0,
+        "stddev": 7.701427017112719
+    },
+    "mean_gpu1_temp": {
+        "type": "DOUBLE",
+        "description": "Mean of gpu1_temp across all nodes in the job",
+        "min": 32.0,
+        "mean": 48.033604526513564,
+        "median": 45.0,
+        "max": 68.0,
+        "stddev": 7.96654256909331
+    },
+    "stddev_gpu1_temp": {
+        "type": "DOUBLE",
+        "description": "Population standard deviation of gpu1_temp across all nodes in the job",
+        "min": 0.0,
+        "mean": 1.3195950327355885,
+        "median": 1.3310245292923244,
+        "max": 11.404357719749063,
+        "stddev": 1.538970846166921
+    },
+    "quantile_25_gpu1_temp": {
+        "type": "DOUBLE",
+        "description": "25th percentile of gpu1_temp across all nodes in the job",
+        "min": 32.0,
+        "mean": 47.18733092876465,
+        "median": 44.0,
+        "max": 68.0,
+        "stddev": 8.25685670194946
+    },
+    "quantile_50_gpu1_temp": {
+        "type": "DOUBLE",
+        "description": "50th percentile of gpu1_temp across all nodes in the job",
+        "min": 32.0,
+        "mean": 47.82777276825969,
+        "median": 44.0,
+        "max": 68.0,
+        "stddev": 8.054444728884553
+    },
+    "quantile_75_gpu1_temp": {
+        "type": "DOUBLE",
+        "description": "75th percentile of gpu1_temp across all nodes in the job",
+        "min": 32.0,
+        "mean": 48.63920198376916,
+        "median": 46.0,
+        "max": 68.0,
+        "stddev": 7.838557027878981
+    },
+    "quantile_99_gpu1_temp": {
+        "type": "DOUBLE",
+        "description": "99th percentile of gpu1_temp across all nodes in the job",
+        "min": 32.0,
+        "mean": 50.392808836789904,
+        "median": 49.0,
+        "max": 68.0,
+        "stddev": 7.739212373422235
+    },
+    "min_gpu2_temp": {
+        "type": "DOUBLE",
+        "description": "Min of gpu2_temp across all nodes in the job",
+        "min": 0.0,
+        "mean": 48.93101893597836,
+        "median": 46.0,
+        "max": 73.0,
+        "stddev": 13.036095513903394
+    },
+    "max_gpu2_temp": {
+        "type": "DOUBLE",
+        "description": "Max of gpu2_temp across all nodes in the job",
+        "min": 38.0,
+        "mean": 54.15295311091073,
+        "median": 50.0,
+        "max": 78.0,
+        "stddev": 10.21167670580492
+    },
+    "mean_gpu2_temp": {
+        "type": "DOUBLE",
+        "description": "Mean of gpu2_temp across all nodes in the job",
+        "min": 38.0,
+        "mean": 51.84136684321069,
+        "median": 47.9875,
+        "max": 74.0,
+        "stddev": 10.329035523689758
+    },
+    "stddev_gpu2_temp": {
+        "type": "DOUBLE",
+        "description": "Population standard deviation of gpu2_temp across all nodes in the job",
+        "min": 0.0,
+        "mean": 1.2055842174629432,
+        "median": 1.3564659966250536,
+        "max": 11.839200423452027,
+        "stddev": 1.2106373221993483
+    },
+    "quantile_25_gpu2_temp": {
+        "type": "DOUBLE",
+        "description": "25th percentile of gpu2_temp across all nodes in the job",
+        "min": 38.0,
+        "mean": 51.009918845807036,
+        "median": 47.0,
+        "max": 73.0,
+        "stddev": 10.480418466299943
+    },
+    "quantile_50_gpu2_temp": {
+        "type": "DOUBLE",
+        "description": "50th percentile of gpu2_temp across all nodes in the job",
+        "min": 38.0,
+        "mean": 51.745716862037874,
+        "median": 48.0,
+        "max": 74.0,
+        "stddev": 10.394746720455103
+    },
+    "quantile_75_gpu2_temp": {
+        "type": "DOUBLE",
+        "description": "75th percentile of gpu2_temp across all nodes in the job",
+        "min": 38.0,
+        "mean": 52.557371505861134,
+        "median": 49.0,
+        "max": 77.0,
+        "stddev": 10.340237605599398
+    },
+    "quantile_99_gpu2_temp": {
+        "type": "DOUBLE",
+        "description": "99th percentile of gpu2_temp across all nodes in the job",
+        "min": 38.0,
+        "mean": 54.062105500450855,
+        "median": 50.0,
+        "max": 78.0,
+        "stddev": 10.259520089408378
+    },
+    "min_gpu3_temp": {
+        "type": "DOUBLE",
+        "description": "Min of gpu3_temp across all nodes in the job",
+        "min": 0.0,
+        "mean": 44.66411181244364,
+        "median": 43.0,
+        "max": 64.0,
+        "stddev": 10.52993421455192
+    },
+    "max_gpu3_temp": {
+        "type": "DOUBLE",
+        "description": "Max of gpu3_temp across all nodes in the job",
+        "min": 32.0,
+        "mean": 49.427412082957616,
+        "median": 48.0,
+        "max": 67.0,
+        "stddev": 7.435772883185305
+    },
+    "mean_gpu3_temp": {
+        "type": "DOUBLE",
+        "description": "Mean of gpu3_temp across all nodes in the job",
+        "min": 32.0,
+        "mean": 47.2827805565131,
+        "median": 44.2,
+        "max": 64.0,
+        "stddev": 7.560704602262366
+    },
+    "stddev_gpu3_temp": {
+        "type": "DOUBLE",
+        "description": "Population standard deviation of gpu3_temp across all nodes in the job",
+        "min": 0.0,
+        "mean": 1.107925694096916,
+        "median": 1.1661903789690593,
+        "max": 11.13147439570438,
+        "stddev": 1.1552791968638527
+    },
+    "quantile_25_gpu3_temp": {
+        "type": "DOUBLE",
+        "description": "25th percentile of gpu3_temp across all nodes in the job",
+        "min": 32.0,
+        "mean": 46.45874661857529,
+        "median": 44.0,
+        "max": 64.0,
+        "stddev": 7.849856997186933
+    },
+    "quantile_50_gpu3_temp": {
+        "type": "DOUBLE",
+        "description": "50th percentile of gpu3_temp across all nodes in the job",
+        "min": 32.0,
+        "mean": 47.160392245266,
+        "median": 44.0,
+        "max": 64.0,
+        "stddev": 7.63651502937331
+    },
+    "quantile_75_gpu3_temp": {
+        "type": "DOUBLE",
+        "description": "75th percentile of gpu3_temp across all nodes in the job",
+        "min": 32.0,
+        "mean": 47.989968440036066,
+        "median": 45.0,
+        "max": 64.0,
+        "stddev": 7.537568270757816
+    },
+    "quantile_99_gpu3_temp": {
+        "type": "DOUBLE",
+        "description": "99th percentile of gpu3_temp across all nodes in the job",
+        "min": 32.0,
+        "mean": 49.325518485121734,
+        "median": 47.0,
+        "max": 67.0,
+        "stddev": 7.464055001579941
+    },
+    "min_gpu_energy_delta": {
+        "type": "DOUBLE",
+        "description": "Min of gpu_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 3650.981571235347,
+        "median": 2956.75,
+        "max": 8181.25,
+        "stddev": 2270.698018143459
+    },
+    "max_gpu_energy_delta": {
+        "type": "DOUBLE",
+        "description": "Max of gpu_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 4216.490485046591,
+        "median": 3278.5,
+        "max": 11039.333333333334,
+        "stddev": 2472.064977133899
+    },
+    "mean_gpu_energy_delta": {
+        "type": "DOUBLE",
+        "description": "Mean of gpu_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 3934.576632624371,
+        "median": 3110.26875,
+        "max": 8641.902777777777,
+        "stddev": 2363.148239064497
+    },
+    "stddev_gpu_energy_delta": {
+        "type": "DOUBLE",
+        "description": "Population standard deviation of gpu_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 150.1761291543015,
+        "median": 95.2928422335695,
+        "max": 2921.3422027597176,
+        "stddev": 189.69225415468256
+    },
+    "sum_gpu_energy_delta": {
+        "type": "DOUBLE",
+        "description": "Total gpu_energy_delta summed across all nodes in the job",
+        "min": 0.0,
+        "mean": 1248904.661904493,
+        "median": 51739.625,
+        "max": 50428816.916666664,
+        "stddev": 7372128.771640262
+    },
+    "quantile_25_gpu_energy_delta": {
+        "type": "DOUBLE",
+        "description": "25th percentile of gpu_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 3803.86446122633,
+        "median": 3028.5,
+        "max": 8452.25,
+        "stddev": 2320.475175910284
+    },
+    "quantile_50_gpu_energy_delta": {
+        "type": "DOUBLE",
+        "description": "50th percentile of gpu_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 3913.1304666366095,
+        "median": 3093.0,
+        "max": 8539.75,
+        "stddev": 2366.7268829239497
+    },
+    "quantile_75_gpu_energy_delta": {
+        "type": "DOUBLE",
+        "description": "75th percentile of gpu_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 4017.2652164111814,
+        "median": 3158.875,
+        "max": 8698.5,
+        "stddev": 2400.941170462827
+    },
+    "quantile_99_gpu_energy_delta": {
+        "type": "DOUBLE",
+        "description": "99th percentile of gpu_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 4200.761750450857,
+        "median": 3277.375,
+        "max": 11039.333333333334,
+        "stddev": 2481.263830186397
+    },
+    "min_gpu0_energy_delta": {
+        "type": "DOUBLE",
+        "description": "Min of gpu0_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 3733.823066952209,
+        "median": 2996.0,
+        "max": 8551.75,
+        "stddev": 2414.1462031701503
+    },
+    "max_gpu0_energy_delta": {
+        "type": "DOUBLE",
+        "description": "Max of gpu0_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 4035.9254489780596,
+        "median": 3170.0,
+        "max": 10410.75,
+        "stddev": 2463.7162610212213
+    },
+    "mean_gpu0_energy_delta": {
+        "type": "DOUBLE",
+        "description": "Mean of gpu0_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 3887.1117417574,
+        "median": 3086.75,
+        "max": 8888.3125,
+        "stddev": 2428.7556203921013
+    },
+    "stddev_gpu0_energy_delta": {
+        "type": "DOUBLE",
+        "description": "Population standard deviation of gpu0_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 86.00937951167427,
+        "median": 64.3739114635764,
+        "max": 2147.3573584757614,
+        "stddev": 151.13977621810787
+    },
+    "sum_gpu0_energy_delta": {
+        "type": "DOUBLE",
+        "description": "Total gpu0_energy_delta summed across all nodes in the job",
+        "min": 0.0,
+        "mean": 315986.6524177188,
+        "median": 12232.875,
+        "max": 12785340.916666666,
+        "stddev": 1865115.0353968644
+    },
+    "quantile_25_gpu0_energy_delta": {
+        "type": "DOUBLE",
+        "description": "25th percentile of gpu0_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 3830.617335437331,
+        "median": 3041.0,
+        "max": 8577.0,
+        "stddev": 2417.487662750811
+    },
+    "quantile_50_gpu0_energy_delta": {
+        "type": "DOUBLE",
+        "description": "50th percentile of gpu0_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 3877.948545987376,
+        "median": 3082.5,
+        "max": 8679.75,
+        "stddev": 2432.105063705602
+    },
+    "quantile_75_gpu0_energy_delta": {
+        "type": "DOUBLE",
+        "description": "75th percentile of gpu0_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 3933.331576871055,
+        "median": 3118.0,
+        "max": 8854.5,
+        "stddev": 2438.006408696884
+    },
+    "quantile_99_gpu0_energy_delta": {
+        "type": "DOUBLE",
+        "description": "99th percentile of gpu0_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 4030.067515779982,
+        "median": 3170.0,
+        "max": 10410.75,
+        "stddev": 2468.826480630204
+    },
+    "min_gpu1_energy_delta": {
+        "type": "DOUBLE",
+        "description": "Min of gpu1_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 3685.621139540126,
+        "median": 3011.25,
+        "max": 8398.25,
+        "stddev": 2344.8622118982407
+    },
+    "max_gpu1_energy_delta": {
+        "type": "DOUBLE",
+        "description": "Max of gpu1_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 3995.688833784192,
+        "median": 3192.25,
+        "max": 10799.333333333334,
+        "stddev": 2394.2900739053375
+    },
+    "mean_gpu1_energy_delta": {
+        "type": "DOUBLE",
+        "description": "Mean of gpu1_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 3844.9847448723813,
+        "median": 3105.025,
+        "max": 8864.861111111111,
+        "stddev": 2361.214850284793
+    },
+    "stddev_gpu1_energy_delta": {
+        "type": "DOUBLE",
+        "description": "Population standard deviation of gpu1_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 86.84580210545185,
+        "median": 54.55797843970001,
+        "max": 2311.175404420876,
+        "stddev": 158.82326674696466
+    },
+    "sum_gpu1_energy_delta": {
+        "type": "DOUBLE",
+        "description": "Total gpu1_energy_delta summed across all nodes in the job",
+        "min": 0.0,
+        "mean": 311021.6459178691,
+        "median": 12314.375,
+        "max": 12551491.25,
+        "stddev": 1835637.6041935915
+    },
+    "quantile_25_gpu1_energy_delta": {
+        "type": "DOUBLE",
+        "description": "25th percentile of gpu1_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 3788.4664393597836,
+        "median": 3050.0,
+        "max": 8399.25,
+        "stddev": 2350.7411481867302
+    },
+    "quantile_50_gpu1_energy_delta": {
+        "type": "DOUBLE",
+        "description": "50th percentile of gpu1_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 3833.5855218665465,
+        "median": 3088.125,
+        "max": 8528.25,
+        "stddev": 2365.3340911600776
+    },
+    "quantile_75_gpu1_energy_delta": {
+        "type": "DOUBLE",
+        "description": "75th percentile of gpu1_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 3890.309193718064,
+        "median": 3134.5,
+        "max": 10799.333333333334,
+        "stddev": 2375.0276120654726
+    },
+    "quantile_99_gpu1_energy_delta": {
+        "type": "DOUBLE",
+        "description": "99th percentile of gpu1_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 3989.817515779982,
+        "median": 3192.25,
+        "max": 10799.333333333334,
+        "stddev": 2399.601920239494
+    },
+    "min_gpu2_energy_delta": {
+        "type": "DOUBLE",
+        "description": "Min of gpu2_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 3726.44513638413,
+        "median": 2995.75,
+        "max": 8654.0,
+        "stddev": 2398.1140057644384
+    },
+    "max_gpu2_energy_delta": {
+        "type": "DOUBLE",
+        "description": "Max of gpu2_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 4016.193173279231,
+        "median": 3185.5,
+        "max": 11039.333333333334,
+        "stddev": 2446.2177443906294
+    },
+    "mean_gpu2_energy_delta": {
+        "type": "DOUBLE",
+        "description": "Mean of gpu2_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 3863.035435024963,
+        "median": 3085.9,
+        "max": 9091.020833333334,
+        "stddev": 2418.688256144722
+    },
+    "stddev_gpu2_energy_delta": {
+        "type": "DOUBLE",
+        "description": "Population standard deviation of gpu2_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 83.56689948052917,
+        "median": 61.20732907067746,
+        "max": 2235.7849013266014,
+        "stddev": 153.04054847949197
+    },
+    "sum_gpu2_energy_delta": {
+        "type": "DOUBLE",
+        "description": "Total gpu2_energy_delta summed across all nodes in the job",
+        "min": 0.0,
+        "mean": 311972.2771077548,
+        "median": 12173.5,
+        "max": 12594523.416666668,
+        "stddev": 1841526.9666992414
+    },
+    "quantile_25_gpu2_energy_delta": {
+        "type": "DOUBLE",
+        "description": "25th percentile of gpu2_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 3804.9656503606852,
+        "median": 3034.375,
+        "max": 8654.0,
+        "stddev": 2410.387974341157
+    },
+    "quantile_50_gpu2_energy_delta": {
+        "type": "DOUBLE",
+        "description": "50th percentile of gpu2_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 3851.1170254733993,
+        "median": 3078.75,
+        "max": 8706.0,
+        "stddev": 2422.2551950173925
+    },
+    "quantile_75_gpu2_energy_delta": {
+        "type": "DOUBLE",
+        "description": "75th percentile of gpu2_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 3903.79722723174,
+        "median": 3118.0,
+        "max": 8909.0,
+        "stddev": 2425.593096341975
+    },
+    "quantile_99_gpu2_energy_delta": {
+        "type": "DOUBLE",
+        "description": "99th percentile of gpu2_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 4008.4386271415688,
+        "median": 3185.5,
+        "max": 11039.333333333334,
+        "stddev": 2453.146685031993
+    },
+    "min_gpu3_energy_delta": {
+        "type": "DOUBLE",
+        "description": "Min of gpu3_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 3686.793564021641,
+        "median": 3018.375,
+        "max": 8414.0,
+        "stddev": 2327.1629615311394
+    },
+    "max_gpu3_energy_delta": {
+        "type": "DOUBLE",
+        "description": "Max of gpu3_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 4008.1173824015636,
+        "median": 3179.875,
+        "max": 10537.0,
+        "stddev": 2440.9069741646676
+    },
+    "mean_gpu3_energy_delta": {
+        "type": "DOUBLE",
+        "description": "Mean of gpu3_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 3847.067863063057,
+        "median": 3106.5,
+        "max": 8914.125,
+        "stddev": 2395.0442806679466
+    },
+    "stddev_gpu3_energy_delta": {
+        "type": "DOUBLE",
+        "description": "Population standard deviation of gpu3_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 96.01669129470714,
+        "median": 63.552112328949356,
+        "max": 2259.154371662105,
+        "stddev": 163.8884404617924
+    },
+    "sum_gpu3_energy_delta": {
+        "type": "DOUBLE",
+        "description": "Total gpu3_energy_delta summed across all nodes in the job",
+        "min": 0.0,
+        "mean": 309924.086461151,
+        "median": 12388.0,
+        "max": 12536463.5,
+        "stddev": 1829878.4133473479
+    },
+    "quantile_25_gpu3_energy_delta": {
+        "type": "DOUBLE",
+        "description": "25th percentile of gpu3_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 3784.5556526149685,
+        "median": 3051.25,
+        "max": 8521.25,
+        "stddev": 2377.1002421347107
+    },
+    "quantile_50_gpu3_energy_delta": {
+        "type": "DOUBLE",
+        "description": "50th percentile of gpu3_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 3839.102400811542,
+        "median": 3091.0,
+        "max": 8648.75,
+        "stddev": 2408.3396218357175
+    },
+    "quantile_75_gpu3_energy_delta": {
+        "type": "DOUBLE",
+        "description": "75th percentile of gpu3_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 3897.7891399909827,
+        "median": 3131.875,
+        "max": 8711.5,
+        "stddev": 2418.112516744591
+    },
+    "quantile_99_gpu3_energy_delta": {
+        "type": "DOUBLE",
+        "description": "99th percentile of gpu3_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 3999.918930342651,
+        "median": 3179.875,
+        "max": 10537.0,
+        "stddev": 2448.214336691805
+    },
+    "min_cpu0_energy_delta": {
+        "type": "DOUBLE",
+        "description": "Min of cpu0_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 1199.790013525699,
+        "median": 1183.75,
+        "max": 2647.0,
+        "stddev": 439.8680180786856
+    },
+    "max_cpu0_energy_delta": {
+        "type": "DOUBLE",
+        "description": "Max of cpu0_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 1339.1943192064923,
+        "median": 1268.5,
+        "max": 4785.75,
+        "stddev": 520.9720776855378
+    },
+    "mean_cpu0_energy_delta": {
+        "type": "DOUBLE",
+        "description": "Mean of cpu0_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 1234.0104521912904,
+        "median": 1221.0857843137255,
+        "max": 2647.0,
+        "stddev": 424.71747031385013
+    },
+    "stddev_cpu0_energy_delta": {
+        "type": "DOUBLE",
+        "description": "Population standard deviation of cpu0_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 24.188944517932676,
+        "median": 13.052465648541812,
+        "max": 909.2224180122334,
+        "stddev": 63.22489364808345
+    },
+    "sum_cpu0_energy_delta": {
+        "type": "DOUBLE",
+        "description": "Total cpu0_energy_delta summed across all nodes in the job",
+        "min": 0.0,
+        "mean": 117772.28857642021,
+        "median": 4889.875,
+        "max": 8365330.833333333,
+        "stddev": 703477.7370435857
+    },
+    "quantile_25_cpu0_energy_delta": {
+        "type": "DOUBLE",
+        "description": "25th percentile of cpu0_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 1215.2870266005411,
+        "median": 1198.875,
+        "max": 2647.0,
+        "stddev": 433.59031744645114
+    },
+    "quantile_50_cpu0_energy_delta": {
+        "type": "DOUBLE",
+        "description": "50th percentile of cpu0_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 1228.493321686204,
+        "median": 1219.75,
+        "max": 2647.0,
+        "stddev": 429.38005454120224
+    },
+    "quantile_75_cpu0_energy_delta": {
+        "type": "DOUBLE",
+        "description": "75th percentile of cpu0_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 1250.613334084761,
+        "median": 1232.25,
+        "max": 2647.0,
+        "stddev": 426.82215754291315
+    },
+    "quantile_99_cpu0_energy_delta": {
+        "type": "DOUBLE",
+        "description": "99th percentile of cpu0_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 1276.9818811992786,
+        "median": 1263.375,
+        "max": 2647.0,
+        "stddev": 422.75347176506557
+    },
+    "min_cpu_memory_energy_delta": {
+        "type": "DOUBLE",
+        "description": "Min of cpu_memory_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 1194.467115644725,
+        "median": 1220.75,
+        "max": 1743.25,
+        "stddev": 211.1604876873445
+    },
+    "max_cpu_memory_energy_delta": {
+        "type": "DOUBLE",
+        "description": "Max of cpu_memory_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 1249.851207920048,
+        "median": 1252.75,
+        "max": 1743.25,
+        "stddev": 208.5329564294456
+    },
+    "mean_cpu_memory_energy_delta": {
+        "type": "DOUBLE",
+        "description": "Mean of cpu_memory_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 1215.718152876261,
+        "median": 1232.5,
+        "max": 1743.25,
+        "stddev": 208.3997995196966
+    },
+    "stddev_cpu_memory_energy_delta": {
+        "type": "DOUBLE",
+        "description": "Population standard deviation of cpu_memory_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 15.53332587046381,
+        "median": 12.875,
+        "max": 212.66796438762157,
+        "stddev": 22.765139760154625
+    },
+    "sum_cpu_memory_energy_delta": {
+        "type": "DOUBLE",
+        "description": "Total cpu_memory_energy_delta summed across all nodes in the job",
+        "min": 0.0,
+        "mean": 210083.29962240756,
+        "median": 5920.0,
+        "max": 9234235.5,
+        "stddev": 1295192.3896727986
+    },
+    "quantile_25_cpu_memory_energy_delta": {
+        "type": "DOUBLE",
+        "description": "25th percentile of cpu_memory_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 1203.9766118124437,
+        "median": 1225.0,
+        "max": 1743.25,
+        "stddev": 209.75911124966362
+    },
+    "quantile_50_cpu_memory_energy_delta": {
+        "type": "DOUBLE",
+        "description": "50th percentile of cpu_memory_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 1212.365701082056,
+        "median": 1229.75,
+        "max": 1743.25,
+        "stddev": 209.39472946029088
+    },
+    "quantile_75_cpu_memory_energy_delta": {
+        "type": "DOUBLE",
+        "description": "75th percentile of cpu_memory_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 1223.4417267808838,
+        "median": 1236.5,
+        "max": 1743.25,
+        "stddev": 208.83834606527532
+    },
+    "quantile_99_cpu_memory_energy_delta": {
+        "type": "DOUBLE",
+        "description": "99th percentile of cpu_memory_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 1244.6443022993687,
+        "median": 1249.75,
+        "max": 1743.25,
+        "stddev": 209.81525545096122
+    },
+    "min_node_energy_delta": {
+        "type": "DOUBLE",
+        "description": "Min of node_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 20089.387905770964,
+        "median": 17554.75,
+        "max": 42670.75,
+        "stddev": 11125.53045710188
+    },
+    "max_node_energy_delta": {
+        "type": "DOUBLE",
+        "description": "Max of node_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 21690.51933047791,
+        "median": 18125.25,
+        "max": 65884.0,
+        "stddev": 10966.44050058072
+    },
+    "mean_node_energy_delta": {
+        "type": "DOUBLE",
+        "description": "Mean of node_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 20873.638781284357,
+        "median": 17751.519444444442,
+        "max": 42913.333333333336,
+        "stddev": 10943.698899651856
+    },
+    "stddev_node_energy_delta": {
+        "type": "DOUBLE",
+        "description": "Population standard deviation of node_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 343.94743876778034,
+        "median": 186.65040342183894,
+        "max": 8336.733702660867,
+        "stddev": 676.6846166923124
+    },
+    "sum_node_energy_delta": {
+        "type": "DOUBLE",
+        "description": "Total node_energy_delta summed across all nodes in the job",
+        "min": 0.0,
+        "mean": 1976291.183949504,
+        "median": 70732.875,
+        "max": 84308079.75,
+        "stddev": 11812450.817445055
+    },
+    "quantile_25_node_energy_delta": {
+        "type": "DOUBLE",
+        "description": "25th percentile of node_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 20640.316698602346,
+        "median": 17619.75,
+        "max": 42670.75,
+        "stddev": 10885.787239892541
+    },
+    "quantile_50_node_energy_delta": {
+        "type": "DOUBLE",
+        "description": "50th percentile of node_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 20862.267583408477,
+        "median": 17719.5,
+        "max": 42949.25,
+        "stddev": 10956.471384772462
+    },
+    "quantile_75_node_energy_delta": {
+        "type": "DOUBLE",
+        "description": "75th percentile of node_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 21057.190233318306,
+        "median": 17816.0,
+        "max": 43350.25,
+        "stddev": 10980.668500319864
+    },
+    "quantile_99_node_energy_delta": {
+        "type": "DOUBLE",
+        "description": "99th percentile of node_energy_delta across all nodes in the job",
+        "min": 0.0,
+        "mean": 21427.660335888188,
+        "median": 18019.75,
+        "max": 43701.5,
+        "stddev": 11061.367209831533
+    }
+}

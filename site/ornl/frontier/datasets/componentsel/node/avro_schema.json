@@ -1,0 +1,310 @@
+{
+    "type": "record",
+    "name": "ComponentSelectedNodeSchema",
+    "fields": [
+        {
+            "name": "timestamp",
+            "type": {
+                "type": "long",
+                "logicalType": "timestamp-micros"
+            },
+            "doc": "Time of the measurement, floored to 15 sec"
+        },
+        {
+            "name": "xname",
+            "type": "string",
+            "doc": "Unique identifier for the node of the measurement, e.g. x2509c4s4b1"
+        },
+        {
+            "name": "row",
+            "type": "long",
+            "doc": "Row index of the node."
+        },
+        {
+            "name": "col",
+            "type": "long",
+            "doc": "Col index of the node"
+        },
+        {
+            "name": "chassis",
+            "type": "long",
+            "doc": "Chassis index of the node"
+        },
+        {
+            "name": "blade",
+            "type": "long",
+            "doc": "Blade index of the node"
+        },
+        {
+            "name": "node",
+            "type": "long",
+            "doc": "Node index on blade, 0 or 1"
+        },
+        {
+            "name": "allocation_id",
+            "type": [
+                "null",
+                "string"
+            ],
+            "default": null,
+            "doc": "Allocation Id of the job associated with this record"
+        },
+        {
+            "name": "job_time_start",
+            "type": [
+                "null",
+                {
+                    "type": "long",
+                    "logicalType": "timestamp-micros"
+                }
+            ],
+            "default": null,
+            "doc": "Start time of the job associated with this record"
+        },
+        {
+            "name": "node_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "Total node power usage (unit: W, interval: 2 sec)"
+        },
+        {
+            "name": "node_temp",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "Max temperature seen on the node (unit: degC)"
+        },
+        {
+            "name": "node_energy",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "Energy counter for node (unit: J, interval: 1 min)"
+        },
+        {
+            "name": "node_energy_delta",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "Energy consumed by node in this timestep (unit: J)"
+        },
+        {
+            "name": "cpu0_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "Power usage of CPU0 (unit: W, interval: 15 sec)"
+        },
+        {
+            "name": "cpu0_temp",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "Temperature of CPU0 (unit: degC, interval: 1 min)"
+        },
+        {
+            "name": "cpu0_energy",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "Energy counter for CPU0 (unit: J, interval: 1 min)"
+        },
+        {
+            "name": "cpu0_energy_delta",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "Energy consumed by CPU0 in this timestep (unit: J)"
+        },
+        {
+            "name": "gpu0_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "Power usage of GPU0 (unit: W, interval: 15 sec)"
+        },
+        {
+            "name": "gpu0_temp",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "Temperature of GPU0 (unit: degC, interval: 1 min)"
+        },
+        {
+            "name": "gpu0_energy",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "Energy counter for GPU0 (unit: J, interval: 1 min)"
+        },
+        {
+            "name": "gpu0_energy_delta",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "Energy consumed by GPU0 in this timestep (unit: J)"
+        },
+        {
+            "name": "gpu1_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "Power usage of GPU1 (unit: W, interval: 15 sec)"
+        },
+        {
+            "name": "gpu1_temp",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "Temperature of GPU1 (unit: degC, interval: 1 min)"
+        },
+        {
+            "name": "gpu1_energy",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "Energy counter for GPU1 (unit: J, interval: 1 min)"
+        },
+        {
+            "name": "gpu1_energy_delta",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "Energy consumed by GPU1 in this timestep (unit: J)"
+        },
+        {
+            "name": "gpu2_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "Power usage of GPU2 (unit: W, interval: 15 sec)"
+        },
+        {
+            "name": "gpu2_temp",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "Temperature of GPU2 (unit: degC, interval: 1 min)"
+        },
+        {
+            "name": "gpu2_energy",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "Energy counter for GPU2 (unit: J, interval: 1 min)"
+        },
+        {
+            "name": "gpu2_energy_delta",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "Energy consumed by GPU2 in this timestep (unit: J)"
+        },
+        {
+            "name": "gpu3_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "Power usage of GPU3 (unit: W, interval: 15 sec)"
+        },
+        {
+            "name": "gpu3_temp",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "Temperature of GPU3 (unit: degC, interval: 1 min)"
+        },
+        {
+            "name": "gpu3_energy",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "Energy counter for GPU3 (unit: J, interval: 1 min)"
+        },
+        {
+            "name": "gpu3_energy_delta",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "Energy consumed by GPU3 in this timestep (unit: J)"
+        },
+        {
+            "name": "cpu_memory_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "Power usage of RAM (unit: W, interval: 15 sec)"
+        },
+        {
+            "name": "cpu_memory_energy",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "Energy counter for RAM (unit: J, interval: 1 min)"
+        },
+        {
+            "name": "cpu_memory_energy_delta",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "Energy consumed by RAM in this timestep (unit: J)"
+        }
+    ],
+    "namespace": "base",
+    "doc": "Usage docs: https://docs.pydantic.dev/2.7/concepts/models/"
+}

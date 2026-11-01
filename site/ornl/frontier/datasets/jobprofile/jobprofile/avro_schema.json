@@ -1,0 +1,1026 @@
+{
+    "type": "record",
+    "name": "JobProfile",
+    "fields": [
+        {
+            "name": "allocation_id",
+            "type": "string",
+            "doc": "Unique identifier for the job"
+        },
+        {
+            "name": "timestamp",
+            "type": {
+                "type": "long",
+                "logicalType": "timestamp-micros"
+            },
+            "doc": "Time of the measurement, floored to 15 sec"
+        },
+        {
+            "name": "reporting_node_count",
+            "type": "long",
+            "doc": "\n                Number of nodes reporting metrics during the measurement.\n                Note this can be different than the job node count, and can vary throughout a job\n                if some nodes don't report telemetry reliably.\n            "
+        },
+        {
+            "name": "min_node_power",
+            "type": "double",
+            "doc": "Min of node_power across all nodes in the job"
+        },
+        {
+            "name": "max_node_power",
+            "type": "double",
+            "doc": "Max of node_power across all nodes in the job"
+        },
+        {
+            "name": "mean_node_power",
+            "type": "double",
+            "doc": "Mean of node_power across all nodes in the job"
+        },
+        {
+            "name": "stddev_node_power",
+            "type": "double",
+            "doc": "Population standard deviation of node_power across all nodes in the job"
+        },
+        {
+            "name": "sum_node_power",
+            "type": "double",
+            "doc": "Total node_power summed across all nodes in the job"
+        },
+        {
+            "name": "quantile_25_node_power",
+            "type": "double",
+            "doc": "25th percentile of node_power across all nodes in the job"
+        },
+        {
+            "name": "quantile_50_node_power",
+            "type": "double",
+            "doc": "50th percentile of node_power across all nodes in the job"
+        },
+        {
+            "name": "quantile_75_node_power",
+            "type": "double",
+            "doc": "75th percentile of node_power across all nodes in the job"
+        },
+        {
+            "name": "quantile_99_node_power",
+            "type": "double",
+            "doc": "99th percentile of node_power across all nodes in the job"
+        },
+        {
+            "name": "min_cpu0_power",
+            "type": "double",
+            "doc": "Min of cpu0_power across all nodes in the job"
+        },
+        {
+            "name": "max_cpu0_power",
+            "type": "double",
+            "doc": "Max of cpu0_power across all nodes in the job"
+        },
+        {
+            "name": "mean_cpu0_power",
+            "type": "double",
+            "doc": "Mean of cpu0_power across all nodes in the job"
+        },
+        {
+            "name": "stddev_cpu0_power",
+            "type": "double",
+            "doc": "Population standard deviation of cpu0_power across all nodes in the job"
+        },
+        {
+            "name": "sum_cpu0_power",
+            "type": "double",
+            "doc": "Total cpu0_power summed across all nodes in the job"
+        },
+        {
+            "name": "quantile_25_cpu0_power",
+            "type": "double",
+            "doc": "25th percentile of cpu0_power across all nodes in the job"
+        },
+        {
+            "name": "quantile_50_cpu0_power",
+            "type": "double",
+            "doc": "50th percentile of cpu0_power across all nodes in the job"
+        },
+        {
+            "name": "quantile_75_cpu0_power",
+            "type": "double",
+            "doc": "75th percentile of cpu0_power across all nodes in the job"
+        },
+        {
+            "name": "quantile_99_cpu0_power",
+            "type": "double",
+            "doc": "99th percentile of cpu0_power across all nodes in the job"
+        },
+        {
+            "name": "min_cpu_memory_power",
+            "type": "double",
+            "doc": "Min of cpu_memory_power across all nodes in the job"
+        },
+        {
+            "name": "max_cpu_memory_power",
+            "type": "double",
+            "doc": "Max of cpu_memory_power across all nodes in the job"
+        },
+        {
+            "name": "mean_cpu_memory_power",
+            "type": "double",
+            "doc": "Mean of cpu_memory_power across all nodes in the job"
+        },
+        {
+            "name": "stddev_cpu_memory_power",
+            "type": "double",
+            "doc": "Population standard deviation of cpu_memory_power across all nodes in the job"
+        },
+        {
+            "name": "sum_cpu_memory_power",
+            "type": "double",
+            "doc": "Total cpu_memory_power summed across all nodes in the job"
+        },
+        {
+            "name": "quantile_25_cpu_memory_power",
+            "type": "double",
+            "doc": "25th percentile of cpu_memory_power across all nodes in the job"
+        },
+        {
+            "name": "quantile_50_cpu_memory_power",
+            "type": "double",
+            "doc": "50th percentile of cpu_memory_power across all nodes in the job"
+        },
+        {
+            "name": "quantile_75_cpu_memory_power",
+            "type": "double",
+            "doc": "75th percentile of cpu_memory_power across all nodes in the job"
+        },
+        {
+            "name": "quantile_99_cpu_memory_power",
+            "type": "double",
+            "doc": "99th percentile of cpu_memory_power across all nodes in the job"
+        },
+        {
+            "name": "min_gpu_power",
+            "type": "double",
+            "doc": "Min of gpu_power across all nodes in the job"
+        },
+        {
+            "name": "max_gpu_power",
+            "type": "double",
+            "doc": "Max of gpu_power across all nodes in the job"
+        },
+        {
+            "name": "mean_gpu_power",
+            "type": "double",
+            "doc": "Mean of gpu_power across all nodes in the job"
+        },
+        {
+            "name": "stddev_gpu_power",
+            "type": "double",
+            "doc": "Population standard deviation of gpu_power across all nodes in the job"
+        },
+        {
+            "name": "sum_gpu_power",
+            "type": "double",
+            "doc": "Total gpu_power summed across all nodes in the job"
+        },
+        {
+            "name": "quantile_25_gpu_power",
+            "type": "double",
+            "doc": "25th percentile of gpu_power across all nodes in the job"
+        },
+        {
+            "name": "quantile_50_gpu_power",
+            "type": "double",
+            "doc": "50th percentile of gpu_power across all nodes in the job"
+        },
+        {
+            "name": "quantile_75_gpu_power",
+            "type": "double",
+            "doc": "75th percentile of gpu_power across all nodes in the job"
+        },
+        {
+            "name": "quantile_99_gpu_power",
+            "type": "double",
+            "doc": "99th percentile of gpu_power across all nodes in the job"
+        },
+        {
+            "name": "min_gpu0_power",
+            "type": "double",
+            "doc": "Min of gpu0_power across all nodes in the job"
+        },
+        {
+            "name": "max_gpu0_power",
+            "type": "double",
+            "doc": "Max of gpu0_power across all nodes in the job"
+        },
+        {
+            "name": "mean_gpu0_power",
+            "type": "double",
+            "doc": "Mean of gpu0_power across all nodes in the job"
+        },
+        {
+            "name": "stddev_gpu0_power",
+            "type": "double",
+            "doc": "Population standard deviation of gpu0_power across all nodes in the job"
+        },
+        {
+            "name": "sum_gpu0_power",
+            "type": "double",
+            "doc": "Total gpu0_power summed across all nodes in the job"
+        },
+        {
+            "name": "quantile_25_gpu0_power",
+            "type": "double",
+            "doc": "25th percentile of gpu0_power across all nodes in the job"
+        },
+        {
+            "name": "quantile_50_gpu0_power",
+            "type": "double",
+            "doc": "50th percentile of gpu0_power across all nodes in the job"
+        },
+        {
+            "name": "quantile_75_gpu0_power",
+            "type": "double",
+            "doc": "75th percentile of gpu0_power across all nodes in the job"
+        },
+        {
+            "name": "quantile_99_gpu0_power",
+            "type": "double",
+            "doc": "99th percentile of gpu0_power across all nodes in the job"
+        },
+        {
+            "name": "min_gpu1_power",
+            "type": "double",
+            "doc": "Min of gpu1_power across all nodes in the job"
+        },
+        {
+            "name": "max_gpu1_power",
+            "type": "double",
+            "doc": "Max of gpu1_power across all nodes in the job"
+        },
+        {
+            "name": "mean_gpu1_power",
+            "type": "double",
+            "doc": "Mean of gpu1_power across all nodes in the job"
+        },
+        {
+            "name": "stddev_gpu1_power",
+            "type": "double",
+            "doc": "Population standard deviation of gpu1_power across all nodes in the job"
+        },
+        {
+            "name": "sum_gpu1_power",
+            "type": "double",
+            "doc": "Total gpu1_power summed across all nodes in the job"
+        },
+        {
+            "name": "quantile_25_gpu1_power",
+            "type": "double",
+            "doc": "25th percentile of gpu1_power across all nodes in the job"
+        },
+        {
+            "name": "quantile_50_gpu1_power",
+            "type": "double",
+            "doc": "50th percentile of gpu1_power across all nodes in the job"
+        },
+        {
+            "name": "quantile_75_gpu1_power",
+            "type": "double",
+            "doc": "75th percentile of gpu1_power across all nodes in the job"
+        },
+        {
+            "name": "quantile_99_gpu1_power",
+            "type": "double",
+            "doc": "99th percentile of gpu1_power across all nodes in the job"
+        },
+        {
+            "name": "min_gpu2_power",
+            "type": "double",
+            "doc": "Min of gpu2_power across all nodes in the job"
+        },
+        {
+            "name": "max_gpu2_power",
+            "type": "double",
+            "doc": "Max of gpu2_power across all nodes in the job"
+        },
+        {
+            "name": "mean_gpu2_power",
+            "type": "double",
+            "doc": "Mean of gpu2_power across all nodes in the job"
+        },
+        {
+            "name": "stddev_gpu2_power",
+            "type": "double",
+            "doc": "Population standard deviation of gpu2_power across all nodes in the job"
+        },
+        {
+            "name": "sum_gpu2_power",
+            "type": "double",
+            "doc": "Total gpu2_power summed across all nodes in the job"
+        },
+        {
+            "name": "quantile_25_gpu2_power",
+            "type": "double",
+            "doc": "25th percentile of gpu2_power across all nodes in the job"
+        },
+        {
+            "name": "quantile_50_gpu2_power",
+            "type": "double",
+            "doc": "50th percentile of gpu2_power across all nodes in the job"
+        },
+        {
+            "name": "quantile_75_gpu2_power",
+            "type": "double",
+            "doc": "75th percentile of gpu2_power across all nodes in the job"
+        },
+        {
+            "name": "quantile_99_gpu2_power",
+            "type": "double",
+            "doc": "99th percentile of gpu2_power across all nodes in the job"
+        },
+        {
+            "name": "min_gpu3_power",
+            "type": "double",
+            "doc": "Min of gpu3_power across all nodes in the job"
+        },
+        {
+            "name": "max_gpu3_power",
+            "type": "double",
+            "doc": "Max of gpu3_power across all nodes in the job"
+        },
+        {
+            "name": "mean_gpu3_power",
+            "type": "double",
+            "doc": "Mean of gpu3_power across all nodes in the job"
+        },
+        {
+            "name": "stddev_gpu3_power",
+            "type": "double",
+            "doc": "Population standard deviation of gpu3_power across all nodes in the job"
+        },
+        {
+            "name": "sum_gpu3_power",
+            "type": "double",
+            "doc": "Total gpu3_power summed across all nodes in the job"
+        },
+        {
+            "name": "quantile_25_gpu3_power",
+            "type": "double",
+            "doc": "25th percentile of gpu3_power across all nodes in the job"
+        },
+        {
+            "name": "quantile_50_gpu3_power",
+            "type": "double",
+            "doc": "50th percentile of gpu3_power across all nodes in the job"
+        },
+        {
+            "name": "quantile_75_gpu3_power",
+            "type": "double",
+            "doc": "75th percentile of gpu3_power across all nodes in the job"
+        },
+        {
+            "name": "quantile_99_gpu3_power",
+            "type": "double",
+            "doc": "99th percentile of gpu3_power across all nodes in the job"
+        },
+        {
+            "name": "min_node_temp",
+            "type": "double",
+            "doc": "Min of node_temp across all nodes in the job"
+        },
+        {
+            "name": "max_node_temp",
+            "type": "double",
+            "doc": "Max of node_temp across all nodes in the job"
+        },
+        {
+            "name": "mean_node_temp",
+            "type": "double",
+            "doc": "Mean of node_temp across all nodes in the job"
+        },
+        {
+            "name": "stddev_node_temp",
+            "type": "double",
+            "doc": "Population standard deviation of node_temp across all nodes in the job"
+        },
+        {
+            "name": "quantile_25_node_temp",
+            "type": "double",
+            "doc": "25th percentile of node_temp across all nodes in the job"
+        },
+        {
+            "name": "quantile_50_node_temp",
+            "type": "double",
+            "doc": "50th percentile of node_temp across all nodes in the job"
+        },
+        {
+            "name": "quantile_75_node_temp",
+            "type": "double",
+            "doc": "75th percentile of node_temp across all nodes in the job"
+        },
+        {
+            "name": "quantile_99_node_temp",
+            "type": "double",
+            "doc": "99th percentile of node_temp across all nodes in the job"
+        },
+        {
+            "name": "min_cpu0_temp",
+            "type": "double",
+            "doc": "Min of cpu0_temp across all nodes in the job"
+        },
+        {
+            "name": "max_cpu0_temp",
+            "type": "double",
+            "doc": "Max of cpu0_temp across all nodes in the job"
+        },
+        {
+            "name": "mean_cpu0_temp",
+            "type": "double",
+            "doc": "Mean of cpu0_temp across all nodes in the job"
+        },
+        {
+            "name": "stddev_cpu0_temp",
+            "type": "double",
+            "doc": "Population standard deviation of cpu0_temp across all nodes in the job"
+        },
+        {
+            "name": "quantile_25_cpu0_temp",
+            "type": "double",
+            "doc": "25th percentile of cpu0_temp across all nodes in the job"
+        },
+        {
+            "name": "quantile_50_cpu0_temp",
+            "type": "double",
+            "doc": "50th percentile of cpu0_temp across all nodes in the job"
+        },
+        {
+            "name": "quantile_75_cpu0_temp",
+            "type": "double",
+            "doc": "75th percentile of cpu0_temp across all nodes in the job"
+        },
+        {
+            "name": "quantile_99_cpu0_temp",
+            "type": "double",
+            "doc": "99th percentile of cpu0_temp across all nodes in the job"
+        },
+        {
+            "name": "min_gpu_temp",
+            "type": "double",
+            "doc": "Min of gpu_temp across all nodes in the job"
+        },
+        {
+            "name": "max_gpu_temp",
+            "type": "double",
+            "doc": "Max of gpu_temp across all nodes in the job"
+        },
+        {
+            "name": "mean_gpu_temp",
+            "type": "double",
+            "doc": "Mean of gpu_temp across all nodes in the job"
+        },
+        {
+            "name": "stddev_gpu_temp",
+            "type": "double",
+            "doc": "Population standard deviation of gpu_temp across all nodes in the job"
+        },
+        {
+            "name": "quantile_25_gpu_temp",
+            "type": "double",
+            "doc": "25th percentile of gpu_temp across all nodes in the job"
+        },
+        {
+            "name": "quantile_50_gpu_temp",
+            "type": "double",
+            "doc": "50th percentile of gpu_temp across all nodes in the job"
+        },
+        {
+            "name": "quantile_75_gpu_temp",
+            "type": "double",
+            "doc": "75th percentile of gpu_temp across all nodes in the job"
+        },
+        {
+            "name": "quantile_99_gpu_temp",
+            "type": "double",
+            "doc": "99th percentile of gpu_temp across all nodes in the job"
+        },
+        {
+            "name": "min_gpu0_temp",
+            "type": "double",
+            "doc": "Min of gpu0_temp across all nodes in the job"
+        },
+        {
+            "name": "max_gpu0_temp",
+            "type": "double",
+            "doc": "Max of gpu0_temp across all nodes in the job"
+        },
+        {
+            "name": "mean_gpu0_temp",
+            "type": "double",
+            "doc": "Mean of gpu0_temp across all nodes in the job"
+        },
+        {
+            "name": "stddev_gpu0_temp",
+            "type": "double",
+            "doc": "Population standard deviation of gpu0_temp across all nodes in the job"
+        },
+        {
+            "name": "quantile_25_gpu0_temp",
+            "type": "double",
+            "doc": "25th percentile of gpu0_temp across all nodes in the job"
+        },
+        {
+            "name": "quantile_50_gpu0_temp",
+            "type": "double",
+            "doc": "50th percentile of gpu0_temp across all nodes in the job"
+        },
+        {
+            "name": "quantile_75_gpu0_temp",
+            "type": "double",
+            "doc": "75th percentile of gpu0_temp across all nodes in the job"
+        },
+        {
+            "name": "quantile_99_gpu0_temp",
+            "type": "double",
+            "doc": "99th percentile of gpu0_temp across all nodes in the job"
+        },
+        {
+            "name": "min_gpu1_temp",
+            "type": "double",
+            "doc": "Min of gpu1_temp across all nodes in the job"
+        },
+        {
+            "name": "max_gpu1_temp",
+            "type": "double",
+            "doc": "Max of gpu1_temp across all nodes in the job"
+        },
+        {
+            "name": "mean_gpu1_temp",
+            "type": "double",
+            "doc": "Mean of gpu1_temp across all nodes in the job"
+        },
+        {
+            "name": "stddev_gpu1_temp",
+            "type": "double",
+            "doc": "Population standard deviation of gpu1_temp across all nodes in the job"
+        },
+        {
+            "name": "quantile_25_gpu1_temp",
+            "type": "double",
+            "doc": "25th percentile of gpu1_temp across all nodes in the job"
+        },
+        {
+            "name": "quantile_50_gpu1_temp",
+            "type": "double",
+            "doc": "50th percentile of gpu1_temp across all nodes in the job"
+        },
+        {
+            "name": "quantile_75_gpu1_temp",
+            "type": "double",
+            "doc": "75th percentile of gpu1_temp across all nodes in the job"
+        },
+        {
+            "name": "quantile_99_gpu1_temp",
+            "type": "double",
+            "doc": "99th percentile of gpu1_temp across all nodes in the job"
+        },
+        {
+            "name": "min_gpu2_temp",
+            "type": "double",
+            "doc": "Min of gpu2_temp across all nodes in the job"
+        },
+        {
+            "name": "max_gpu2_temp",
+            "type": "double",
+            "doc": "Max of gpu2_temp across all nodes in the job"
+        },
+        {
+            "name": "mean_gpu2_temp",
+            "type": "double",
+            "doc": "Mean of gpu2_temp across all nodes in the job"
+        },
+        {
+            "name": "stddev_gpu2_temp",
+            "type": "double",
+            "doc": "Population standard deviation of gpu2_temp across all nodes in the job"
+        },
+        {
+            "name": "quantile_25_gpu2_temp",
+            "type": "double",
+            "doc": "25th percentile of gpu2_temp across all nodes in the job"
+        },
+        {
+            "name": "quantile_50_gpu2_temp",
+            "type": "double",
+            "doc": "50th percentile of gpu2_temp across all nodes in the job"
+        },
+        {
+            "name": "quantile_75_gpu2_temp",
+            "type": "double",
+            "doc": "75th percentile of gpu2_temp across all nodes in the job"
+        },
+        {
+            "name": "quantile_99_gpu2_temp",
+            "type": "double",
+            "doc": "99th percentile of gpu2_temp across all nodes in the job"
+        },
+        {
+            "name": "min_gpu3_temp",
+            "type": "double",
+            "doc": "Min of gpu3_temp across all nodes in the job"
+        },
+        {
+            "name": "max_gpu3_temp",
+            "type": "double",
+            "doc": "Max of gpu3_temp across all nodes in the job"
+        },
+        {
+            "name": "mean_gpu3_temp",
+            "type": "double",
+            "doc": "Mean of gpu3_temp across all nodes in the job"
+        },
+        {
+            "name": "stddev_gpu3_temp",
+            "type": "double",
+            "doc": "Population standard deviation of gpu3_temp across all nodes in the job"
+        },
+        {
+            "name": "quantile_25_gpu3_temp",
+            "type": "double",
+            "doc": "25th percentile of gpu3_temp across all nodes in the job"
+        },
+        {
+            "name": "quantile_50_gpu3_temp",
+            "type": "double",
+            "doc": "50th percentile of gpu3_temp across all nodes in the job"
+        },
+        {
+            "name": "quantile_75_gpu3_temp",
+            "type": "double",
+            "doc": "75th percentile of gpu3_temp across all nodes in the job"
+        },
+        {
+            "name": "quantile_99_gpu3_temp",
+            "type": "double",
+            "doc": "99th percentile of gpu3_temp across all nodes in the job"
+        },
+        {
+            "name": "min_gpu_energy_delta",
+            "type": "double",
+            "doc": "Min of gpu_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "max_gpu_energy_delta",
+            "type": "double",
+            "doc": "Max of gpu_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "mean_gpu_energy_delta",
+            "type": "double",
+            "doc": "Mean of gpu_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "stddev_gpu_energy_delta",
+            "type": "double",
+            "doc": "Population standard deviation of gpu_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "sum_gpu_energy_delta",
+            "type": "double",
+            "doc": "Total gpu_energy_delta summed across all nodes in the job"
+        },
+        {
+            "name": "quantile_25_gpu_energy_delta",
+            "type": "double",
+            "doc": "25th percentile of gpu_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "quantile_50_gpu_energy_delta",
+            "type": "double",
+            "doc": "50th percentile of gpu_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "quantile_75_gpu_energy_delta",
+            "type": "double",
+            "doc": "75th percentile of gpu_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "quantile_99_gpu_energy_delta",
+            "type": "double",
+            "doc": "99th percentile of gpu_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "min_gpu0_energy_delta",
+            "type": "double",
+            "doc": "Min of gpu0_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "max_gpu0_energy_delta",
+            "type": "double",
+            "doc": "Max of gpu0_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "mean_gpu0_energy_delta",
+            "type": "double",
+            "doc": "Mean of gpu0_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "stddev_gpu0_energy_delta",
+            "type": "double",
+            "doc": "Population standard deviation of gpu0_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "sum_gpu0_energy_delta",
+            "type": "double",
+            "doc": "Total gpu0_energy_delta summed across all nodes in the job"
+        },
+        {
+            "name": "quantile_25_gpu0_energy_delta",
+            "type": "double",
+            "doc": "25th percentile of gpu0_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "quantile_50_gpu0_energy_delta",
+            "type": "double",
+            "doc": "50th percentile of gpu0_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "quantile_75_gpu0_energy_delta",
+            "type": "double",
+            "doc": "75th percentile of gpu0_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "quantile_99_gpu0_energy_delta",
+            "type": "double",
+            "doc": "99th percentile of gpu0_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "min_gpu1_energy_delta",
+            "type": "double",
+            "doc": "Min of gpu1_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "max_gpu1_energy_delta",
+            "type": "double",
+            "doc": "Max of gpu1_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "mean_gpu1_energy_delta",
+            "type": "double",
+            "doc": "Mean of gpu1_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "stddev_gpu1_energy_delta",
+            "type": "double",
+            "doc": "Population standard deviation of gpu1_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "sum_gpu1_energy_delta",
+            "type": "double",
+            "doc": "Total gpu1_energy_delta summed across all nodes in the job"
+        },
+        {
+            "name": "quantile_25_gpu1_energy_delta",
+            "type": "double",
+            "doc": "25th percentile of gpu1_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "quantile_50_gpu1_energy_delta",
+            "type": "double",
+            "doc": "50th percentile of gpu1_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "quantile_75_gpu1_energy_delta",
+            "type": "double",
+            "doc": "75th percentile of gpu1_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "quantile_99_gpu1_energy_delta",
+            "type": "double",
+            "doc": "99th percentile of gpu1_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "min_gpu2_energy_delta",
+            "type": "double",
+            "doc": "Min of gpu2_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "max_gpu2_energy_delta",
+            "type": "double",
+            "doc": "Max of gpu2_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "mean_gpu2_energy_delta",
+            "type": "double",
+            "doc": "Mean of gpu2_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "stddev_gpu2_energy_delta",
+            "type": "double",
+            "doc": "Population standard deviation of gpu2_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "sum_gpu2_energy_delta",
+            "type": "double",
+            "doc": "Total gpu2_energy_delta summed across all nodes in the job"
+        },
+        {
+            "name": "quantile_25_gpu2_energy_delta",
+            "type": "double",
+            "doc": "25th percentile of gpu2_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "quantile_50_gpu2_energy_delta",
+            "type": "double",
+            "doc": "50th percentile of gpu2_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "quantile_75_gpu2_energy_delta",
+            "type": "double",
+            "doc": "75th percentile of gpu2_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "quantile_99_gpu2_energy_delta",
+            "type": "double",
+            "doc": "99th percentile of gpu2_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "min_gpu3_energy_delta",
+            "type": "double",
+            "doc": "Min of gpu3_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "max_gpu3_energy_delta",
+            "type": "double",
+            "doc": "Max of gpu3_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "mean_gpu3_energy_delta",
+            "type": "double",
+            "doc": "Mean of gpu3_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "stddev_gpu3_energy_delta",
+            "type": "double",
+            "doc": "Population standard deviation of gpu3_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "sum_gpu3_energy_delta",
+            "type": "double",
+            "doc": "Total gpu3_energy_delta summed across all nodes in the job"
+        },
+        {
+            "name": "quantile_25_gpu3_energy_delta",
+            "type": "double",
+            "doc": "25th percentile of gpu3_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "quantile_50_gpu3_energy_delta",
+            "type": "double",
+            "doc": "50th percentile of gpu3_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "quantile_75_gpu3_energy_delta",
+            "type": "double",
+            "doc": "75th percentile of gpu3_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "quantile_99_gpu3_energy_delta",
+            "type": "double",
+            "doc": "99th percentile of gpu3_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "min_cpu0_energy_delta",
+            "type": "double",
+            "doc": "Min of cpu0_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "max_cpu0_energy_delta",
+            "type": "double",
+            "doc": "Max of cpu0_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "mean_cpu0_energy_delta",
+            "type": "double",
+            "doc": "Mean of cpu0_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "stddev_cpu0_energy_delta",
+            "type": "double",
+            "doc": "Population standard deviation of cpu0_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "sum_cpu0_energy_delta",
+            "type": "double",
+            "doc": "Total cpu0_energy_delta summed across all nodes in the job"
+        },
+        {
+            "name": "quantile_25_cpu0_energy_delta",
+            "type": "double",
+            "doc": "25th percentile of cpu0_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "quantile_50_cpu0_energy_delta",
+            "type": "double",
+            "doc": "50th percentile of cpu0_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "quantile_75_cpu0_energy_delta",
+            "type": "double",
+            "doc": "75th percentile of cpu0_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "quantile_99_cpu0_energy_delta",
+            "type": "double",
+            "doc": "99th percentile of cpu0_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "min_cpu_memory_energy_delta",
+            "type": "double",
+            "doc": "Min of cpu_memory_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "max_cpu_memory_energy_delta",
+            "type": "double",
+            "doc": "Max of cpu_memory_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "mean_cpu_memory_energy_delta",
+            "type": "double",
+            "doc": "Mean of cpu_memory_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "stddev_cpu_memory_energy_delta",
+            "type": "double",
+            "doc": "Population standard deviation of cpu_memory_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "sum_cpu_memory_energy_delta",
+            "type": "double",
+            "doc": "Total cpu_memory_energy_delta summed across all nodes in the job"
+        },
+        {
+            "name": "quantile_25_cpu_memory_energy_delta",
+            "type": "double",
+            "doc": "25th percentile of cpu_memory_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "quantile_50_cpu_memory_energy_delta",
+            "type": "double",
+            "doc": "50th percentile of cpu_memory_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "quantile_75_cpu_memory_energy_delta",
+            "type": "double",
+            "doc": "75th percentile of cpu_memory_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "quantile_99_cpu_memory_energy_delta",
+            "type": "double",
+            "doc": "99th percentile of cpu_memory_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "min_node_energy_delta",
+            "type": "double",
+            "doc": "Min of node_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "max_node_energy_delta",
+            "type": "double",
+            "doc": "Max of node_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "mean_node_energy_delta",
+            "type": "double",
+            "doc": "Mean of node_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "stddev_node_energy_delta",
+            "type": "double",
+            "doc": "Population standard deviation of node_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "sum_node_energy_delta",
+            "type": "double",
+            "doc": "Total node_energy_delta summed across all nodes in the job"
+        },
+        {
+            "name": "quantile_25_node_energy_delta",
+            "type": "double",
+            "doc": "25th percentile of node_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "quantile_50_node_energy_delta",
+            "type": "double",
+            "doc": "50th percentile of node_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "quantile_75_node_energy_delta",
+            "type": "double",
+            "doc": "75th percentile of node_energy_delta across all nodes in the job"
+        },
+        {
+            "name": "quantile_99_node_energy_delta",
+            "type": "double",
+            "doc": "99th percentile of node_energy_delta across all nodes in the job"
+        }
+    ],
+    "namespace": "base",
+    "doc": "Usage docs: https://docs.pydantic.dev/2.7/concepts/models/"
+}

@@ -1,0 +1,36 @@
+Domain,Science,Description
+PHY,Phy,Physics
+CFD,Fld Dyn-Eng,Fluid Dynamics Engineering
+ARD,Aerospc-Eng,Aerospace Engineering
+CSC,Comp Sci,Computer Science
+NPH,Nuclear Phy,Nuclear Physics
+GEO,Geosc-Earth Sc,Geoscience Earth Science
+CHM,Chem-Chem,Chemistry
+ENG,Engineering,Engineering
+STF,Staff-CS,Staff Computer Science
+AST,Astro Phy,Astro Physics
+CLI,Cli-Earth Sc,Climate Earth Science
+BIF,Bioinform,Bioinformatics
+VEN,Vndr-CS,Vendor Computer Science
+NFI,N Fission,Nuclear Fission
+TUR,Turbulence-Eng,Turbulence Engineering
+HEP,High Enrg Phy,High Energy Physics
+MAT,Mtrls Sc,Materials Science
+NFU,N Fuel Cycl,Nuclear Fuel Cycle
+CMB,Combustion,Combustion
+MED,Medical Sc,Medical Science
+SYB,Sys Bio-Bio,Systems Biology
+APH,Acc Phy-Phy,Accelerated Physics
+GEN,Gen-CS,General Computer Science
+BIE,Bioeneg Eng,Bioenergy Engineering
+LGT,Latice Theory,Lattice Theory
+FUS,Fusion Eng,Fusion Engineering
+ATM,Atm Earth Sc,Atmospheric Earth Science
+BIP,Biophy-Bio,Biophysics
+LRN,Machine Learn,Machine Learning
+CHP,Cond Mtr Phy,Condensed Matter Physics
+TRN,Trng/Wkshp-CS,Training Workshop Computer Science
+CPH,Cond Mtr Phy,Condensed Matter Physics
+NRO,Neurosc-Bio,Neuroscience
+NTI,Nanosc-Mtrls,Nanoscience Materials
+UMS,CS,User Managed Software or Computer Science

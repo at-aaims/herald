@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #0f1117;
+  color: #e2e8f0;
+}
+
+/* Smooth scrollbar for the message list */
+.scroll-area {
+  scrollbar-width: thin;
+  scrollbar-color: #2a2d3a transparent;
+}
+.scroll-area::-webkit-scrollbar { width: 6px; }
+.scroll-area::-webkit-scrollbar-track { background: transparent; }
+.scroll-area::-webkit-scrollbar-thumb { background: #2a2d3a; border-radius: 3px; }
+
+/* Prose styling for markdown rendered in AI messages */
+.ai-prose > *:last-child { margin-bottom: 0; }
+.ai-prose p  { margin-bottom: 0.75rem; line-height: 1.7; }
+.ai-prose h1, .ai-prose h2, .ai-prose h3 {
+  font-weight: 600; margin: 1.25rem 0 0.5rem; color: #e2e8f0;
+}
+.ai-prose h1 { font-size: 1.25rem; }
+.ai-prose h2 { font-size: 1.1rem; }
+.ai-prose h3 { font-size: 1rem; }
+.ai-prose strong { color: #f1f5f9; font-weight: 600; }
+.ai-prose em     { color: #cbd5e1; font-style: italic; }
+.ai-prose a      { color: #60a5fa; text-decoration: underline; text-underline-offset: 2px; }
+.ai-prose a:hover { color: #93c5fd; }
+.ai-prose ul, .ai-prose ol { padding-left: 1.25rem; margin-bottom: 0.75rem; }
+.ai-prose ul { list-style: disc; }
+.ai-prose ol { list-style: decimal; }
+.ai-prose li { margin-bottom: 0.25rem; }
+
+.ai-prose code {
+  font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, monospace;
+  font-size: 0.82rem;
+  background: #1a1d27;
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+  color: #93c5fd;
+}
+.ai-prose pre {
+  background: #1a1d27;
+  border: 1px solid #2a2d3a;
+  border-radius: 6px;
+  padding: 0.85rem 1rem;
+  overflow-x: auto;
+  margin-bottom: 0.75rem;
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+.ai-prose pre code {
+  background: none;
+  padding: 0;
+  color: #e2e8f0;
+}
+
+.ai-prose blockquote {
+  border-left: 3px solid #4f8ef7;
+  padding-left: 0.75rem;
+  margin: 0.5rem 0 0.75rem;
+  color: #94a3b8;
+  font-style: italic;
+}
+
+.ai-prose table {
+  border-collapse: collapse;
+  margin-bottom: 0.75rem;
+  font-size: 0.82rem;
+  display: block;
+  overflow-x: auto;
+}
+.ai-prose th, .ai-prose td {
+  border: 1px solid #2a2d3a;
+  padding: 0.4rem 0.65rem;
+  text-align: left;
+}
+.ai-prose th { background: #1a1d27; font-weight: 600; color: #e2e8f0; }
+.ai-prose tr:nth-child(even) td { background: rgba(26, 29, 39, 0.5); }
+
+.ai-prose hr {
+  border: 0;
+  border-top: 1px solid #2a2d3a;
+  margin: 1rem 0;
+}

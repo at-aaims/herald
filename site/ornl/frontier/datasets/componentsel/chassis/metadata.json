@@ -1,0 +1,125 @@
+{
+    "timestamp": {
+        "type": "TIMESTAMP",
+        "description": "Time of the measurement, floored to 15 sec"
+    },
+    "xname": {
+        "type": "STRING",
+        "description": "Unique identifier for the chassis of the measurement, e.g. x2007c7"
+    },
+    "row": {
+        "type": "BIGINT",
+        "description": "Row index of the chassis.",
+        "min": 0,
+        "mean": 2.635135135135135,
+        "median": 3.0,
+        "max": 6,
+        "stddev": 1.8201152645734096
+    },
+    "col": {
+        "type": "BIGINT",
+        "description": "Col index of the chassis",
+        "min": 0,
+        "mean": 5.6891891891891895,
+        "median": 6.0,
+        "max": 11,
+        "stddev": 3.5218456297633476
+    },
+    "chassis": {
+        "type": "BIGINT",
+        "description": "Chassis index in cabinet",
+        "min": 0,
+        "mean": 3.5,
+        "median": 3.5,
+        "max": 7,
+        "stddev": 2.291287847477921
+    },
+    "rectifier0_input_power": {
+        "type": "DOUBLE",
+        "description": "Input power for Rectifier0 (unit: W, interval: 15 sec)",
+        "min": 1817.0,
+        "mean": 2971.1342166385134,
+        "median": 2952.0,
+        "max": 6553.0,
+        "stddev": 389.60232214501684,
+        "unit": "W",
+        "interval": "15 sec"
+    },
+    "rectifier0_output_power": {
+        "type": "DOUBLE",
+        "description": "Output power for Rectifier0 (unit: W, interval: 15 sec)",
+        "min": 1912.07,
+        "mean": 2868.913967272077,
+        "median": 2844.53,
+        "max": 6902.53,
+        "stddev": 371.76796615219655,
+        "unit": "W",
+        "interval": "15 sec"
+    },
+    "rectifier1_input_power": {
+        "type": "DOUBLE",
+        "description": "Input power for Rectifier1 (unit: W, interval: 15 sec)",
+        "min": 1806.0,
+        "mean": 2958.166536458333,
+        "median": 2927.0,
+        "max": 6294.0,
+        "stddev": 386.4920268004443,
+        "unit": "W",
+        "interval": "15 sec"
+    },
+    "rectifier1_output_power": {
+        "type": "DOUBLE",
+        "description": "Output power for Rectifier1 (unit: W, interval: 15 sec)",
+        "min": 1728.0,
+        "mean": 2854.1147062571736,
+        "median": 2821.38,
+        "max": 6702.9,
+        "stddev": 370.0557847760027,
+        "unit": "W",
+        "interval": "15 sec"
+    },
+    "rectifier2_input_power": {
+        "type": "DOUBLE",
+        "description": "Input power for Rectifier2 (unit: W, interval: 15 sec)",
+        "min": 888.0,
+        "mean": 2905.4117081925674,
+        "median": 2897.0,
+        "max": 6084.0,
+        "stddev": 404.7604117348345,
+        "unit": "W",
+        "interval": "15 sec"
+    },
+    "rectifier2_output_power": {
+        "type": "DOUBLE",
+        "description": "Output power for Rectifier2 (unit: W, interval: 15 sec)",
+        "min": 864.07,
+        "mean": 2804.6506658925714,
+        "median": 2786.45,
+        "max": 6116.01,
+        "stddev": 375.5415895148867,
+        "unit": "W",
+        "interval": "15 sec"
+    },
+    "rectifier3_input_power": {
+        "type": "DOUBLE",
+        "description": "Input power for Rectifier3 (unit: W, interval: 15 sec)",
+        "min": 1129.0,
+        "mean": 2890.3264850788287,
+        "median": 2877.0,
+        "max": 5671.0,
+        "stddev": 372.41631949418417,
+        "unit": "W",
+        "interval": "15 sec"
+    },
+    "rectifier3_output_power": {
+        "type": "DOUBLE",
+        "description": "Output power for Rectifier3 (unit: W, interval: 15 sec)",
+        "min": 1739.75,
+        "mean": 2792.799294517299,
+        "median": 2770.9,
+        "max": 6101.32,
+        "stddev": 344.08776918297843,
+        "unit": "W",
+        "interval": "15 sec"
+    }
+}

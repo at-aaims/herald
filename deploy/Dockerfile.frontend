@@ -1,0 +1,17 @@
+# deploy/Dockerfile.frontend — dev container for the Next.js frontend.
+#
+# Dev-oriented: source is bind-mounted at runtime (see deploy/docker-compose.yml),
+# runs `next dev` for hot-reload rather than a production `next build`/`next start`.
+# No .nvmrc exists in the repo; this image is the Node version pin (matches the
+# Makefile's `nvm use v20`).
+FROM node:20-slim
+
+WORKDIR /app
+
+COPY frontend/package.json frontend/package-lock.json ./
+RUN npm ci
+
+COPY frontend/ .
+
+EXPOSE 3000
+CMD ["npm", "run", "dev"]

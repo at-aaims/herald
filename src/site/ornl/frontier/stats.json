@@ -1,0 +1,3196 @@
+{
+  "node_count": {
+    "dist": {
+      "dist": "halfgennorm",
+      "params": [
+        0.3,
+        -100.0,
+        50.0
+      ]
+    },
+    "min": 0.0,
+    "max": 9000.0,
+    "mean": 80.0,
+    "std": 500.0,
+    "median": 1.0,
+    "mad": 0.0
+  },
+  "runtime": {
+    "dist": {
+      "dist": "halfgennorm",
+      "params": [
+        0.3,
+        -200.0,
+        100.0
+      ]
+    },
+    "min": 0.0,
+    "max": 86400.0,
+    "mean": 1100.0,
+    "std": 3000.0,
+    "median": 60.0,
+    "mad": 50.0
+  },
+  "stats": {
+    "stats_cpu0_energy_delta_measurement_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 1552.4728,
+      "std": 232.87092,
+      "median": 1552.4728,
+      "mad": 163.00964
+    },
+    "stats_cpu0_energy_delta_measurement_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 988.14652,
+      "std": 148.22198,
+      "median": 988.14652,
+      "mad": 103.75538
+    },
+    "stats_cpu0_energy_delta_measurement_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 685.1387,
+      "std": 102.77081,
+      "median": 685.1387,
+      "mad": 71.93956
+    },
+    "stats_cpu0_energy_delta_measurement_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 97.39757,
+      "std": 14.60964,
+      "median": 97.39757,
+      "mad": 10.22674
+    },
+    "stats_cpu0_energy_delta_node_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 1544.7524,
+      "std": 231.71286,
+      "median": 1544.7524,
+      "mad": 162.199
+    },
+    "stats_cpu0_energy_delta_node_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 1016.44551,
+      "std": 152.46683,
+      "median": 1016.44551,
+      "mad": 106.72678
+    },
+    "stats_cpu0_energy_delta_node_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 786.07765,
+      "std": 117.91165,
+      "median": 786.07765,
+      "mad": 82.53815
+    },
+    "stats_cpu0_energy_delta_node_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 82.51089,
+      "std": 12.37663,
+      "median": 82.51089,
+      "mad": 8.66364
+    },
+    "stats_cpu0_energy_delta_timestamp_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 4845.16246,
+      "std": 726.77437,
+      "median": 4845.16246,
+      "mad": 508.74206
+    },
+    "stats_cpu0_energy_delta_timestamp_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 2368.40489,
+      "std": 355.26073,
+      "median": 2368.40489,
+      "mad": 248.68251
+    },
+    "stats_cpu0_energy_delta_timestamp_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 1178.01165,
+      "std": 176.70175,
+      "median": 1178.01165,
+      "mad": 123.69122
+    },
+    "stats_cpu0_energy_delta_timestamp_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 475.98954,
+      "std": 71.39843,
+      "median": 475.98954,
+      "mad": 49.9789
+    },
+    "stats_cpu0_power_measurement_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 287.85768,
+      "std": 43.17865,
+      "median": 287.85768,
+      "mad": 30.22506
+    },
+    "stats_cpu0_power_measurement_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 225.42438,
+      "std": 33.81366,
+      "median": 225.42438,
+      "mad": 23.66956
+    },
+    "stats_cpu0_power_measurement_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 180.07671,
+      "std": 27.01151,
+      "median": 180.07671,
+      "mad": 18.90805
+    },
+    "stats_cpu0_power_measurement_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 15.34023,
+      "std": 2.30103,
+      "median": 15.34023,
+      "mad": 1.61072
+    },
+    "stats_cpu0_power_node_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 278.17558,
+      "std": 41.72634,
+      "median": 278.17558,
+      "mad": 29.20844
+    },
+    "stats_cpu0_power_node_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 203.03417,
+      "std": 30.45513,
+      "median": 203.03417,
+      "mad": 21.31859
+    },
+    "stats_cpu0_power_node_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 158.91458,
+      "std": 23.83719,
+      "median": 158.91458,
+      "mad": 16.68603
+    },
+    "stats_cpu0_power_node_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 16.45628,
+      "std": 2.46844,
+      "median": 16.45628,
+      "mad": 1.72791
+    },
+    "stats_cpu0_power_timestamp_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 5027.70944,
+      "std": 754.15642,
+      "median": 5027.70944,
+      "mad": 527.90949
+    },
+    "stats_cpu0_power_timestamp_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 2282.28114,
+      "std": 342.34217,
+      "median": 2282.28114,
+      "mad": 239.63952
+    },
+    "stats_cpu0_power_timestamp_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 1310.68293,
+      "std": 196.60244,
+      "median": 1310.68293,
+      "mad": 137.62171
+    },
+    "stats_cpu0_power_timestamp_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 446.93087,
+      "std": 67.03963,
+      "median": 446.93087,
+      "mad": 46.92774
+    },
+    "stats_cpu0_temp_measurement_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 78.35848,
+      "std": 11.75377,
+      "median": 78.35848,
+      "mad": 8.22764
+    },
+    "stats_cpu0_temp_measurement_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 55.06715,
+      "std": 8.26007,
+      "median": 55.06715,
+      "mad": 5.78205
+    },
+    "stats_cpu0_temp_measurement_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 51.19635,
+      "std": 7.67945,
+      "median": 51.19635,
+      "mad": 5.37562
+    },
+    "stats_cpu0_temp_measurement_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 3.4341,
+      "std": 1.0,
+      "median": 3.4341,
+      "mad": 0.7
+    },
+    "stats_cpu0_temp_node_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 77.6668,
+      "std": 11.65002,
+      "median": 77.6668,
+      "mad": 8.15501
+    },
+    "stats_cpu0_temp_node_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 61.73561,
+      "std": 9.26034,
+      "median": 61.73561,
+      "mad": 6.48224
+    },
+    "stats_cpu0_temp_node_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 50.20885,
+      "std": 7.53133,
+      "median": 50.20885,
+      "mad": 5.27193
+    },
+    "stats_cpu0_temp_node_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 3.49577,
+      "std": 1.0,
+      "median": 3.49577,
+      "mad": 0.7
+    },
+    "stats_cpu0_temp_timestamp_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 4369.21995,
+      "std": 655.38299,
+      "median": 4369.21995,
+      "mad": 458.76809
+    },
+    "stats_cpu0_temp_timestamp_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 2716.75775,
+      "std": 407.51366,
+      "median": 2716.75775,
+      "mad": 285.25956
+    },
+    "stats_cpu0_temp_timestamp_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 1287.88089,
+      "std": 193.18213,
+      "median": 1287.88089,
+      "mad": 135.22749
+    },
+    "stats_cpu0_temp_timestamp_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 452.71451,
+      "std": 67.90718,
+      "median": 452.71451,
+      "mad": 47.53502
+    },
+    "stats_cpu_memory_energy_delta_measurement_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 449.21838,
+      "std": 67.38276,
+      "median": 449.21838,
+      "mad": 47.16793
+    },
+    "stats_cpu_memory_energy_delta_measurement_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 350.56713,
+      "std": 52.58507,
+      "median": 350.56713,
+      "mad": 36.80955
+    },
+    "stats_cpu_memory_energy_delta_measurement_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 239.70751,
+      "std": 35.95613,
+      "median": 239.70751,
+      "mad": 25.16929
+    },
+    "stats_cpu_memory_energy_delta_measurement_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 29.25574,
+      "std": 4.38836,
+      "median": 29.25574,
+      "mad": 3.07185
+    },
+    "stats_cpu_memory_energy_delta_node_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 494.299,
+      "std": 74.14485,
+      "median": 494.299,
+      "mad": 51.90139
+    },
+    "stats_cpu_memory_energy_delta_node_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 341.41432,
+      "std": 51.21215,
+      "median": 341.41432,
+      "mad": 35.8485
+    },
+    "stats_cpu_memory_energy_delta_node_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 242.28212,
+      "std": 36.34232,
+      "median": 242.28212,
+      "mad": 25.43962
+    },
+    "stats_cpu_memory_energy_delta_node_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 32.05143,
+      "std": 4.80771,
+      "median": 32.05143,
+      "mad": 3.3654
+    },
+    "stats_cpu_memory_energy_delta_timestamp_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 4290.88297,
+      "std": 643.63244,
+      "median": 4290.88297,
+      "mad": 450.54271
+    },
+    "stats_cpu_memory_energy_delta_timestamp_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 2528.66512,
+      "std": 379.29977,
+      "median": 2528.66512,
+      "mad": 265.50984
+    },
+    "stats_cpu_memory_energy_delta_timestamp_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 1207.50389,
+      "std": 181.12558,
+      "median": 1207.50389,
+      "mad": 126.78791
+    },
+    "stats_cpu_memory_energy_delta_timestamp_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 489.35764,
+      "std": 73.40365,
+      "median": 489.35764,
+      "mad": 51.38255
+    },
+    "stats_cpu_memory_power_measurement_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 99.62152,
+      "std": 14.94323,
+      "median": 99.62152,
+      "mad": 10.46026
+    },
+    "stats_cpu_memory_power_measurement_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 76.39706,
+      "std": 11.45956,
+      "median": 76.39706,
+      "mad": 8.02169
+    },
+    "stats_cpu_memory_power_measurement_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 51.98175,
+      "std": 7.79726,
+      "median": 51.98175,
+      "mad": 5.45808
+    },
+    "stats_cpu_memory_power_measurement_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 5.04566,
+      "std": 1.0,
+      "median": 5.04566,
+      "mad": 0.7
+    },
+    "stats_cpu_memory_power_node_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 85.79824,
+      "std": 12.86974,
+      "median": 85.79824,
+      "mad": 9.00882
+    },
+    "stats_cpu_memory_power_node_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 66.87497,
+      "std": 10.03125,
+      "median": 66.87497,
+      "mad": 7.02187
+    },
+    "stats_cpu_memory_power_node_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 59.43294,
+      "std": 8.91494,
+      "median": 59.43294,
+      "mad": 6.24046
+    },
+    "stats_cpu_memory_power_node_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 4.91121,
+      "std": 1.0,
+      "median": 4.91121,
+      "mad": 0.7
+    },
+    "stats_cpu_memory_power_timestamp_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 4282.20487,
+      "std": 642.33073,
+      "median": 4282.20487,
+      "mad": 449.63151
+    },
+    "stats_cpu_memory_power_timestamp_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 2727.35933,
+      "std": 409.1039,
+      "median": 2727.35933,
+      "mad": 286.37273
+    },
+    "stats_cpu_memory_power_timestamp_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 1210.18336,
+      "std": 181.5275,
+      "median": 1210.18336,
+      "mad": 127.06925
+    },
+    "stats_cpu_memory_power_timestamp_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 480.05004,
+      "std": 72.00751,
+      "median": 480.05004,
+      "mad": 50.40525
+    },
+    "stats_gpu0_energy_delta_measurement_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 2321.39131,
+      "std": 348.2087,
+      "median": 2321.39131,
+      "mad": 243.74609
+    },
+    "stats_gpu0_energy_delta_measurement_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 1759.02607,
+      "std": 263.85391,
+      "median": 1759.02607,
+      "mad": 184.69774
+    },
+    "stats_gpu0_energy_delta_measurement_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 1326.84845,
+      "std": 199.02727,
+      "median": 1326.84845,
+      "mad": 139.31909
+    },
+    "stats_gpu0_energy_delta_measurement_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 156.87133,
+      "std": 23.5307,
+      "median": 156.87133,
+      "mad": 16.47149
+    },
+    "stats_gpu0_energy_delta_node_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 2717.77591,
+      "std": 407.66639,
+      "median": 2717.77591,
+      "mad": 285.36647
+    },
+    "stats_gpu0_energy_delta_node_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 1791.33657,
+      "std": 268.70049,
+      "median": 1791.33657,
+      "mad": 188.09034
+    },
+    "stats_gpu0_energy_delta_node_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 1445.39878,
+      "std": 216.80982,
+      "median": 1445.39878,
+      "mad": 151.76687
+    },
+    "stats_gpu0_energy_delta_node_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 161.05522,
+      "std": 24.15828,
+      "median": 161.05522,
+      "mad": 16.9108
+    },
+    "stats_gpu0_energy_delta_timestamp_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 4891.95649,
+      "std": 733.79347,
+      "median": 4891.95649,
+      "mad": 513.65543
+    },
+    "stats_gpu0_energy_delta_timestamp_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 2690.7838,
+      "std": 403.61757,
+      "median": 2690.7838,
+      "mad": 282.5323
+    },
+    "stats_gpu0_energy_delta_timestamp_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 1284.29506,
+      "std": 192.64426,
+      "median": 1284.29506,
+      "mad": 134.85098
+    },
+    "stats_gpu0_energy_delta_timestamp_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 475.29572,
+      "std": 71.29436,
+      "median": 475.29572,
+      "mad": 49.90605
+    },
+    "stats_gpu0_power_measurement_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 545.29244,
+      "std": 81.79387,
+      "median": 545.29244,
+      "mad": 57.25571
+    },
+    "stats_gpu0_power_measurement_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 364.4716,
+      "std": 54.67074,
+      "median": 364.4716,
+      "mad": 38.26952
+    },
+    "stats_gpu0_power_measurement_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 281.1317,
+      "std": 42.16976,
+      "median": 281.1317,
+      "mad": 29.51883
+    },
+    "stats_gpu0_power_measurement_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 26.70804,
+      "std": 4.00621,
+      "median": 26.70804,
+      "mad": 2.80434
+    },
+    "stats_gpu0_power_node_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 506.43973,
+      "std": 75.96596,
+      "median": 506.43973,
+      "mad": 53.17617
+    },
+    "stats_gpu0_power_node_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 351.07952,
+      "std": 52.66193,
+      "median": 351.07952,
+      "mad": 36.86335
+    },
+    "stats_gpu0_power_node_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 305.81179,
+      "std": 45.87177,
+      "median": 305.81179,
+      "mad": 32.11024
+    },
+    "stats_gpu0_power_node_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 30.3777,
+      "std": 4.55666,
+      "median": 30.3777,
+      "mad": 3.18966
+    },
+    "stats_gpu0_power_timestamp_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 4586.38506,
+      "std": 687.95776,
+      "median": 4586.38506,
+      "mad": 481.57043
+    },
+    "stats_gpu0_power_timestamp_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 2658.867,
+      "std": 398.83005,
+      "median": 2658.867,
+      "mad": 279.18104
+    },
+    "stats_gpu0_power_timestamp_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 1340.66182,
+      "std": 201.09927,
+      "median": 1340.66182,
+      "mad": 140.76949
+    },
+    "stats_gpu0_power_timestamp_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 462.69387,
+      "std": 69.40408,
+      "median": 462.69387,
+      "mad": 48.58286
+    },
+    "stats_gpu0_temp_measurement_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 80.62661,
+      "std": 12.09399,
+      "median": 80.62661,
+      "mad": 8.46579
+    },
+    "stats_gpu0_temp_measurement_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 67.63457,
+      "std": 10.14518,
+      "median": 67.63457,
+      "mad": 7.10163
+    },
+    "stats_gpu0_temp_measurement_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 57.98455,
+      "std": 8.69768,
+      "median": 57.98455,
+      "mad": 6.08838
+    },
+    "stats_gpu0_temp_measurement_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 3.63259,
+      "std": 1.0,
+      "median": 3.63259,
+      "mad": 0.7
+    },
+    "stats_gpu0_temp_node_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 89.98896,
+      "std": 13.49834,
+      "median": 89.98896,
+      "mad": 9.44884
+    },
+    "stats_gpu0_temp_node_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 62.00129,
+      "std": 9.30019,
+      "median": 62.00129,
+      "mad": 6.51014
+    },
+    "stats_gpu0_temp_node_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 50.83092,
+      "std": 7.62464,
+      "median": 50.83092,
+      "mad": 5.33725
+    },
+    "stats_gpu0_temp_node_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 4.16557,
+      "std": 1.0,
+      "median": 4.16557,
+      "mad": 0.7
+    },
+    "stats_gpu0_temp_timestamp_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 4802.51774,
+      "std": 720.37766,
+      "median": 4802.51774,
+      "mad": 504.26436
+    },
+    "stats_gpu0_temp_timestamp_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 2646.7812,
+      "std": 397.01718,
+      "median": 2646.7812,
+      "mad": 277.91203
+    },
+    "stats_gpu0_temp_timestamp_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 1286.13437,
+      "std": 192.92016,
+      "median": 1286.13437,
+      "mad": 135.04411
+    },
+    "stats_gpu0_temp_timestamp_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 411.36965,
+      "std": 61.70545,
+      "median": 411.36965,
+      "mad": 43.19381
+    },
+    "stats_gpu1_energy_delta_measurement_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 2502.44825,
+      "std": 375.36724,
+      "median": 2502.44825,
+      "mad": 262.75707
+    },
+    "stats_gpu1_energy_delta_measurement_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 1637.18471,
+      "std": 245.57771,
+      "median": 1637.18471,
+      "mad": 171.90439
+    },
+    "stats_gpu1_energy_delta_measurement_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 1309.48613,
+      "std": 196.42292,
+      "median": 1309.48613,
+      "mad": 137.49604
+    },
+    "stats_gpu1_energy_delta_measurement_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 147.03102,
+      "std": 22.05465,
+      "median": 147.03102,
+      "mad": 15.43826
+    },
+    "stats_gpu1_energy_delta_node_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 2559.43263,
+      "std": 383.91489,
+      "median": 2559.43263,
+      "mad": 268.74043
+    },
+    "stats_gpu1_energy_delta_node_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 1651.56041,
+      "std": 247.73406,
+      "median": 1651.56041,
+      "mad": 173.41384
+    },
+    "stats_gpu1_energy_delta_node_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 1486.4211,
+      "std": 222.96316,
+      "median": 1486.4211,
+      "mad": 156.07422
+    },
+    "stats_gpu1_energy_delta_node_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 168.46015,
+      "std": 25.26902,
+      "median": 168.46015,
+      "mad": 17.68832
+    },
+    "stats_gpu1_energy_delta_timestamp_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 4431.62714,
+      "std": 664.74407,
+      "median": 4431.62714,
+      "mad": 465.32085
+    },
+    "stats_gpu1_energy_delta_timestamp_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 2722.52554,
+      "std": 408.37883,
+      "median": 2722.52554,
+      "mad": 285.86518
+    },
+    "stats_gpu1_energy_delta_timestamp_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 1187.21918,
+      "std": 178.08288,
+      "median": 1187.21918,
+      "mad": 124.65801
+    },
+    "stats_gpu1_energy_delta_timestamp_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 428.1686,
+      "std": 64.22529,
+      "median": 428.1686,
+      "mad": 44.9577
+    },
+    "stats_gpu1_power_measurement_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 469.18976,
+      "std": 70.37846,
+      "median": 469.18976,
+      "mad": 49.26493
+    },
+    "stats_gpu1_power_measurement_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 374.39912,
+      "std": 56.15987,
+      "median": 374.39912,
+      "mad": 39.31191
+    },
+    "stats_gpu1_power_measurement_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 285.87532,
+      "std": 42.8813,
+      "median": 285.87532,
+      "mad": 30.01691
+    },
+    "stats_gpu1_power_measurement_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 27.91089,
+      "std": 4.18663,
+      "median": 27.91089,
+      "mad": 2.93064
+    },
+    "stats_gpu1_power_node_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 534.01863,
+      "std": 80.10279,
+      "median": 534.01863,
+      "mad": 56.07196
+    },
+    "stats_gpu1_power_node_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 409.43885,
+      "std": 61.41583,
+      "median": 409.43885,
+      "mad": 42.99108
+    },
+    "stats_gpu1_power_node_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 304.03148,
+      "std": 45.60472,
+      "median": 304.03148,
+      "mad": 31.92331
+    },
+    "stats_gpu1_power_node_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 30.31563,
+      "std": 4.54734,
+      "median": 30.31563,
+      "mad": 3.18314
+    },
+    "stats_gpu1_power_timestamp_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 4472.35415,
+      "std": 670.85312,
+      "median": 4472.35415,
+      "mad": 469.59719
+    },
+    "stats_gpu1_power_timestamp_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 2679.34309,
+      "std": 401.90146,
+      "median": 2679.34309,
+      "mad": 281.33102
+    },
+    "stats_gpu1_power_timestamp_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 1303.90889,
+      "std": 195.58633,
+      "median": 1303.90889,
+      "mad": 136.91043
+    },
+    "stats_gpu1_power_timestamp_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 468.21739,
+      "std": 70.23261,
+      "median": 468.21739,
+      "mad": 49.16283
+    },
+    "stats_gpu1_temp_measurement_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 77.78684,
+      "std": 11.66803,
+      "median": 77.78684,
+      "mad": 8.16762
+    },
+    "stats_gpu1_temp_measurement_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 66.09865,
+      "std": 9.9148,
+      "median": 66.09865,
+      "mad": 6.94036
+    },
+    "stats_gpu1_temp_measurement_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 52.43541,
+      "std": 7.86531,
+      "median": 52.43541,
+      "mad": 5.50572
+    },
+    "stats_gpu1_temp_measurement_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 4.14402,
+      "std": 1.0,
+      "median": 4.14402,
+      "mad": 0.7
+    },
+    "stats_gpu1_temp_node_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 83.77143,
+      "std": 12.56571,
+      "median": 83.77143,
+      "mad": 8.796
+    },
+    "stats_gpu1_temp_node_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 64.99463,
+      "std": 9.7492,
+      "median": 64.99463,
+      "mad": 6.82444
+    },
+    "stats_gpu1_temp_node_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 57.58471,
+      "std": 8.63771,
+      "median": 57.58471,
+      "mad": 6.04639
+    },
+    "stats_gpu1_temp_node_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 3.93824,
+      "std": 1.0,
+      "median": 3.93824,
+      "mad": 0.7
+    },
+    "stats_gpu1_temp_timestamp_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 4447.05737,
+      "std": 667.05861,
+      "median": 4447.05737,
+      "mad": 466.94102
+    },
+    "stats_gpu1_temp_timestamp_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 2315.46643,
+      "std": 347.31996,
+      "median": 2315.46643,
+      "mad": 243.12398
+    },
+    "stats_gpu1_temp_timestamp_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 1332.37156,
+      "std": 199.85573,
+      "median": 1332.37156,
+      "mad": 139.89901
+    },
+    "stats_gpu1_temp_timestamp_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 488.28116,
+      "std": 73.24217,
+      "median": 488.28116,
+      "mad": 51.26952
+    },
+    "stats_gpu2_energy_delta_measurement_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 2731.00362,
+      "std": 409.65054,
+      "median": 2731.00362,
+      "mad": 286.75538
+    },
+    "stats_gpu2_energy_delta_measurement_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 1645.10992,
+      "std": 246.76649,
+      "median": 1645.10992,
+      "mad": 172.73654
+    },
+    "stats_gpu2_energy_delta_measurement_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 1320.19803,
+      "std": 198.0297,
+      "median": 1320.19803,
+      "mad": 138.62079
+    },
+    "stats_gpu2_energy_delta_measurement_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 145.85529,
+      "std": 21.87829,
+      "median": 145.85529,
+      "mad": 15.31481
+    },
+    "stats_gpu2_energy_delta_node_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 2645.30521,
+      "std": 396.79578,
+      "median": 2645.30521,
+      "mad": 277.75705
+    },
+    "stats_gpu2_energy_delta_node_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 1849.78084,
+      "std": 277.46713,
+      "median": 1849.78084,
+      "mad": 194.22699
+    },
+    "stats_gpu2_energy_delta_node_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 1438.56384,
+      "std": 215.78458,
+      "median": 1438.56384,
+      "mad": 151.0492
+    },
+    "stats_gpu2_energy_delta_node_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 150.60408,
+      "std": 22.59061,
+      "median": 150.60408,
+      "mad": 15.81343
+    },
+    "stats_gpu2_energy_delta_timestamp_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 4339.671,
+      "std": 650.95065,
+      "median": 4339.671,
+      "mad": 455.66545
+    },
+    "stats_gpu2_energy_delta_timestamp_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 2466.38619,
+      "std": 369.95793,
+      "median": 2466.38619,
+      "mad": 258.97055
+    },
+    "stats_gpu2_energy_delta_timestamp_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 1361.54846,
+      "std": 204.23227,
+      "median": 1361.54846,
+      "mad": 142.96259
+    },
+    "stats_gpu2_energy_delta_timestamp_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 423.64071,
+      "std": 63.54611,
+      "median": 423.64071,
+      "mad": 44.48227
+    },
+    "stats_gpu2_power_measurement_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 546.12307,
+      "std": 81.91846,
+      "median": 546.12307,
+      "mad": 57.34292
+    },
+    "stats_gpu2_power_measurement_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 370.97128,
+      "std": 55.64569,
+      "median": 370.97128,
+      "mad": 38.95198
+    },
+    "stats_gpu2_power_measurement_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 326.75658,
+      "std": 49.01349,
+      "median": 326.75658,
+      "mad": 34.30944
+    },
+    "stats_gpu2_power_measurement_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 31.12214,
+      "std": 4.66832,
+      "median": 31.12214,
+      "mad": 3.26782
+    },
+    "stats_gpu2_power_node_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 516.84624,
+      "std": 77.52694,
+      "median": 516.84624,
+      "mad": 54.26886
+    },
+    "stats_gpu2_power_node_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 412.00112,
+      "std": 61.80017,
+      "median": 412.00112,
+      "mad": 43.26012
+    },
+    "stats_gpu2_power_node_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 299.25984,
+      "std": 44.88898,
+      "median": 299.25984,
+      "mad": 31.42228
+    },
+    "stats_gpu2_power_node_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 29.55604,
+      "std": 4.43341,
+      "median": 29.55604,
+      "mad": 3.10338
+    },
+    "stats_gpu2_power_timestamp_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 4919.15614,
+      "std": 737.87342,
+      "median": 4919.15614,
+      "mad": 516.51139
+    },
+    "stats_gpu2_power_timestamp_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 2669.38389,
+      "std": 400.40758,
+      "median": 2669.38389,
+      "mad": 280.28531
+    },
+    "stats_gpu2_power_timestamp_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 1194.14589,
+      "std": 179.12188,
+      "median": 1194.14589,
+      "mad": 125.38532
+    },
+    "stats_gpu2_power_timestamp_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 428.42842,
+      "std": 64.26426,
+      "median": 428.42842,
+      "mad": 44.98498
+    },
+    "stats_gpu2_temp_measurement_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 81.70669,
+      "std": 12.256,
+      "median": 81.70669,
+      "mad": 8.5792
+    },
+    "stats_gpu2_temp_measurement_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 69.65172,
+      "std": 10.44776,
+      "median": 69.65172,
+      "mad": 7.31343
+    },
+    "stats_gpu2_temp_measurement_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 52.16203,
+      "std": 7.8243,
+      "median": 52.16203,
+      "mad": 5.47701
+    },
+    "stats_gpu2_temp_measurement_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 3.59872,
+      "std": 1.0,
+      "median": 3.59872,
+      "mad": 0.7
+    },
+    "stats_gpu2_temp_node_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 81.1258,
+      "std": 12.16887,
+      "median": 81.1258,
+      "mad": 8.51821
+    },
+    "stats_gpu2_temp_node_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 61.28052,
+      "std": 9.19208,
+      "median": 61.28052,
+      "mad": 6.43445
+    },
+    "stats_gpu2_temp_node_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 56.9613,
+      "std": 8.5442,
+      "median": 56.9613,
+      "mad": 5.98094
+    },
+    "stats_gpu2_temp_node_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 3.96826,
+      "std": 1.0,
+      "median": 3.96826,
+      "mad": 0.7
+    },
+    "stats_gpu2_temp_timestamp_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 4188.29904,
+      "std": 628.24486,
+      "median": 4188.29904,
+      "mad": 439.7714
+    },
+    "stats_gpu2_temp_timestamp_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 2688.71519,
+      "std": 403.30728,
+      "median": 2688.71519,
+      "mad": 282.31509
+    },
+    "stats_gpu2_temp_timestamp_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 1284.54432,
+      "std": 192.68165,
+      "median": 1284.54432,
+      "mad": 134.87715
+    },
+    "stats_gpu2_temp_timestamp_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 474.91983,
+      "std": 71.23798,
+      "median": 474.91983,
+      "mad": 49.86658
+    },
+    "stats_gpu3_energy_delta_measurement_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 2384.91194,
+      "std": 357.73679,
+      "median": 2384.91194,
+      "mad": 250.41575
+    },
+    "stats_gpu3_energy_delta_measurement_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 1730.85018,
+      "std": 259.62753,
+      "median": 1730.85018,
+      "mad": 181.73927
+    },
+    "stats_gpu3_energy_delta_measurement_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 1251.26207,
+      "std": 187.68931,
+      "median": 1251.26207,
+      "mad": 131.38252
+    },
+    "stats_gpu3_energy_delta_measurement_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 158.5977,
+      "std": 23.78965,
+      "median": 158.5977,
+      "mad": 16.65276
+    },
+    "stats_gpu3_energy_delta_node_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 2519.65898,
+      "std": 377.94885,
+      "median": 2519.65898,
+      "mad": 264.56419
+    },
+    "stats_gpu3_energy_delta_node_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 1865.80666,
+      "std": 279.871,
+      "median": 1865.80666,
+      "mad": 195.9097
+    },
+    "stats_gpu3_energy_delta_node_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 1362.41524,
+      "std": 204.36229,
+      "median": 1362.41524,
+      "mad": 143.0536
+    },
+    "stats_gpu3_energy_delta_node_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 158.77658,
+      "std": 23.81649,
+      "median": 158.77658,
+      "mad": 16.67154
+    },
+    "stats_gpu3_energy_delta_timestamp_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 4579.72502,
+      "std": 686.95875,
+      "median": 4579.72502,
+      "mad": 480.87113
+    },
+    "stats_gpu3_energy_delta_timestamp_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 2390.6302,
+      "std": 358.59453,
+      "median": 2390.6302,
+      "mad": 251.01617
+    },
+    "stats_gpu3_energy_delta_timestamp_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 1266.07661,
+      "std": 189.91149,
+      "median": 1266.07661,
+      "mad": 132.93804
+    },
+    "stats_gpu3_energy_delta_timestamp_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 459.04444,
+      "std": 68.85667,
+      "median": 459.04444,
+      "mad": 48.19967
+    },
+    "stats_gpu3_power_measurement_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 482.84257,
+      "std": 72.42639,
+      "median": 482.84257,
+      "mad": 50.69847
+    },
+    "stats_gpu3_power_measurement_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 381.43369,
+      "std": 57.21505,
+      "median": 381.43369,
+      "mad": 40.05054
+    },
+    "stats_gpu3_power_measurement_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 330.1241,
+      "std": 49.51861,
+      "median": 330.1241,
+      "mad": 34.66303
+    },
+    "stats_gpu3_power_measurement_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 28.25728,
+      "std": 4.23859,
+      "median": 28.25728,
+      "mad": 2.96701
+    },
+    "stats_gpu3_power_node_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 530.26866,
+      "std": 79.5403,
+      "median": 530.26866,
+      "mad": 55.67821
+    },
+    "stats_gpu3_power_node_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 392.14808,
+      "std": 58.82221,
+      "median": 392.14808,
+      "mad": 41.17555
+    },
+    "stats_gpu3_power_node_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 322.32179,
+      "std": 48.34827,
+      "median": 322.32179,
+      "mad": 33.84379
+    },
+    "stats_gpu3_power_node_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 29.78564,
+      "std": 4.46785,
+      "median": 29.78564,
+      "mad": 3.12749
+    },
+    "stats_gpu3_power_timestamp_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 4747.85047,
+      "std": 712.17757,
+      "median": 4747.85047,
+      "mad": 498.5243
+    },
+    "stats_gpu3_power_timestamp_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 2301.85541,
+      "std": 345.27831,
+      "median": 2301.85541,
+      "mad": 241.69482
+    },
+    "stats_gpu3_power_timestamp_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 1265.32478,
+      "std": 189.79872,
+      "median": 1265.32478,
+      "mad": 132.8591
+    },
+    "stats_gpu3_power_timestamp_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 476.46544,
+      "std": 71.46982,
+      "median": 476.46544,
+      "mad": 50.02887
+    },
+    "stats_gpu3_temp_measurement_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 75.96481,
+      "std": 11.39472,
+      "median": 75.96481,
+      "mad": 7.9763
+    },
+    "stats_gpu3_temp_measurement_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 60.32023,
+      "std": 9.04803,
+      "median": 60.32023,
+      "mad": 6.33362
+    },
+    "stats_gpu3_temp_measurement_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 59.02653,
+      "std": 8.85398,
+      "median": 59.02653,
+      "mad": 6.19779
+    },
+    "stats_gpu3_temp_measurement_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 3.96865,
+      "std": 1.0,
+      "median": 3.96865,
+      "mad": 0.7
+    },
+    "stats_gpu3_temp_node_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 91.19001,
+      "std": 13.6785,
+      "median": 91.19001,
+      "mad": 9.57495
+    },
+    "stats_gpu3_temp_node_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 68.29654,
+      "std": 10.24448,
+      "median": 68.29654,
+      "mad": 7.17114
+    },
+    "stats_gpu3_temp_node_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 60.0128,
+      "std": 9.00192,
+      "median": 60.0128,
+      "mad": 6.30134
+    },
+    "stats_gpu3_temp_node_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 3.74292,
+      "std": 1.0,
+      "median": 3.74292,
+      "mad": 0.7
+    },
+    "stats_gpu3_temp_timestamp_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 4771.17199,
+      "std": 715.6758,
+      "median": 4771.17199,
+      "mad": 500.97306
+    },
+    "stats_gpu3_temp_timestamp_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 2415.29337,
+      "std": 362.29401,
+      "median": 2415.29337,
+      "mad": 253.6058
+    },
+    "stats_gpu3_temp_timestamp_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 1415.95223,
+      "std": 212.39283,
+      "median": 1415.95223,
+      "mad": 148.67498
+    },
+    "stats_gpu3_temp_timestamp_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 431.44032,
+      "std": 64.71605,
+      "median": 431.44032,
+      "mad": 45.30123
+    },
+    "stats_gpu_energy_delta_measurement_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 2399.86231,
+      "std": 359.97935,
+      "median": 2399.86231,
+      "mad": 251.98554
+    },
+    "stats_gpu_energy_delta_measurement_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 1913.14237,
+      "std": 286.97136,
+      "median": 1913.14237,
+      "mad": 200.87995
+    },
+    "stats_gpu_energy_delta_measurement_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 1307.54388,
+      "std": 196.13158,
+      "median": 1307.54388,
+      "mad": 137.29211
+    },
+    "stats_gpu_energy_delta_measurement_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 163.10269,
+      "std": 24.4654,
+      "median": 163.10269,
+      "mad": 17.12578
+    },
+    "stats_gpu_energy_delta_node_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 2608.24654,
+      "std": 391.23698,
+      "median": 2608.24654,
+      "mad": 273.86589
+    },
+    "stats_gpu_energy_delta_node_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 1742.26833,
+      "std": 261.34025,
+      "median": 1742.26833,
+      "mad": 182.93817
+    },
+    "stats_gpu_energy_delta_node_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 1322.64666,
+      "std": 198.397,
+      "median": 1322.64666,
+      "mad": 138.8779
+    },
+    "stats_gpu_energy_delta_node_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 156.20238,
+      "std": 23.43036,
+      "median": 156.20238,
+      "mad": 16.40125
+    },
+    "stats_gpu_energy_delta_timestamp_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 4386.10349,
+      "std": 657.91552,
+      "median": 4386.10349,
+      "mad": 460.54087
+    },
+    "stats_gpu_energy_delta_timestamp_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 2629.83617,
+      "std": 394.47543,
+      "median": 2629.83617,
+      "mad": 276.1328
+    },
+    "stats_gpu_energy_delta_timestamp_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 1323.19973,
+      "std": 198.47996,
+      "median": 1323.19973,
+      "mad": 138.93597
+    },
+    "stats_gpu_energy_delta_timestamp_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 454.34206,
+      "std": 68.15131,
+      "median": 454.34206,
+      "mad": 47.70592
+    },
+    "stats_gpu_power_measurement_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 546.25661,
+      "std": 81.93849,
+      "median": 546.25661,
+      "mad": 57.35694
+    },
+    "stats_gpu_power_measurement_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 361.54345,
+      "std": 54.23152,
+      "median": 361.54345,
+      "mad": 37.96206
+    },
+    "stats_gpu_power_measurement_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 281.93467,
+      "std": 42.2902,
+      "median": 281.93467,
+      "mad": 29.60314
+    },
+    "stats_gpu_power_measurement_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 25.81176,
+      "std": 3.87176,
+      "median": 25.81176,
+      "mad": 2.71023
+    },
+    "stats_gpu_power_node_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 465.53252,
+      "std": 69.82988,
+      "median": 465.53252,
+      "mad": 48.88091
+    },
+    "stats_gpu_power_node_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 417.29139,
+      "std": 62.59371,
+      "median": 417.29139,
+      "mad": 43.8156
+    },
+    "stats_gpu_power_node_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 332.80793,
+      "std": 49.92119,
+      "median": 332.80793,
+      "mad": 34.94483
+    },
+    "stats_gpu_power_node_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 29.44962,
+      "std": 4.41744,
+      "median": 29.44962,
+      "mad": 3.09221
+    },
+    "stats_gpu_power_timestamp_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 5051.40759,
+      "std": 757.71114,
+      "median": 5051.40759,
+      "mad": 530.3978
+    },
+    "stats_gpu_power_timestamp_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 2507.82625,
+      "std": 376.17394,
+      "median": 2507.82625,
+      "mad": 263.32176
+    },
+    "stats_gpu_power_timestamp_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 1282.9844,
+      "std": 192.44766,
+      "median": 1282.9844,
+      "mad": 134.71336
+    },
+    "stats_gpu_power_timestamp_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 451.37558,
+      "std": 67.70634,
+      "median": 451.37558,
+      "mad": 47.39444
+    },
+    "stats_gpu_temp_measurement_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 76.02811,
+      "std": 11.40422,
+      "median": 76.02811,
+      "mad": 7.98295
+    },
+    "stats_gpu_temp_measurement_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 68.37455,
+      "std": 10.25618,
+      "median": 68.37455,
+      "mad": 7.17933
+    },
+    "stats_gpu_temp_measurement_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 52.47236,
+      "std": 7.87085,
+      "median": 52.47236,
+      "mad": 5.5096
+    },
+    "stats_gpu_temp_measurement_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 4.0545,
+      "std": 1.0,
+      "median": 4.0545,
+      "mad": 0.7
+    },
+    "stats_gpu_temp_node_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 90.01412,
+      "std": 13.50212,
+      "median": 90.01412,
+      "mad": 9.45148
+    },
+    "stats_gpu_temp_node_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 61.35479,
+      "std": 9.20322,
+      "median": 61.35479,
+      "mad": 6.44225
+    },
+    "stats_gpu_temp_node_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 54.64779,
+      "std": 8.19717,
+      "median": 54.64779,
+      "mad": 5.73802
+    },
+    "stats_gpu_temp_node_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 4.01945,
+      "std": 1.0,
+      "median": 4.01945,
+      "mad": 0.7
+    },
+    "stats_gpu_temp_timestamp_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 4886.08166,
+      "std": 732.91225,
+      "median": 4886.08166,
+      "mad": 513.03857
+    },
+    "stats_gpu_temp_timestamp_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 2591.37571,
+      "std": 388.70636,
+      "median": 2591.37571,
+      "mad": 272.09445
+    },
+    "stats_gpu_temp_timestamp_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 1256.08376,
+      "std": 188.41256,
+      "median": 1256.08376,
+      "mad": 131.88879
+    },
+    "stats_gpu_temp_timestamp_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 455.77618,
+      "std": 68.36643,
+      "median": 455.77618,
+      "mad": 47.8565
+    },
+    "stats_node_energy_delta_measurement_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 3972.47922,
+      "std": 595.87188,
+      "median": 3972.47922,
+      "mad": 417.11032
+    },
+    "stats_node_energy_delta_measurement_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 2999.64962,
+      "std": 449.94744,
+      "median": 2999.64962,
+      "mad": 314.96321
+    },
+    "stats_node_energy_delta_measurement_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 2480.66192,
+      "std": 372.09929,
+      "median": 2480.66192,
+      "mad": 260.4695
+    },
+    "stats_node_energy_delta_measurement_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 294.30987,
+      "std": 44.14648,
+      "median": 294.30987,
+      "mad": 30.90254
+    },
+    "stats_node_energy_delta_node_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 3953.22776,
+      "std": 592.98416,
+      "median": 3953.22776,
+      "mad": 415.08891
+    },
+    "stats_node_energy_delta_node_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 3019.38827,
+      "std": 452.90824,
+      "median": 3019.38827,
+      "mad": 317.03577
+    },
+    "stats_node_energy_delta_node_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 2334.65699,
+      "std": 350.19855,
+      "median": 2334.65699,
+      "mad": 245.13898
+    },
+    "stats_node_energy_delta_node_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 250.85872,
+      "std": 37.62881,
+      "median": 250.85872,
+      "mad": 26.34017
+    },
+    "stats_node_energy_delta_timestamp_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 5013.07169,
+      "std": 751.96075,
+      "median": 5013.07169,
+      "mad": 526.37253
+    },
+    "stats_node_energy_delta_timestamp_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 2371.64287,
+      "std": 355.74643,
+      "median": 2371.64287,
+      "mad": 249.0225
+    },
+    "stats_node_energy_delta_timestamp_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 1212.70503,
+      "std": 181.90575,
+      "median": 1212.70503,
+      "mad": 127.33403
+    },
+    "stats_node_energy_delta_timestamp_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 450.57885,
+      "std": 67.58683,
+      "median": 450.57885,
+      "mad": 47.31078
+    },
+    "stats_node_power_measurement_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 878.37813,
+      "std": 131.75672,
+      "median": 878.37813,
+      "mad": 92.2297
+    },
+    "stats_node_power_measurement_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 685.54829,
+      "std": 102.83224,
+      "median": 685.54829,
+      "mad": 71.98257
+    },
+    "stats_node_power_measurement_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 556.73044,
+      "std": 83.50957,
+      "median": 556.73044,
+      "mad": 58.4567
+    },
+    "stats_node_power_measurement_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 47.05841,
+      "std": 7.05876,
+      "median": 47.05841,
+      "mad": 4.94113
+    },
+    "stats_node_power_node_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 914.04389,
+      "std": 137.10658,
+      "median": 914.04389,
+      "mad": 95.97461
+    },
+    "stats_node_power_node_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 658.02391,
+      "std": 98.70359,
+      "median": 658.02391,
+      "mad": 69.09251
+    },
+    "stats_node_power_node_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 523.64845,
+      "std": 78.54727,
+      "median": 523.64845,
+      "mad": 54.98309
+    },
+    "stats_node_power_node_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 49.71719,
+      "std": 7.45758,
+      "median": 49.71719,
+      "mad": 5.22031
+    },
+    "stats_node_power_timestamp_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 4550.63074,
+      "std": 682.59461,
+      "median": 4550.63074,
+      "mad": 477.81623
+    },
+    "stats_node_power_timestamp_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 2435.85186,
+      "std": 365.37778,
+      "median": 2435.85186,
+      "mad": 255.76445
+    },
+    "stats_node_power_timestamp_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 1411.72803,
+      "std": 211.7592,
+      "median": 1411.72803,
+      "mad": 148.23144
+    },
+    "stats_node_power_timestamp_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 473.66091,
+      "std": 71.04914,
+      "median": 473.66091,
+      "mad": 49.7344
+    },
+    "stats_node_temp_measurement_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 72.87624,
+      "std": 10.93144,
+      "median": 72.87624,
+      "mad": 7.65201
+    },
+    "stats_node_temp_measurement_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 59.24942,
+      "std": 8.88741,
+      "median": 59.24942,
+      "mad": 6.22119
+    },
+    "stats_node_temp_measurement_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 47.16135,
+      "std": 7.0742,
+      "median": 47.16135,
+      "mad": 4.95194
+    },
+    "stats_node_temp_measurement_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 3.0168,
+      "std": 1.0,
+      "median": 3.0168,
+      "mad": 0.7
+    },
+    "stats_node_temp_node_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 66.56916,
+      "std": 9.98537,
+      "median": 66.56916,
+      "mad": 6.98976
+    },
+    "stats_node_temp_node_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 58.33322,
+      "std": 8.74998,
+      "median": 58.33322,
+      "mad": 6.12499
+    },
+    "stats_node_temp_node_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 44.77876,
+      "std": 6.71681,
+      "median": 44.77876,
+      "mad": 4.70177
+    },
+    "stats_node_temp_node_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 3.59015,
+      "std": 1.0,
+      "median": 3.59015,
+      "mad": 0.7
+    },
+    "stats_node_temp_timestamp_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 4773.92811,
+      "std": 716.08922,
+      "median": 4773.92811,
+      "mad": 501.26245
+    },
+    "stats_node_temp_timestamp_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 2439.89337,
+      "std": 365.98401,
+      "median": 2439.89337,
+      "mad": 256.1888
+    },
+    "stats_node_temp_timestamp_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 1298.12434,
+      "std": 194.71865,
+      "median": 1298.12434,
+      "mad": 136.30306
+    },
+    "stats_node_temp_timestamp_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 409.72028,
+      "std": 61.45804,
+      "median": 409.72028,
+      "mad": 43.02063
+    },
+    "stats_total_cpu0_energy": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 247403.78216,
+      "std": 37110.56732,
+      "median": 247403.78216,
+      "mad": 25977.39713
+    },
+    "stats_total_cpu0_energy_node_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 341223.2548,
+      "std": 51183.48822,
+      "median": 341223.2548,
+      "mad": 35828.44175
+    },
+    "stats_total_cpu0_energy_node_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 239658.20239,
+      "std": 35948.73036,
+      "median": 239658.20239,
+      "mad": 25164.11125
+    },
+    "stats_total_cpu0_energy_node_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 195454.49442,
+      "std": 29318.17416,
+      "median": 195454.49442,
+      "mad": 20522.72191
+    },
+    "stats_total_cpu0_energy_node_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 24401.44349,
+      "std": 3660.21652,
+      "median": 24401.44349,
+      "mad": 2562.15157
+    },
+    "stats_total_cpu_memory_energy": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 93184.5123,
+      "std": 13977.67684,
+      "median": 93184.5123,
+      "mad": 9784.37379
+    },
+    "stats_total_cpu_memory_energy_node_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 138144.15863,
+      "std": 20721.62379,
+      "median": 138144.15863,
+      "mad": 14505.13666
+    },
+    "stats_total_cpu_memory_energy_node_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 93475.21913,
+      "std": 14021.28287,
+      "median": 93475.21913,
+      "mad": 9814.89801
+    },
+    "stats_total_cpu_memory_energy_node_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 68616.33223,
+      "std": 10292.44983,
+      "median": 68616.33223,
+      "mad": 7204.71488
+    },
+    "stats_total_cpu_memory_energy_node_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 10138.44411,
+      "std": 1520.76662,
+      "median": 10138.44411,
+      "mad": 1064.53663
+    },
+    "stats_total_gpu0_energy": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 485660.86932,
+      "std": 72849.1304,
+      "median": 485660.86932,
+      "mad": 50994.39128
+    },
+    "stats_total_gpu0_energy_node_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 725840.32208,
+      "std": 108876.04831,
+      "median": 725840.32208,
+      "mad": 76213.23382
+    },
+    "stats_total_gpu0_energy_node_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 467404.94302,
+      "std": 70110.74145,
+      "median": 467404.94302,
+      "mad": 49077.51902
+    },
+    "stats_total_gpu0_energy_node_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 370038.56314,
+      "std": 55505.78447,
+      "median": 370038.56314,
+      "mad": 38854.04913
+    },
+    "stats_total_gpu0_energy_node_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 49478.84256,
+      "std": 7421.82638,
+      "median": 49478.84256,
+      "mad": 5195.27847
+    },
+    "stats_total_gpu1_energy": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 469644.9517,
+      "std": 70446.74275,
+      "median": 469644.9517,
+      "mad": 49312.71993
+    },
+    "stats_total_gpu1_energy_node_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 818023.75446,
+      "std": 122703.56317,
+      "median": 818023.75446,
+      "mad": 85892.49422
+    },
+    "stats_total_gpu1_energy_node_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 512042.16745,
+      "std": 76806.32512,
+      "median": 512042.16745,
+      "mad": 53764.42758
+    },
+    "stats_total_gpu1_energy_node_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 376606.58713,
+      "std": 56490.98807,
+      "median": 376606.58713,
+      "mad": 39543.69165
+    },
+    "stats_total_gpu1_energy_node_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 52519.48361,
+      "std": 7877.92254,
+      "median": 52519.48361,
+      "mad": 5514.54578
+    },
+    "stats_total_gpu2_energy": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 463250.04226,
+      "std": 69487.50634,
+      "median": 463250.04226,
+      "mad": 48641.25444
+    },
+    "stats_total_gpu2_energy_node_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 806117.1326,
+      "std": 120917.56989,
+      "median": 806117.1326,
+      "mad": 84642.29892
+    },
+    "stats_total_gpu2_energy_node_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 515124.64042,
+      "std": 77268.69606,
+      "median": 515124.64042,
+      "mad": 54088.08724
+    },
+    "stats_total_gpu2_energy_node_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 327564.67077,
+      "std": 49134.70062,
+      "median": 327564.67077,
+      "mad": 34394.29043
+    },
+    "stats_total_gpu2_energy_node_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 56846.87579,
+      "std": 8527.03137,
+      "median": 56846.87579,
+      "mad": 5968.92196
+    },
+    "stats_total_gpu3_energy": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 496804.77259,
+      "std": 74520.71589,
+      "median": 496804.77259,
+      "mad": 52164.50112
+    },
+    "stats_total_gpu3_energy_node_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 759566.20075,
+      "std": 113934.93011,
+      "median": 759566.20075,
+      "mad": 79754.45108
+    },
+    "stats_total_gpu3_energy_node_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 487179.23111,
+      "std": 73076.88467,
+      "median": 487179.23111,
+      "mad": 51153.81927
+    },
+    "stats_total_gpu3_energy_node_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 352559.10395,
+      "std": 52883.86559,
+      "median": 352559.10395,
+      "mad": 37018.70591
+    },
+    "stats_total_gpu3_energy_node_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 55423.27885,
+      "std": 8313.49183,
+      "median": 55423.27885,
+      "mad": 5819.44428
+    },
+    "stats_total_gpu_energy": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 473417.01186,
+      "std": 71012.55178,
+      "median": 473417.01186,
+      "mad": 49708.78625
+    },
+    "stats_total_gpu_energy_node_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 671803.02151,
+      "std": 100770.45323,
+      "median": 671803.02151,
+      "mad": 70539.31726
+    },
+    "stats_total_gpu_energy_node_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 481274.93604,
+      "std": 72191.24041,
+      "median": 481274.93604,
+      "mad": 50533.86828
+    },
+    "stats_total_gpu_energy_node_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 394946.82702,
+      "std": 59242.02405,
+      "median": 394946.82702,
+      "mad": 41469.41684
+    },
+    "stats_total_gpu_energy_node_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 48514.97207,
+      "std": 7277.24581,
+      "median": 48514.97207,
+      "mad": 5094.07207
+    },
+    "stats_total_node_energy": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 815984.89289,
+      "std": 122397.73393,
+      "median": 815984.89289,
+      "mad": 85678.41375
+    },
+    "stats_total_node_energy_node_max": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 1279034.3581,
+      "std": 191855.15372,
+      "median": 1279034.3581,
+      "mad": 134298.6076
+    },
+    "stats_total_node_energy_node_mean": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 805438.19019,
+      "std": 120815.72853,
+      "median": 805438.19019,
+      "mad": 84571.00997
+    },
+    "stats_total_node_energy_node_min": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 586778.71431,
+      "std": 88016.80715,
+      "median": 586778.71431,
+      "mad": 61611.765
+    },
+    "stats_total_node_energy_node_stddev": {
+      "linear_regression": {},
+      "dist": [],
+      "min": null,
+      "max": null,
+      "mean": 84624.89875,
+      "std": 12693.73481,
+      "median": 84624.89875,
+      "mad": 8885.61437
+    }
+  }
+}

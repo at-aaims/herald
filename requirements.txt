@@ -1,0 +1,94 @@
+# Dev
+python-dotenv==1.0.1
+pytest==8.3.4
+pytest-mock==3.14.0
+pytest-asyncio==0.25.3
+responses==0.25.6
+
+# Basics
+loguru==0.7.3
+pydantic==2.10.1
+pydantic-settings==2.6.1
+
+# Agent stack
+# pydantic-ai-slim with explicit provider extras avoids the meta package's mistralai pull-in
+mcp[cli]>=1.0.0
+# Pinned exact, not >=: an unpinned `anthropic` here resolves to whatever's
+# newest on install day, and newest broke this. pydantic-ai-slim==1.60.0's
+# anthropic integration imports `UserLocation` from
+# anthropic.types.beta.beta_web_search_tool_20250305_param -- renamed to
+# BetaUserLocationParam somewhere between anthropic 0.79.0 (confirmed
+# working) and 0.81.0 (confirmed broken), so ANY anthropic>=0.81.0,
+# including the 2.3.0 that was actually getting installed, makes the
+# Anthropic backend fail at import time regardless of credentials. A much
+# newer pydantic-ai-slim (2.64.0 exists vs. this 1.60.0) likely fixed this
+# upstream, but jumping that many versions risks breaking the tool-calling/
+# streaming APIs this app's code actually calls -- out of scope for a
+# dependency-pin fix. Re-evaluate both pins together if upgrading either.
+pydantic-ai-slim[openai,anthropic]==1.60.0
+anthropic==0.79.0
+
+# API Server development
+fastapi==0.115.6
+# Required by FastAPI for multipart/form-data (RAG document upload endpoint).
+python-multipart==0.0.29
+
+# Web scraping
+beautifulsoup4==4.13.0
+
+# Basic data handling
+pyarrow==18.1.0
+pandas==2.2.3
+numpy==1.26.4
+duckdb==1.1.3
+scipy==1.14.1
+
+# ClickHouse client for the syslog events store at production scale (P5b).
+# Optional — only loaded when settings.syslog_store_backend == "clickhouse".
+clickhouse-connect==0.8.6
+
+# Kafka consumer for the live syslog ingestion connector (P8). Optional —
+# only loaded when kafka_bootstrap_servers/kafka_topic are configured.
+aiokafka==0.11.0
+
+# Elasticsearch client for the syslog backfill connector (P8). Optional —
+# only loaded when elasticsearch_hosts/elasticsearch_index are configured.
+elasticsearch==8.15.1
+
+# Random Generation
+faker==33.1.0
+ClusterShell==1.9.2
+
+# SQLAlchemy and extensions
+sqlalchemy==2.0.36
+duckdb_engine==0.13.6
+
+# Vector stores
+chromadb==0.6.3
+
+# Document processing
+docutils==0.21.2
+
+# OpenAI access (used directly for AsyncOpenAI/AsyncAzureOpenAI clients)
+openai>=1.60.0
+
+# Daemon management for background servers
+supervisor==4.2.5
+
+# Hugging Face
+huggingface-hub==0.29.1
+transformers==4.49.0
+# RAG embedding/reranking (mxbai retriever + cross-encoder reranker in src/rag).
+# Compatible with the pinned transformers==4.49.0 and torch==2.2.2.
+sentence-transformers==3.4.1
+# User-document ingestion for RAG (src/rag/ingest_user.py): PDF + DOCX parsing.
+pypdf==5.1.0
+python-docx==1.1.2
+
+# Pytorch — pinned to 2.2.2 (last version with Intel macOS x86_64 wheels).
+# Apple Silicon / Linux users can bump to 2.6.0 if they need newer features;
+# transformers==4.49.0 is compatible with both.
+torch==2.2.2
+
+# Agents
+# TBD

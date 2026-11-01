@@ -1,0 +1,108 @@
+{
+    "type": "record",
+    "name": "ComponentSelectedChassisSchema",
+    "fields": [
+        {
+            "name": "timestamp",
+            "type": {
+                "type": "long",
+                "logicalType": "timestamp-micros"
+            },
+            "doc": "Time of the measurement, floored to 15 sec"
+        },
+        {
+            "name": "xname",
+            "type": "string",
+            "doc": "Unique identifier for the chassis of the measurement, e.g. x2007c7"
+        },
+        {
+            "name": "row",
+            "type": "long",
+            "doc": "Row index of the chassis."
+        },
+        {
+            "name": "col",
+            "type": "long",
+            "doc": "Col index of the chassis"
+        },
+        {
+            "name": "chassis",
+            "type": "long",
+            "doc": "Chassis index in cabinet"
+        },
+        {
+            "name": "rectifier0_input_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "Input power for Rectifier0 (unit: W, interval: 15 sec)"
+        },
+        {
+            "name": "rectifier0_output_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "Output power for Rectifier0 (unit: W, interval: 15 sec)"
+        },
+        {
+            "name": "rectifier1_input_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "Input power for Rectifier1 (unit: W, interval: 15 sec)"
+        },
+        {
+            "name": "rectifier1_output_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "Output power for Rectifier1 (unit: W, interval: 15 sec)"
+        },
+        {
+            "name": "rectifier2_input_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "Input power for Rectifier2 (unit: W, interval: 15 sec)"
+        },
+        {
+            "name": "rectifier2_output_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "Output power for Rectifier2 (unit: W, interval: 15 sec)"
+        },
+        {
+            "name": "rectifier3_input_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "Input power for Rectifier3 (unit: W, interval: 15 sec)"
+        },
+        {
+            "name": "rectifier3_output_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "Output power for Rectifier3 (unit: W, interval: 15 sec)"
+        }
+    ],
+    "namespace": "base",
+    "doc": "Usage docs: https://docs.pydantic.dev/2.7/concepts/models/"
+}

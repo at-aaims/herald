@@ -1,0 +1,154 @@
+{
+    "timestamp": {
+        "type": "TIMESTAMP",
+        "description": "Time of the measurement, floored to 15 sec"
+    },
+    "xname": {
+        "type": "STRING",
+        "description": "Unique identifier for the CDU of the measurement, e.g. x2007c1. The CDU xname is the xname of the neighboring cabinet"
+    },
+    "row": {
+        "type": "BIGINT",
+        "description": "Row index of the cdu.",
+        "min": 0,
+        "max": 6
+    },
+    "col": {
+        "type": "BIGINT",
+        "description": "Col index of the cdu. (Note this the col of the neighboring cabinet.)",
+        "min": 2,
+        "max": 9
+    },
+    "power": {
+        "type": "DOUBLE",
+        "description": "AC Input power to the CDU (unit: W, interval: 15 sec)",
+        "min": 900.0,
+        "mean": 7996.533333333334,
+        "median": 9000.0,
+        "max": 9600.0,
+        "stddev": 2546.6055149726026,
+        "unit": "W",
+        "interval": "15 sec"
+    },
+    "liquid_inlet_0_flow_primary": {
+        "type": "DOUBLE",
+        "description": "Liquid Inlet 0 Liquid Flow Primary, i.e. the facility supply flowrate (unit: gal/min, interval: 1 min)",
+        "min": 18.3,
+        "mean": 53.02146666666648,
+        "median": 53.1,
+        "max": 74.7,
+        "stddev": 8.456643493858683,
+        "unit": "gal/min",
+        "interval": "1 min"
+    },
+    "liquid_inlet_0_temperature_primary": {
+        "type": "DOUBLE",
+        "description": "Liquid Inlet 0 Temperature Primary i.e. the facility supply temperature (unit: degC, interval: 1 min)",
+        "min": 11.9,
+        "mean": 12.824299999999948,
+        "median": 12.8,
+        "max": 13.7,
+        "stddev": 0.31613210846100387,
+        "unit": "degC",
+        "interval": "1 min"
+    },
+    "liquid_outlet_0_temperature_primary": {
+        "type": "DOUBLE",
+        "description": "Liquid Outlet 0 Temperature Primary i.e. the facility return temperature (unit: degC, interval: 1 min)",
+        "min": 29.9,
+        "mean": 31.964233333333333,
+        "median": 32.0,
+        "max": 34.0,
+        "stddev": 0.6964749903781343,
+        "unit": "degC",
+        "interval": "1 min"
+    },
+    "liquid_inlet_0_pressure_primary": {
+        "type": "DOUBLE",
+        "description": "Liquid Inlet_0 Pressure Primary i.e. the facility supply pressure (unit: lbs/in^2, interval: 1 min)",
+        "min": 61.3,
+        "mean": 62.20251666666686,
+        "median": 62.2,
+        "max": 63.3,
+        "stddev": 0.3444057680346774,
+        "unit": "lbs/in^2",
+        "interval": "1 min"
+    },
+    "liquid_outlet_0_pressure_primary": {
+        "type": "DOUBLE",
+        "description": "Liquid Outlet 0 Pressure Primary i.e. the facility return pressure (unit: lbs/in^2, interval: 1 min)",
+        "min": 39.8,
+        "mean": 40.21218333333358,
+        "median": 40.2,
+        "max": 40.6,
+        "stddev": 0.12400228380512945,
+        "unit": "lbs/in^2",
+        "interval": "1 min"
+    },
+    "liquid_outlet_0_flow_secondary": {
+        "type": "DOUBLE",
+        "description": "Liquid Outlet 0 Liquid Flow Secondary i.e. the rack supply flowrate (unit: gal/min, interval: 1 min)",
+        "min": 172.0,
+        "mean": 264.967,
+        "median": 269.0,
+        "max": 283.0,
+        "stddev": 19.1120706448394,
+        "unit": "gal/min",
+        "interval": "1 min"
+    },
+    "liquid_inlet_1_temperature_secondary": {
+        "type": "DOUBLE",
+        "description": "Liquid Inlet 1 Temperature Secondary i.e. rack return temperature (unit: degC, interval: 1 min)",
+        "min": 29.8,
+        "mean": 31.932416666666555,
+        "median": 31.9,
+        "max": 34.1,
+        "stddev": 0.6763585043369301,
+        "unit": "degC",
+        "interval": "1 min"
+    },
+    "liquid_outlet_1_temperature_secondary": {
+        "type": "DOUBLE",
+        "description": "Liquid Outlet 1 Temperature Secondary i.e. the rack supply temperature (unit: degC, interval: 1 min)",
+        "min": 25.5,
+        "mean": 27.984700000000206,
+        "median": 28.0,
+        "max": 30.4,
+        "stddev": 0.7502394573290149,
+        "unit": "degC",
+        "interval": "1 min"
+    },
+    "liquid_inlet_1_pressure_secondary": {
+        "type": "DOUBLE",
+        "description": "Liquid Inlet 1 Pressure Secondary i.e. the rack return pressure (unit: lbs/in^2, interval: 1 min)",
+        "min": 19.1,
+        "mean": 22.9781,
+        "median": 23.1,
+        "max": 25.8,
+        "stddev": 1.6473636686131765,
+        "unit": "lbs/in^2",
+        "interval": "1 min"
+    },
+    "liquid_outlet_1_pressure_secondary": {
+        "type": "DOUBLE",
+        "description": "Liquid Outlet 1 Pressure Secondary i.e. the rack supply pressure (unit: lbs/in^2, interval: 1 min)",
+        "min": 46.7,
+        "mean": 50.47808333333318,
+        "median": 50.6,
+        "max": 53.2,
+        "stddev": 1.6422630705996994,
+        "unit": "lbs/in^2",
+        "interval": "1 min"
+    },
+    "pump_1_input_pressure_secondary": {
+        "type": "DOUBLE",
+        "description": "Pump 1 Input Pressure (unit: lbs/in^2, interval: 1 min)",
+        "min": 11.0,
+        "mean": 14.61151666666667,
+        "median": 14.9,
+        "max": 17.0,
+        "stddev": 1.4698352627836273,
+        "unit": "lbs/in^2",
+        "interval": "1 min"
+    }
+}

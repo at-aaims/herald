@@ -1,0 +1,141 @@
+{
+    "type": "record",
+    "name": "CrayexNodeBaseSchema",
+    "fields": [
+        {
+            "name": "timestamp",
+            "type": {
+                "type": "long",
+                "logicalType": "timestamp-micros"
+            },
+            "doc": "Time of the event"
+        },
+        {
+            "name": "xname",
+            "type": "string",
+            "doc": "Unique identifier for the node of the measurement, e.g. x2509c4s4b1"
+        },
+        {
+            "name": "row",
+            "type": "long",
+            "doc": "Row index of the node"
+        },
+        {
+            "name": "col",
+            "type": "long",
+            "doc": "Col index of the node"
+        },
+        {
+            "name": "chassis",
+            "type": "long",
+            "doc": "Chassis index of the node"
+        },
+        {
+            "name": "blade",
+            "type": "long",
+            "doc": "Blade index of the node"
+        },
+        {
+            "name": "node",
+            "type": "long",
+            "doc": "Node index on blade, 0 or 1"
+        },
+        {
+            "name": "sensor_id",
+            "type": "string",
+            "doc": "Unique id for the sensor the event came from"
+        },
+        {
+            "name": "parental_context",
+            "type": [
+                "null",
+                "string"
+            ],
+            "default": null
+        },
+        {
+            "name": "location_type",
+            "type": "string",
+            "doc": "Type of location the sensor came from"
+        },
+        {
+            "name": "telemetry_source",
+            "type": "string"
+        },
+        {
+            "name": "parental_index",
+            "type": [
+                "null",
+                "long"
+            ],
+            "default": null
+        },
+        {
+            "name": "physical_context",
+            "type": [
+                "null",
+                "string"
+            ],
+            "default": null
+        },
+        {
+            "name": "index",
+            "type": [
+                "null",
+                "long"
+            ],
+            "default": null
+        },
+        {
+            "name": "physical_sub_context",
+            "type": [
+                "null",
+                "string"
+            ],
+            "default": null
+        },
+        {
+            "name": "message_id",
+            "type": [
+                "null",
+                "string"
+            ],
+            "default": null
+        },
+        {
+            "name": "device_specific_context",
+            "type": [
+                "null",
+                "string"
+            ],
+            "default": null
+        },
+        {
+            "name": "value",
+            "type": "double"
+        },
+        {
+            "name": "allocation_id",
+            "type": [
+                "null",
+                "string"
+            ],
+            "default": null,
+            "doc": "Allocation Id of the job associated with this record"
+        },
+        {
+            "name": "job_time_start",
+            "type": [
+                "null",
+                {
+                    "type": "long",
+                    "logicalType": "timestamp-micros"
+                }
+            ],
+            "default": null,
+            "doc": "Start time of the job associated with this record"
+        }
+    ],
+    "namespace": "base",
+    "doc": "Usage docs: https://docs.pydantic.dev/2.7/concepts/models/"
+}

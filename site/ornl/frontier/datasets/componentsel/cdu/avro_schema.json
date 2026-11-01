@@ -1,0 +1,139 @@
+{
+    "type": "record",
+    "name": "ComponentSelectedCDUSchema",
+    "fields": [
+        {
+            "name": "timestamp",
+            "type": {
+                "type": "long",
+                "logicalType": "timestamp-micros"
+            },
+            "doc": "Time of the measurement, floored to 15 sec"
+        },
+        {
+            "name": "xname",
+            "type": "string",
+            "doc": "Unique identifier for the CDU of the measurement, e.g. x2007c1. The CDU xname is the xname of the neighboring cabinet"
+        },
+        {
+            "name": "row",
+            "type": "long",
+            "doc": "Row index of the cdu."
+        },
+        {
+            "name": "col",
+            "type": "long",
+            "doc": "Col index of the cdu. (Note this the col of the neighboring cabinet.)"
+        },
+        {
+            "name": "power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "AC Input power to the CDU (unit: W, interval: 15 sec)"
+        },
+        {
+            "name": "liquid_inlet_0_flow_primary",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "Liquid Inlet 0 Liquid Flow Primary, i.e. the facility supply flowrate (unit: gal/min, interval: 1 min)"
+        },
+        {
+            "name": "liquid_inlet_0_temperature_primary",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "Liquid Inlet 0 Temperature Primary i.e. the facility supply temperature (unit: degC, interval: 1 min)"
+        },
+        {
+            "name": "liquid_outlet_0_temperature_primary",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "Liquid Outlet 0 Temperature Primary i.e. the facility return temperature (unit: degC, interval: 1 min)"
+        },
+        {
+            "name": "liquid_inlet_0_pressure_primary",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "Liquid Inlet_0 Pressure Primary i.e. the facility supply pressure (unit: lbs/in^2, interval: 1 min)"
+        },
+        {
+            "name": "liquid_outlet_0_pressure_primary",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "Liquid Outlet 0 Pressure Primary i.e. the facility return pressure (unit: lbs/in^2, interval: 1 min)"
+        },
+        {
+            "name": "liquid_outlet_0_flow_secondary",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "Liquid Outlet 0 Liquid Flow Secondary i.e. the rack supply flowrate (unit: gal/min, interval: 1 min)"
+        },
+        {
+            "name": "liquid_inlet_1_temperature_secondary",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "Liquid Inlet 1 Temperature Secondary i.e. rack return temperature (unit: degC, interval: 1 min)"
+        },
+        {
+            "name": "liquid_outlet_1_temperature_secondary",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "Liquid Outlet 1 Temperature Secondary i.e. the rack supply temperature (unit: degC, interval: 1 min)"
+        },
+        {
+            "name": "liquid_inlet_1_pressure_secondary",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "Liquid Inlet 1 Pressure Secondary i.e. the rack return pressure (unit: lbs/in^2, interval: 1 min)"
+        },
+        {
+            "name": "liquid_outlet_1_pressure_secondary",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "Liquid Outlet 1 Pressure Secondary i.e. the rack supply pressure (unit: lbs/in^2, interval: 1 min)"
+        },
+        {
+            "name": "pump_1_input_pressure_secondary",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "Pump 1 Input Pressure (unit: lbs/in^2, interval: 1 min)"
+        }
+    ],
+    "namespace": "base",
+    "doc": "Usage docs: https://docs.pydantic.dev/2.7/concepts/models/"
+}

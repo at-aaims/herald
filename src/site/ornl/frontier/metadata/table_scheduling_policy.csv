@@ -1,0 +1,6 @@
+bin_size,min_node_range,max_node_range,job_class
+1,5645,99999,leadership
+2,1882,5644,large
+3,184,1881,medium
+4,92,183,medium
+5,1,91,small

@@ -1,0 +1,107 @@
+{
+    "timestamp": {
+        "type": "TIMESTAMP",
+        "description": "Time of the event"
+    },
+    "xname": {
+        "type": "STRING",
+        "description": "Unique identifier for the node of the measurement, e.g. x2509c4s4b1"
+    },
+    "row": {
+        "type": "BIGINT",
+        "description": "Row index of the node",
+        "min": 0,
+        "max": 5
+    },
+    "col": {
+        "type": "BIGINT",
+        "description": "Col index of the node",
+        "min": 0,
+        "max": 11
+    },
+    "chassis": {
+        "type": "BIGINT",
+        "description": "Chassis index of the node",
+        "min": 0,
+        "max": 7
+    },
+    "blade": {
+        "type": "BIGINT",
+        "description": "Blade index of the node",
+        "min": 0,
+        "max": 7
+    },
+    "node": {
+        "type": "BIGINT",
+        "description": "Node index on blade, 0 or 1",
+        "min": 0,
+        "max": 1
+    },
+    "sensor_id": {
+        "type": "STRING",
+        "description": "Unique id for the sensor the event came from"
+    },
+    "parental_context": {
+        "type": "STRING",
+        "description": ""
+    },
+    "location_type": {
+        "type": "STRING",
+        "description": "Type of location the sensor came from"
+    },
+    "telemetry_source": {
+        "type": "STRING",
+        "description": ""
+    },
+    "parental_index": {
+        "type": "BIGINT",
+        "description": "",
+        "min": 0,
+        "mean": 0.6451822916666666,
+        "median": 1.0,
+        "max": 1,
+        "stddev": 0.47845804642247847
+    },
+    "physical_context": {
+        "type": "STRING",
+        "description": ""
+    },
+    "index": {
+        "type": "BIGINT",
+        "description": "",
+        "min": 0,
+        "mean": 0.5279947916666666,
+        "median": 1.0,
+        "max": 1,
+        "stddev": 0.49921567647615
+    },
+    "physical_sub_context": {
+        "type": "STRING",
+        "description": ""
+    },
+    "message_id": {
+        "type": "STRING",
+        "description": ""
+    },
+    "device_specific_context": {
+        "type": "STRING",
+        "description": ""
+    },
+    "value": {
+        "type": "DOUBLE",
+        "description": "",
+        "min": 528.0,
+        "mean": 12172069636570.75,
+        "median": 1416165.5,
+        "max": 28786678349196.0,
+        "stddev": 14189255172334.69
+    },
+    "allocation_id": {
+        "type": "STRING",
+        "description": "Allocation Id of the job associated with this record"
+    },
+    "job_time_start": {
+        "type": "TIMESTAMP",
+        "description": "Start time of the job associated with this record"
+    }
+}

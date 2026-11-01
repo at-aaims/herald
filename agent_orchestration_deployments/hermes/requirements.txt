@@ -1,0 +1,21 @@
+# Core requirements
+# Install torch first (required by flash-attn)
+torch>=2.0.0
+torchvision
+torchaudio
+
+# Then install other core packages
+transformers>=4.51.0
+vllm>=0.4.0
+
+# Additional dependencies
+numpy>=1.21.0
+regex
+requests
+huggingface-hub
+tokenizers>=0.15.0
+accelerate
+safetensors
+
+# Optional performance optimization (comment out if installation fails)
+# flash-attn>=2.0.0

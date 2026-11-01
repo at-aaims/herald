@@ -1,0 +1,143 @@
+{
+    "slurm_version": {
+        "type": "STRING",
+        "description": ""
+    },
+    "job_id": {
+        "type": "STRING",
+        "description": ""
+    },
+    "account": {
+        "type": "STRING",
+        "description": ""
+    },
+    "group": {
+        "type": "STRING",
+        "description": ""
+    },
+    "user": {
+        "type": "STRING",
+        "description": ""
+    },
+    "name": {
+        "type": "STRING",
+        "description": ""
+    },
+    "working_directory": {
+        "type": "STRING",
+        "description": ""
+    },
+    "partition": {
+        "type": "STRING",
+        "description": ""
+    },
+    "time_limit": {
+        "type": "DOUBLE",
+        "description": "",
+        "min": 10.0,
+        "mean": 288.3812114428508,
+        "median": 120.0,
+        "max": 10080.0,
+        "stddev": 968.447777917962
+    },
+    "constraints": {
+        "type": "STRING",
+        "description": ""
+    },
+    "mcs": {
+        "type": "STRING",
+        "description": ""
+    },
+    "time_submission": {
+        "type": "TIMESTAMP",
+        "description": ""
+    },
+    "time_eligible": {
+        "type": "TIMESTAMP",
+        "description": ""
+    },
+    "time_start": {
+        "type": "TIMESTAMP",
+        "description": ""
+    },
+    "time_end": {
+        "type": "TIMESTAMP",
+        "description": ""
+    },
+    "time_elapsed": {
+        "type": "DOUBLE",
+        "description": "",
+        "min": 0.0,
+        "mean": 2012533.4061483198,
+        "median": 0.0,
+        "max": 73395723.0,
+        "stddev": 11829686.505566431
+    },
+    "node_count": {
+        "type": "BIGINT",
+        "description": "",
+        "min": 0,
+        "mean": 29.60293620011974,
+        "median": 0.0,
+        "max": 2048,
+        "stddev": 143.75705341860797
+    },
+    "node_ranges": {
+        "type": "STRING",
+        "description": ""
+    },
+    "xnames": {
+        "type": "ARRAY<STRING>",
+        "description": ""
+    },
+    "state_current": {
+        "type": "STRING",
+        "description": ""
+    },
+    "state_reason": {
+        "type": "STRING",
+        "description": ""
+    },
+    "batch_time_start": {
+        "type": "TIMESTAMP",
+        "description": ""
+    },
+    "batch_time_end": {
+        "type": "TIMESTAMP",
+        "description": ""
+    },
+    "batch_time_elapsed": {
+        "type": "DOUBLE",
+        "description": "",
+        "min": 0.0,
+        "mean": 2012533.4069812843,
+        "median": 0.0,
+        "max": 73395723.0,
+        "stddev": 11829686.505425166
+    },
+    "batch_state": {
+        "type": "STRING",
+        "description": ""
+    },
+    "batch_exit_code_return_code": {
+        "type": "BIGINT",
+        "description": "",
+        "min": 0,
+        "mean": 0.12205534008381706,
+        "median": 0.0,
+        "max": 250,
+        "stddev": 4.414336298458459
+    },
+    "batch_exit_code_status": {
+        "type": "STRING",
+        "description": ""
+    },
+    "allocation_id": {
+        "type": "STRING",
+        "description": ""
+    },
+    "time_snapshot": {
+        "type": "TIMESTAMP",
+        "description": ""
+    }
+}

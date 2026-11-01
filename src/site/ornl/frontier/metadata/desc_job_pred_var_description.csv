@@ -1,0 +1,22 @@
+Column,Description,Type,Anonymized
+domain,Science domain,string,false
+project,Project description or project code.,number,false
+time_elapsed,Duration of the job execution in seconds,number,false
+node_count,Number of nodes requested for the job. For job size large jobs have more than 1882 nodes. Medium Jobs run on 92 nodes or more. Small jobs have less than 92 nodes,integer,false
+utilization_type,Job utilizes cpu or gpu,string,false
+stats_node_power_node_mean,Mean of the average node_power of each node,number,false
+stats_node_power_node_max,Maximum of the average node_power of each node,number,false
+stats_node_power_node_stddev,Standard Deviation of the average node_power of each node. It presents the swing in node_power,number,false
+stats_cpu_memory_power_node_max,Maximum of the average cpu_memory_power of each node,number,false
+stats_gpu_power_node_max,Maximum of the average gpu_power of each node,number,false
+stats_gpu_power_node_mean,Mean of the average gpu_power of each node,number,false
+stats_gpu_power_node_stddev,Standard Deviation of the average gpu_power of each node. It presents the swing in gpu_power,number,false
+stats_node_temp_node_max,Maximum of the average node_temp of each node,number,false
+stats_node_temp_node_stddev,Standard Deviation of the average node_temp of each node. It presents the swing in node_temp,number,false
+stats_total_node_energy,Total Node Energy consumed,number,false
+stats_total_node_energy_node_max,Maximum of the total node_energy of each node,number,false
+stats_total_node_energy_node_mean,Mean of the total node_energy of each node,number,false
+stats_total_cpu_memory_energy,Total Cpu Memory Energy consumed,number,false
+stats_total_gpu_energy,Total Gpu Energy consumed,number,false
+stats_total_gpu_energy_node_max,Maximum of the total gpu_energy of each node,number,false
+stats_total_gpu_energy_node_mean,Mean of the total gpu_energy of each node,number,false

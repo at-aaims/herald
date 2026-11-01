@@ -1,0 +1,337 @@
+{
+    "timestamp": {
+        "type": "TIMESTAMP",
+        "description": "Time of the measurement, floored to 15 sec"
+    },
+    "xname": {
+        "type": "STRING",
+        "description": "Unique identifier for the node of the measurement, e.g. x2509c4s4b1"
+    },
+    "row": {
+        "type": "BIGINT",
+        "description": "Row index of the node.",
+        "min": 0,
+        "max": 6
+    },
+    "col": {
+        "type": "BIGINT",
+        "description": "Col index of the node",
+        "min": 0,
+        "max": 11
+    },
+    "chassis": {
+        "type": "BIGINT",
+        "description": "Chassis index of the node",
+        "min": 0,
+        "max": 7
+    },
+    "blade": {
+        "type": "BIGINT",
+        "description": "Blade index of the node",
+        "min": 0,
+        "max": 7
+    },
+    "node": {
+        "type": "BIGINT",
+        "description": "Node index on blade, 0 or 1",
+        "min": 0,
+        "max": 1
+    },
+    "allocation_id": {
+        "type": "STRING",
+        "description": "Allocation Id of the job associated with this record"
+    },
+    "job_time_start": {
+        "type": "TIMESTAMP",
+        "description": "Start time of the job associated with this record"
+    },
+    "node_power": {
+        "type": "DOUBLE",
+        "description": "Total node power usage (unit: W, interval: 2 sec)",
+        "min": 39.0,
+        "mean": 636.2054058856421,
+        "median": 614.2857142857143,
+        "max": 64205.0,
+        "stddev": 205.09416391595366,
+        "unit": "W",
+        "interval": "2 sec"
+    },
+    "node_temp": {
+        "type": "DOUBLE",
+        "description": "Max temperature seen on the node (unit: degC)",
+        "min": 0.0,
+        "mean": 43.841452806623444,
+        "median": 43.0,
+        "max": 80.0,
+        "stddev": 3.239183447859705,
+        "unit": "degC"
+    },
+    "node_energy": {
+        "type": "DOUBLE",
+        "description": "Energy counter for node (unit: J, interval: 1 min)",
+        "min": 4855090.0,
+        "mean": 747931582.4067496,
+        "median": 752540975.0,
+        "max": 1191424437.0,
+        "stddev": 78759324.8751146,
+        "unit": "J",
+        "interval": "1 min"
+    },
+    "node_energy_delta": {
+        "type": "DOUBLE",
+        "description": "Energy consumed by node in this timestep (unit: J)",
+        "min": 594.25,
+        "mean": 9618.932117253564,
+        "median": 9295.0,
+        "max": 65884.0,
+        "stddev": 2478.8018241086043,
+        "unit": "J"
+    },
+    "cpu0_power": {
+        "type": "DOUBLE",
+        "description": "Power usage of CPU0 (unit: W, interval: 15 sec)",
+        "min": 18.0,
+        "mean": 35.42708198159786,
+        "median": 33.0,
+        "max": 355.0,
+        "stddev": 13.427748212439756,
+        "unit": "W",
+        "interval": "15 sec"
+    },
+    "cpu0_temp": {
+        "type": "DOUBLE",
+        "description": "Temperature of CPU0 (unit: degC, interval: 1 min)",
+        "min": 32.625,
+        "mean": 40.459077818351616,
+        "median": 39.75,
+        "max": 63.375,
+        "stddev": 2.979301666076926,
+        "unit": "degC",
+        "interval": "1 min"
+    },
+    "cpu0_energy": {
+        "type": "DOUBLE",
+        "description": "Energy counter for CPU0 (unit: J, interval: 1 min)",
+        "min": 1024655.0,
+        "mean": 52507583.41313248,
+        "median": 53429215.0,
+        "max": 222397805.0,
+        "stddev": 5802586.673709342,
+        "unit": "J",
+        "interval": "1 min"
+    },
+    "cpu0_energy_delta": {
+        "type": "DOUBLE",
+        "description": "Energy consumed by CPU0 in this timestep (unit: J)",
+        "min": 133.75,
+        "mean": 561.4294945241721,
+        "median": 509.25,
+        "max": 4785.75,
+        "stddev": 178.94963678026147,
+        "unit": "J"
+    },
+    "gpu0_power": {
+        "type": "DOUBLE",
+        "description": "Power usage of GPU0 (unit: W, interval: 15 sec)",
+        "min": 48.058,
+        "mean": 100.94689527969908,
+        "median": 94.141,
+        "max": 889.16,
+        "stddev": 41.978851640398,
+        "unit": "W",
+        "interval": "15 sec"
+    },
+    "gpu0_temp": {
+        "type": "DOUBLE",
+        "description": "Temperature of GPU0 (unit: degC, interval: 1 min)",
+        "min": 0.0,
+        "mean": 42.463124297166424,
+        "median": 42.0,
+        "max": 80.0,
+        "stddev": 3.2896033761541816,
+        "unit": "degC",
+        "interval": "1 min"
+    },
+    "gpu0_energy": {
+        "type": "DOUBLE",
+        "description": "Energy counter for GPU0 (unit: J, interval: 1 min)",
+        "min": 2861868.0,
+        "mean": 130653665.8326419,
+        "median": 130983488.0,
+        "max": 177548944.0,
+        "stddev": 15387186.196407784,
+        "unit": "J",
+        "interval": "1 min"
+    },
+    "gpu0_energy_delta": {
+        "type": "DOUBLE",
+        "description": "Energy consumed by GPU0 in this timestep (unit: J)",
+        "min": 584.0,
+        "mean": 1524.2466100534436,
+        "median": 1407.5,
+        "max": 10410.75,
+        "stddev": 552.3787682806757,
+        "unit": "J"
+    },
+    "gpu1_power": {
+        "type": "DOUBLE",
+        "description": "Power usage of GPU1 (unit: W, interval: 15 sec)",
+        "min": 4.608,
+        "mean": 99.32814241269583,
+        "median": 92.825,
+        "max": 818.305,
+        "stddev": 41.442234511267756,
+        "unit": "W",
+        "interval": "15 sec"
+    },
+    "gpu1_temp": {
+        "type": "DOUBLE",
+        "description": "Temperature of GPU1 (unit: degC, interval: 1 min)",
+        "min": 0.0,
+        "mean": 40.2363502678045,
+        "median": 40.0,
+        "max": 68.0,
+        "stddev": 2.897357475122717,
+        "unit": "degC",
+        "interval": "1 min"
+    },
+    "gpu1_energy": {
+        "type": "DOUBLE",
+        "description": "Energy counter for GPU1 (unit: J, interval: 1 min)",
+        "min": 2712785.0,
+        "mean": 129103023.9360396,
+        "median": 129454941.5,
+        "max": 172702477.0,
+        "stddev": 15222561.189608991,
+        "unit": "J",
+        "interval": "1 min"
+    },
+    "gpu1_energy_delta": {
+        "type": "DOUBLE",
+        "description": "Energy consumed by GPU1 in this timestep (unit: J)",
+        "min": 583.5,
+        "mean": 1500.7376799135338,
+        "median": 1383.25,
+        "max": 10799.333333333334,
+        "stddev": 541.5482385377875,
+        "unit": "J"
+    },
+    "gpu2_power": {
+        "type": "DOUBLE",
+        "description": "Power usage of GPU2 (unit: W, interval: 15 sec)",
+        "min": 26.992,
+        "mean": 99.64509232060495,
+        "median": 92.825,
+        "max": 824.23,
+        "stddev": 41.29675038159164,
+        "unit": "W",
+        "interval": "15 sec"
+    },
+    "gpu2_temp": {
+        "type": "DOUBLE",
+        "description": "Temperature of GPU2 (unit: degC, interval: 1 min)",
+        "min": 0.0,
+        "mean": 41.47537376932841,
+        "median": 41.0,
+        "max": 78.0,
+        "stddev": 3.326716180451794,
+        "unit": "degC",
+        "interval": "1 min"
+    },
+    "gpu2_energy": {
+        "type": "DOUBLE",
+        "description": "Energy counter for GPU2 (unit: J, interval: 1 min)",
+        "min": 2769090.0,
+        "mean": 129703440.85246886,
+        "median": 130011356.0,
+        "max": 178383842.0,
+        "stddev": 15326520.821982231,
+        "unit": "J",
+        "interval": "1 min"
+    },
+    "gpu2_energy_delta": {
+        "type": "DOUBLE",
+        "description": "Energy consumed by GPU2 in this timestep (unit: J)",
+        "min": 568.5,
+        "mean": 1505.2110526927079,
+        "median": 1388.5,
+        "max": 11039.333333333334,
+        "stddev": 543.8374113540184,
+        "unit": "J"
+    },
+    "gpu3_power": {
+        "type": "DOUBLE",
+        "description": "Power usage of GPU3 (unit: W, interval: 15 sec)",
+        "min": 26.333,
+        "mean": 98.90345456297977,
+        "median": 92.166,
+        "max": 824.889,
+        "stddev": 40.939245734280256,
+        "unit": "W",
+        "interval": "15 sec"
+    },
+    "gpu3_temp": {
+        "type": "DOUBLE",
+        "description": "Temperature of GPU3 (unit: degC, interval: 1 min)",
+        "min": 0.0,
+        "mean": 39.63801660843944,
+        "median": 40.0,
+        "max": 67.0,
+        "stddev": 2.853446325706139,
+        "unit": "degC",
+        "interval": "1 min"
+    },
+    "gpu3_energy": {
+        "type": "DOUBLE",
+        "description": "Energy counter for GPU3 (unit: J, interval: 1 min)",
+        "min": 2806865.0,
+        "mean": 128581226.08010927,
+        "median": 128918352.0,
+        "max": 175116909.0,
+        "stddev": 15189616.863822034,
+        "unit": "J",
+        "interval": "1 min"
+    },
+    "gpu3_energy_delta": {
+        "type": "DOUBLE",
+        "description": "Energy consumed by GPU3 in this timestep (unit: J)",
+        "min": 563.0,
+        "mean": 1494.9805723331472,
+        "median": 1378.25,
+        "max": 10537.0,
+        "stddev": 536.8854318517941,
+        "unit": "J"
+    },
+    "cpu_memory_power": {
+        "type": "DOUBLE",
+        "description": "Power usage of RAM (unit: W, interval: 15 sec)",
+        "min": 18.0,
+        "mean": 35.42708198159786,
+        "median": 33.0,
+        "max": 355.0,
+        "stddev": 13.427748212439756,
+        "unit": "W",
+        "interval": "15 sec"
+    },
+    "cpu_memory_energy": {
+        "type": "DOUBLE",
+        "description": "Energy counter for RAM (unit: J, interval: 1 min)",
+        "min": 2007788.0,
+        "mean": 55718823.320638634,
+        "median": 56329151.0,
+        "max": 61966203.0,
+        "stddev": 4661497.39548091,
+        "unit": "J",
+        "interval": "1 min"
+    },
+    "cpu_memory_energy_delta": {
+        "type": "DOUBLE",
+        "description": "Energy consumed by RAM in this timestep (unit: J)",
+        "min": 271.25,
+        "mean": 1016.954358209465,
+        "median": 1004.0,
+        "max": 1743.25,
+        "stddev": 52.2860786691511,
+        "unit": "J"
+    }
+}

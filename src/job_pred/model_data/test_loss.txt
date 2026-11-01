@@ -1,0 +1,2 @@
+0.14845728874206543
+# Sample model trained on fabricated synthetic data (scripts/train_sample_job_pred_model.py) -- NOT real Frontier telemetry.

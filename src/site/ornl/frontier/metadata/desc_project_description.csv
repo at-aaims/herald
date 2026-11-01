@@ -1,0 +1,4 @@
+Column,Description,Type,Anonymized,isPrimary,isForeign
+account, It is the unique code of the projects whose jobs/workloads run on the system,string,false,true,false
+project_code, The project_code column provides the project information of the account from which the job is submitted. The project code is extracted by extracting the initial english letter substring from the account's column alphanumeric string in the project_description table.,string,false,false,false
+project_domain, It describes the project's domain or science domain or research area.,string,false,false,false``

@@ -1,0 +1,83 @@
+# Local dev stack for HERALD — backend + frontend + (optional) ClickHouse.
+#
+# Dev-oriented: source is bind-mounted, hot-reload preserved (uvicorn --reload,
+# `next dev`), so `make docker-up` replaces `make api` + `make frontend` with
+# an identical live-editing workflow, just fully containerized. Not an
+# immutable production build.
+#
+# Usage:
+#   make docker-up / make docker-down          — backend + frontend (default: DuckDB)
+#   docker compose -f deploy/docker-compose.yml --profile clickhouse up -d clickhouse
+#     (or: make clickhouse-up / make clickhouse-down)
+services:
+  backend:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.backend
+    container_name: herald-backend
+    env_file:
+      - ../.env
+    volumes:
+      - ..:/app
+      # RAG's embedding/reranker/CLIP models (src/rag/model_cache.py) download
+      # from HuggingFace on first use -- a few GB total. Without this, that
+      # cache lives only in the container's own ephemeral filesystem, so any
+      # rebuild that recreates the container (e.g. `docker compose up --build`
+      # after a code change) re-downloads everything from scratch. Naming the
+      # volume keeps it across rebuilds; only a full `docker compose down -v`
+      # (or deleting the volume explicitly) clears it.
+      - huggingface-cache:/root/.cache/huggingface
+    ports:
+      - "8000:8000"
+
+  frontend:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.frontend
+    container_name: herald-frontend
+    environment:
+      HERALD_API_URL: http://backend:8000
+    volumes:
+      - ../frontend:/app
+      - /app/node_modules   # anonymous volume: keeps the container-built
+                            # node_modules from being shadowed by the host's
+                            # (possibly different-arch) bind-mounted copy
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+  # Production-scale SyslogStore backend (src/syslog/store.py), opt-in — the
+  # default DuckDB backend needs nothing extra. See src/syslog/README.md.
+  clickhouse:
+    image: clickhouse/clickhouse-server
+    container_name: herald-clickhouse
+    profiles: ["clickhouse"]
+    environment:
+      # Newer ClickHouse images disable network access for the default user
+      # entirely unless a password is set (an unset CLICKHOUSE_PASSWORD is
+      # NOT the same as an empty one). Local dev sandbox only — not exposed
+      # beyond localhost. Substituted from the repo-root .env (docker compose
+      # reads .env from the current working directory, which is the repo
+      # root for every `make`-invoked command here) so this container's
+      # password and the backend's CLICKHOUSE_PASSWORD setting can never
+      # drift out of sync — there is exactly one place this value is set.
+      CLICKHOUSE_PASSWORD: "${CLICKHOUSE_PASSWORD:-herald-dev-local}"
+    ports:
+      - "8123:8123"  # HTTP (clickhouse-connect uses this)
+      - "9000:9000"  # native protocol (clickhouse-client)
+    ulimits:
+      nofile:
+        soft: 262144
+        hard: 262144
+    volumes:
+      - clickhouse-data:/var/lib/clickhouse
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8123/ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+volumes:
+  clickhouse-data:
+  huggingface-cache:

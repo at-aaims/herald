@@ -1,0 +1,5 @@
+Column,Description,Type,Anonymized,isPrimary,isForeign
+bin_size,"Bin size describes the number of nodes that the job used to run. Bin sizes range from 1 to 5. Such that bin 1 contains jobs that run on 5645 nodes or more nodes. Bin 2 has jobs from nodes 1882 to 5644 nodes. Bin 3 Jobs has nodes between 184 and 1881. Bin 4 has nodes between 92 and 183. Bin 5 jobs have nodes between 1 and 91.",number,false,true,false
+min_node_range,Minimum value of the range for the corresponding bin size.,number,false,false,false
+max_node_range,Maximum value of the range for the corresponding bin size.,number,false,false,false
+job_class, "Bin 1 is 'leadership' class jobs and bin 2 is 'large' class jobs. Bin 3 and bin 4 are 'medium' jobs. Bin 5 is for 'small' jobs.",string,false,false,false

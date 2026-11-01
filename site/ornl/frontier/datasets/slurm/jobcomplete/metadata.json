@@ -1,0 +1,143 @@
+{
+    "slurm_version": {
+        "type": "STRING",
+        "description": ""
+    },
+    "job_id": {
+        "type": "STRING",
+        "description": ""
+    },
+    "account": {
+        "type": "STRING",
+        "description": ""
+    },
+    "group": {
+        "type": "STRING",
+        "description": ""
+    },
+    "user": {
+        "type": "STRING",
+        "description": ""
+    },
+    "name": {
+        "type": "STRING",
+        "description": ""
+    },
+    "working_directory": {
+        "type": "STRING",
+        "description": ""
+    },
+    "partition": {
+        "type": "STRING",
+        "description": ""
+    },
+    "time_limit": {
+        "type": "DOUBLE",
+        "description": "",
+        "min": 10.0,
+        "mean": 82.06425702811245,
+        "median": 120.0,
+        "max": 719.0,
+        "stddev": 64.83729936623382
+    },
+    "constraints": {
+        "type": "STRING",
+        "description": ""
+    },
+    "mcs": {
+        "type": "STRING",
+        "description": ""
+    },
+    "time_submission": {
+        "type": "TIMESTAMP",
+        "description": ""
+    },
+    "time_eligible": {
+        "type": "TIMESTAMP",
+        "description": ""
+    },
+    "time_start": {
+        "type": "TIMESTAMP",
+        "description": ""
+    },
+    "time_end": {
+        "type": "TIMESTAMP",
+        "description": ""
+    },
+    "time_elapsed": {
+        "type": "DOUBLE",
+        "description": "",
+        "min": 0.0,
+        "mean": 2918.5502008032126,
+        "median": 828.0,
+        "max": 37357.0,
+        "stddev": 3731.269541598166
+    },
+    "node_count": {
+        "type": "BIGINT",
+        "description": "",
+        "min": 0,
+        "mean": 117.30923694779116,
+        "median": 1.0,
+        "max": 1641,
+        "stddev": 382.14029041866945
+    },
+    "node_ranges": {
+        "type": "STRING",
+        "description": ""
+    },
+    "xnames": {
+        "type": "ARRAY<STRING>",
+        "description": ""
+    },
+    "state_current": {
+        "type": "STRING",
+        "description": ""
+    },
+    "state_reason": {
+        "type": "STRING",
+        "description": ""
+    },
+    "batch_time_start": {
+        "type": "TIMESTAMP",
+        "description": ""
+    },
+    "batch_time_end": {
+        "type": "TIMESTAMP",
+        "description": ""
+    },
+    "batch_time_elapsed": {
+        "type": "DOUBLE",
+        "description": "",
+        "min": 0.0,
+        "mean": 2918.6546184738954,
+        "median": 828.0,
+        "max": 37357.0,
+        "stddev": 3731.2793386721346
+    },
+    "batch_state": {
+        "type": "STRING",
+        "description": ""
+    },
+    "batch_exit_code_return_code": {
+        "type": "BIGINT",
+        "description": "",
+        "min": 0,
+        "mean": 31.184738955823292,
+        "median": 0.0,
+        "max": 250,
+        "stddev": 63.919801094182134
+    },
+    "batch_exit_code_status": {
+        "type": "STRING",
+        "description": ""
+    },
+    "allocation_id": {
+        "type": "STRING",
+        "description": ""
+    },
+    "time_snapshot": {
+        "type": "TIMESTAMP",
+        "description": ""
+    }
+}

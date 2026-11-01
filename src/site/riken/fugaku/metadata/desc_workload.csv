@@ -1,0 +1,46 @@
+Column,Description,Type,Anonymized,isPrimary,isForeign
+jid,The id assigned to the job when it is submitted,string,true,true,false
+usr,The username of the user submitting the job,string,true,false,false
+jnam,The name of the job,string,true,false,false
+cnumr,Number of cores requested for the job,int,false,false,false
+cnumat,Number of cores allocated to the job,int,false,false,false
+cnumut,Number of cores used by the job,int,false,false,false
+nnumr,Number of nodes requested for the job,int,false,false,false
+adt,Arrival datetime (submission time),timestamp,false,false,false
+qdt,Time of insertion in the job queue,timestamp,false,false,false
+schedsdt,Time of completed scheduling choice,timestamp,false,false,false
+deldt,Time of job deletion,timestamp,false,false,false
+ec,Job exit code,int,false,false,false
+elpl,Elapsed time limit (the time limit set to the job duration),float,false,false,false
+sdt,Start datetime,timestamp,false,false,false
+edt,End datetime,timestamp,false,false,false
+nnuma,Number of nodes allocated to the job,int,false,false,false
+idle_time_ave,Average idle time of the job,float,false,false,false
+nnumu,Number of nodes used by the job,int,false,false,false
+perf1,Number of execution cycles,float,false,false,false
+perf2,FP_FIXED_OPS_SPEC,float,false,false,false
+perf3,FP_SCALE_OPS_SPEC,float,false,false,false
+perf4,BUS_READ_TOTAL_MEM,float,false,false,false
+perf5,BUS_WRITE_TOTAL_MEM,float,false,false,false
+perf6,Number of sleep cycles,float,false,false,false
+mszl,Memory size limit for the job,float,false,false,false
+pri,Priority,int,false,false,false
+econ,Energy consumption,float,false,false,false
+avgpcon,Average node power consuption,float,false,false,false
+minpcon,Minimum node power consuption,float,false,false,false
+maxpcon,Maximum node power consuption,float,false,false,false
+msza,Memory size allocated,float,false,false,false
+mmszu,Memory size used,float,false,false,false
+uctmut,User cpu time total use,float,false,false,false
+sctmut,System cpu time total use,float,false,false,false
+usctmut,Total cpu time use,float,false,false,false
+jobenv_req,Job environment requested,string,true,false,false
+freq_req,Node frequency requested,int,false,false,false
+freq_alloc,Node frequency allocated,int,false,false,false
+flops,Number of floating point operations per second,float,false,false,false
+mbwidth,Memory bandwidth,float,false,false,false
+opint,Operational intensity,float,false,false,false
+pclass,Performance class (either compute-bound or memory-bound),string,false,false,false
+embedding,Sensitive data encoding with Sentence-Bert,Array[float],false,false,false
+exit state,Exit state of the job execution (either completed or failed),string,false,false,false
+duration,Duration of the job execution in seconds,float,false,false,false

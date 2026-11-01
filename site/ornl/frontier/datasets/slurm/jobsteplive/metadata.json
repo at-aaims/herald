@@ -1,0 +1,115 @@
+{
+    "job_id": {
+        "type": "STRING",
+        "description": ""
+    },
+    "account": {
+        "type": "STRING",
+        "description": ""
+    },
+    "group": {
+        "type": "STRING",
+        "description": ""
+    },
+    "user": {
+        "type": "STRING",
+        "description": ""
+    },
+    "time_submission": {
+        "type": "TIMESTAMP",
+        "description": ""
+    },
+    "step_id": {
+        "type": "STRING",
+        "description": ""
+    },
+    "step_name": {
+        "type": "STRING",
+        "description": ""
+    },
+    "state": {
+        "type": "STRING",
+        "description": ""
+    },
+    "time_start": {
+        "type": "TIMESTAMP",
+        "description": ""
+    },
+    "time_end": {
+        "type": "TIMESTAMP",
+        "description": ""
+    },
+    "time_elapsed": {
+        "type": "DOUBLE",
+        "description": "",
+        "min": 0.0,
+        "mean": 318885.6440050552,
+        "median": 2212.0,
+        "max": 73382978.0,
+        "stddev": 4802623.898220653
+    },
+    "exit_code_return_code": {
+        "type": "BIGINT",
+        "description": "",
+        "min": 0,
+        "mean": 0.10579103514417088,
+        "median": 0.0,
+        "max": 255,
+        "stddev": 4.269452030232741
+    },
+    "exit_code_status": {
+        "type": "STRING",
+        "description": ""
+    },
+    "kill_request_user": {
+        "type": "STRING",
+        "description": ""
+    },
+    "task_distribution": {
+        "type": "STRING",
+        "description": ""
+    },
+    "tasks_count": {
+        "type": "BIGINT",
+        "description": "",
+        "min": 1,
+        "mean": 130.47276573241672,
+        "median": 10.0,
+        "max": 16384,
+        "stddev": 812.7067480187023
+    },
+    "node_count": {
+        "type": "BIGINT",
+        "description": "",
+        "min": 1,
+        "mean": 36.18951500864936,
+        "median": 4.0,
+        "max": 2048,
+        "stddev": 161.9661049237102
+    },
+    "node_ranges": {
+        "type": "STRING",
+        "description": ""
+    },
+    "xnames": {
+        "type": "ARRAY<STRING>",
+        "description": ""
+    },
+    "energy_consumed": {
+        "type": "DOUBLE",
+        "description": "",
+        "min": -13759549.0,
+        "mean": 796824.8679740789,
+        "median": 0.0,
+        "max": 12082701255.0,
+        "stddev": 48978522.10429407
+    },
+    "allocation_id": {
+        "type": "STRING",
+        "description": ""
+    },
+    "time_snapshot": {
+        "type": "TIMESTAMP",
+        "description": ""
+    }
+}

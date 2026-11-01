@@ -1,0 +1,2492 @@
+# componentlevel/nodetswithjobs
+This dataset is processed from crayextelemetry. It contains the crayextelemetry
+node level sensors in wide format. Each record contains the allocation_id of the
+slurm job running on the node at the time.
+
+- Saved: `s3a://<your-bucket>/tier1/frontier/componentlevel/chassists` as parquets
+- Stream: `src-ts-frontier-componentlevelnodetswithjobs` as Avro
+- Size: 170 MiB/day
+
+## Schema
+
+- timestamp
+    - Time of the measurement, floored to 15 sec
+    - type: TIMESTAMP
+- xname
+    - Unique identifier for the node of the measurement, e.g. x2509c4s4b1
+    - type: STRING
+- row
+    - Row index of the node
+    - type: BIGINT
+- col
+    - Col index of the node
+    - type: BIGINT
+- chassis
+    - Chassis index of the node
+    - type: BIGINT
+- blade
+    - Blade index of the node
+    - type: BIGINT
+- node
+    - Node index on blade, 0 or 1
+    - type: BIGINT
+- board_chassis_voltageregulator_0_input_power
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 2 sec
+    - parental_context: Chassis
+    - parental_index: None
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: Input
+    - message_id: Power
+    - device_specific_context: None
+- node_chassis_voltageregulator_0_input_power
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 2 sec
+    - parental_context: Chassis
+    - parental_index: None
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: Input
+    - message_id: Power
+    - device_specific_context: None
+- node_chassis_voltageregulator_2_input_power
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 2 sec
+    - parental_context: Chassis
+    - parental_index: None
+    - physical_context: VoltageRegulator
+    - index: 2
+    - physical_sub_context: Input
+    - message_id: Power
+    - device_specific_context: None
+- board_board_0_voltageregulator_0_power
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 15 sec
+    - parental_context: Board
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: None
+    - message_id: Power
+    - device_specific_context: None
+- board_board_0_voltageregulator_1_power
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 15 sec
+    - parental_context: Board
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 1
+    - physical_sub_context: None
+    - message_id: Power
+    - device_specific_context: None
+- board_board_1_voltageregulator_0_power
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 15 sec
+    - parental_context: Board
+    - parental_index: 1
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: None
+    - message_id: Power
+    - device_specific_context: None
+- board_board_1_voltageregulator_1_power
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 15 sec
+    - parental_context: Board
+    - parental_index: 1
+    - physical_context: VoltageRegulator
+    - index: 1
+    - physical_sub_context: None
+    - message_id: Power
+    - device_specific_context: None
+- node_accelerator_0_voltageregulator_0_input_power
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 15 sec
+    - parental_context: Accelerator
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: Input
+    - message_id: Power
+    - device_specific_context: None
+- node_accelerator_1_voltageregulator_0_input_power
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 15 sec
+    - parental_context: Accelerator
+    - parental_index: 1
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: Input
+    - message_id: Power
+    - device_specific_context: None
+- node_accelerator_2_voltageregulator_0_input_power
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 15 sec
+    - parental_context: Accelerator
+    - parental_index: 2
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: Input
+    - message_id: Power
+    - device_specific_context: None
+- node_accelerator_3_voltageregulator_0_input_power
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 15 sec
+    - parental_context: Accelerator
+    - parental_index: 3
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: Input
+    - message_id: Power
+    - device_specific_context: None
+- node_chassis_cpusubsystem_0_output_power
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 15 sec
+    - parental_context: Chassis
+    - parental_index: None
+    - physical_context: CPUSubsystem
+    - index: 0
+    - physical_sub_context: Output
+    - message_id: Power
+    - device_specific_context: None
+- node_chassis_memorysubsystem_0_output_power
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 15 sec
+    - parental_context: Chassis
+    - parental_index: None
+    - physical_context: MemorySubsystem
+    - index: 0
+    - physical_sub_context: Output
+    - message_id: Power
+    - device_specific_context: None
+- node_chassis_voltageregulator_0_output_power
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 15 sec
+    - parental_context: Chassis
+    - parental_index: None
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: Output
+    - message_id: Power
+    - device_specific_context: None
+- node_chassis_voltageregulator_3_output_power
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 15 sec
+    - parental_context: Chassis
+    - parental_index: None
+    - physical_context: VoltageRegulator
+    - index: 3
+    - physical_sub_context: Output
+    - message_id: Power
+    - device_specific_context: None
+- node_chassis_voltageregulator_4_output_power
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 15 sec
+    - parental_context: Chassis
+    - parental_index: None
+    - physical_context: VoltageRegulator
+    - index: 4
+    - physical_sub_context: Output
+    - message_id: Power
+    - device_specific_context: None
+- node_chassis_voltageregulator_5_output_power
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 15 sec
+    - parental_context: Chassis
+    - parental_index: None
+    - physical_context: VoltageRegulator
+    - index: 5
+    - physical_sub_context: Output
+    - message_id: Power
+    - device_specific_context: None
+- node_cpu_0_0_power_synthesized
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 15 sec
+    - parental_context: CPU
+    - parental_index: 0
+    - physical_context: None
+    - index: 0
+    - physical_sub_context: None
+    - message_id: Power
+    - device_specific_context: Synthesized
+- node_cpu_0_1_power_synthesized
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 15 sec
+    - parental_context: CPU
+    - parental_index: 0
+    - physical_context: None
+    - index: 1
+    - physical_sub_context: None
+    - message_id: Power
+    - device_specific_context: Synthesized
+- node_cpu_0_2_power_reported
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 15 sec
+    - parental_context: CPU
+    - parental_index: 0
+    - physical_context: None
+    - index: 2
+    - physical_sub_context: None
+    - message_id: Power
+    - device_specific_context: Reported
+- node_cpu_0_3_power_reported
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 15 sec
+    - parental_context: CPU
+    - parental_index: 0
+    - physical_context: None
+    - index: 3
+    - physical_sub_context: None
+    - message_id: Power
+    - device_specific_context: Reported
+- node_cpu_0_4_power_reported
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 15 sec
+    - parental_context: CPU
+    - parental_index: 0
+    - physical_context: None
+    - index: 4
+    - physical_sub_context: None
+    - message_id: Power
+    - device_specific_context: Reported
+- node_cpu_0_voltageregulator_0_output_power
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 15 sec
+    - parental_context: CPU
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: Output
+    - message_id: Power
+    - device_specific_context: None
+- node_cpu_0_voltageregulator_1_output_power
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 15 sec
+    - parental_context: CPU
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 1
+    - physical_sub_context: Output
+    - message_id: Power
+    - device_specific_context: None
+- node_cpu_0_voltageregulator_5_output_power
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 15 sec
+    - parental_context: CPU
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 5
+    - physical_sub_context: Output
+    - message_id: Power
+    - device_specific_context: None
+- node_cpu_0_voltageregulator_6_input_power
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 15 sec
+    - parental_context: CPU
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 6
+    - physical_sub_context: Input
+    - message_id: Power
+    - device_specific_context: None
+- node_cpu_0_voltageregulator_6_output_power
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 15 sec
+    - parental_context: CPU
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 6
+    - physical_sub_context: Output
+    - message_id: Power
+    - device_specific_context: None
+- node_gpusubsystem_accelerator_0_power
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 15 sec
+    - parental_context: GPUSubsystem
+    - parental_index: None
+    - physical_context: Accelerator
+    - index: 0
+    - physical_sub_context: None
+    - message_id: Power
+    - device_specific_context: None
+- node_gpusubsystem_accelerator_1_power
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 15 sec
+    - parental_context: GPUSubsystem
+    - parental_index: None
+    - physical_context: Accelerator
+    - index: 1
+    - physical_sub_context: None
+    - message_id: Power
+    - device_specific_context: None
+- node_gpusubsystem_accelerator_2_power
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 15 sec
+    - parental_context: GPUSubsystem
+    - parental_index: None
+    - physical_context: Accelerator
+    - index: 2
+    - physical_sub_context: None
+    - message_id: Power
+    - device_specific_context: None
+- node_gpusubsystem_accelerator_3_power
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 15 sec
+    - parental_context: GPUSubsystem
+    - parental_index: None
+    - physical_context: Accelerator
+    - index: 3
+    - physical_sub_context: None
+    - message_id: Power
+    - device_specific_context: None
+- node_memorysubsystem_0_power
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 15 sec
+    - parental_context: None
+    - parental_index: None
+    - physical_context: MemorySubsystem
+    - index: 0
+    - physical_sub_context: None
+    - message_id: Power
+    - device_specific_context: None
+- node_memorysubsystem_0_voltageregulator_2_output_power
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 15 sec
+    - parental_context: MemorySubsystem
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 2
+    - physical_sub_context: Output
+    - message_id: Power
+    - device_specific_context: None
+- node_memorysubsystem_0_voltageregulator_3_output_power
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 15 sec
+    - parental_context: MemorySubsystem
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 3
+    - physical_sub_context: Output
+    - message_id: Power
+    - device_specific_context: None
+- node_memorysubsystem_0_voltageregulator_7_input_power
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 15 sec
+    - parental_context: MemorySubsystem
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 7
+    - physical_sub_context: Input
+    - message_id: Power
+    - device_specific_context: None
+- node_memorysubsystem_0_voltageregulator_7_output_power
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 15 sec
+    - parental_context: MemorySubsystem
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 7
+    - physical_sub_context: Output
+    - message_id: Power
+    - device_specific_context: None
+- node_memorysubsystem_0_voltageregulator_8_input_power
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 15 sec
+    - parental_context: MemorySubsystem
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 8
+    - physical_sub_context: Input
+    - message_id: Power
+    - device_specific_context: None
+- node_memorysubsystem_0_voltageregulator_8_output_power
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 15 sec
+    - parental_context: MemorySubsystem
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 8
+    - physical_sub_context: Output
+    - message_id: Power
+    - device_specific_context: None
+- board_board_0_asic_0_temperature
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Board
+    - parental_index: 0
+    - physical_context: ASIC
+    - index: 0
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- board_board_0_asic_1_temperature
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Board
+    - parental_index: 0
+    - physical_context: ASIC
+    - index: 1
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- board_board_0_dcbus_0_voltage
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Board
+    - parental_index: 0
+    - physical_context: DCBus
+    - index: 0
+    - physical_sub_context: None
+    - message_id: Voltage
+    - device_specific_context: None
+- board_board_0_dcbus_1_voltage
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Board
+    - parental_index: 0
+    - physical_context: DCBus
+    - index: 1
+    - physical_sub_context: None
+    - message_id: Voltage
+    - device_specific_context: None
+- board_board_0_networkingdevice_0_metric_pcscorrectedcw
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Board
+    - parental_index: 0
+    - physical_context: NetworkingDevice
+    - index: 0
+    - physical_sub_context: None
+    - message_id: Metric
+    - device_specific_context: C_CNTR_HNI_PCS_CORRECTED_CW
+- board_board_0_networkingdevice_1_metric_pcsfeclerrors6
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Board
+    - parental_index: 0
+    - physical_context: NetworkingDevice
+    - index: 1
+    - physical_sub_context: None
+    - message_id: Metric
+    - device_specific_context: C_CNTR_HNI_PCS_FECL_ERRORS_6
+- board_board_0_systemboard_0_temperature
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Board
+    - parental_index: 0
+    - physical_context: SystemBoard
+    - index: 0
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- board_board_0_systemboard_1_temperature
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Board
+    - parental_index: 0
+    - physical_context: SystemBoard
+    - index: 1
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- board_board_0_systemboard_2_voltage
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Board
+    - parental_index: 0
+    - physical_context: SystemBoard
+    - index: 2
+    - physical_sub_context: None
+    - message_id: Voltage
+    - device_specific_context: None
+- board_board_0_systemboard_3_voltage
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Board
+    - parental_index: 0
+    - physical_context: SystemBoard
+    - index: 3
+    - physical_sub_context: None
+    - message_id: Voltage
+    - device_specific_context: None
+- board_board_0_systemboard_4_voltage
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Board
+    - parental_index: 0
+    - physical_context: SystemBoard
+    - index: 4
+    - physical_sub_context: None
+    - message_id: Voltage
+    - device_specific_context: None
+- board_board_0_systemboard_5_voltage
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Board
+    - parental_index: 0
+    - physical_context: SystemBoard
+    - index: 5
+    - physical_sub_context: None
+    - message_id: Voltage
+    - device_specific_context: None
+- board_board_0_systemboard_6_voltage
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Board
+    - parental_index: 0
+    - physical_context: SystemBoard
+    - index: 6
+    - physical_sub_context: None
+    - message_id: Voltage
+    - device_specific_context: None
+- board_board_0_voltage
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Board
+    - parental_index: 0
+    - physical_context: None
+    - index: None
+    - physical_sub_context: None
+    - message_id: Voltage
+    - device_specific_context: None
+- board_board_0_voltageregulator_0_current
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Board
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: None
+    - message_id: Current
+    - device_specific_context: None
+- board_board_0_voltageregulator_0_temperature
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Board
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- board_board_0_voltageregulator_0_voltage
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Board
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: None
+    - message_id: Voltage
+    - device_specific_context: None
+- board_board_0_voltageregulator_1_current
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Board
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 1
+    - physical_sub_context: None
+    - message_id: Current
+    - device_specific_context: None
+- board_board_0_voltageregulator_1_temperature
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Board
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 1
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- board_board_0_voltageregulator_1_voltage
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Board
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 1
+    - physical_sub_context: None
+    - message_id: Voltage
+    - device_specific_context: None
+- board_board_1_asic_0_temperature
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Board
+    - parental_index: 1
+    - physical_context: ASIC
+    - index: 0
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- board_board_1_asic_1_temperature
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Board
+    - parental_index: 1
+    - physical_context: ASIC
+    - index: 1
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- board_board_1_dcbus_0_voltage
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Board
+    - parental_index: 1
+    - physical_context: DCBus
+    - index: 0
+    - physical_sub_context: None
+    - message_id: Voltage
+    - device_specific_context: None
+- board_board_1_dcbus_1_voltage
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Board
+    - parental_index: 1
+    - physical_context: DCBus
+    - index: 1
+    - physical_sub_context: None
+    - message_id: Voltage
+    - device_specific_context: None
+- board_board_1_networkingdevice_0_metric_pcscorrectedcw
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Board
+    - parental_index: 1
+    - physical_context: NetworkingDevice
+    - index: 0
+    - physical_sub_context: None
+    - message_id: Metric
+    - device_specific_context: C_CNTR_HNI_PCS_CORRECTED_CW
+- board_board_1_networkingdevice_1_metric_pcsfeclerrors6
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Board
+    - parental_index: 1
+    - physical_context: NetworkingDevice
+    - index: 1
+    - physical_sub_context: None
+    - message_id: Metric
+    - device_specific_context: C_CNTR_HNI_PCS_FECL_ERRORS_6
+- board_board_1_systemboard_0_temperature
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Board
+    - parental_index: 1
+    - physical_context: SystemBoard
+    - index: 0
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- board_board_1_systemboard_1_temperature
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Board
+    - parental_index: 1
+    - physical_context: SystemBoard
+    - index: 1
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- board_board_1_systemboard_2_voltage
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Board
+    - parental_index: 1
+    - physical_context: SystemBoard
+    - index: 2
+    - physical_sub_context: None
+    - message_id: Voltage
+    - device_specific_context: None
+- board_board_1_systemboard_3_voltage
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Board
+    - parental_index: 1
+    - physical_context: SystemBoard
+    - index: 3
+    - physical_sub_context: None
+    - message_id: Voltage
+    - device_specific_context: None
+- board_board_1_systemboard_4_voltage
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Board
+    - parental_index: 1
+    - physical_context: SystemBoard
+    - index: 4
+    - physical_sub_context: None
+    - message_id: Voltage
+    - device_specific_context: None
+- board_board_1_systemboard_5_voltage
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Board
+    - parental_index: 1
+    - physical_context: SystemBoard
+    - index: 5
+    - physical_sub_context: None
+    - message_id: Voltage
+    - device_specific_context: None
+- board_board_1_systemboard_6_voltage
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Board
+    - parental_index: 1
+    - physical_context: SystemBoard
+    - index: 6
+    - physical_sub_context: None
+    - message_id: Voltage
+    - device_specific_context: None
+- board_board_1_voltage
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Board
+    - parental_index: 1
+    - physical_context: None
+    - index: None
+    - physical_sub_context: None
+    - message_id: Voltage
+    - device_specific_context: None
+- board_board_1_voltageregulator_0_current
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Board
+    - parental_index: 1
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: None
+    - message_id: Current
+    - device_specific_context: None
+- board_board_1_voltageregulator_0_temperature
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Board
+    - parental_index: 1
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- board_board_1_voltageregulator_0_voltage
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Board
+    - parental_index: 1
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: None
+    - message_id: Voltage
+    - device_specific_context: None
+- board_board_1_voltageregulator_1_current
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Board
+    - parental_index: 1
+    - physical_context: VoltageRegulator
+    - index: 1
+    - physical_sub_context: None
+    - message_id: Current
+    - device_specific_context: None
+- board_board_1_voltageregulator_1_temperature
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Board
+    - parental_index: 1
+    - physical_context: VoltageRegulator
+    - index: 1
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- board_board_1_voltageregulator_1_voltage
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Board
+    - parental_index: 1
+    - physical_context: VoltageRegulator
+    - index: 1
+    - physical_sub_context: None
+    - message_id: Voltage
+    - device_specific_context: None
+- board_chassis_0_temperature
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: None
+    - parental_index: None
+    - physical_context: Chassis
+    - index: 0
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- board_chassis_systemboard_0_temperature
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Chassis
+    - parental_index: None
+    - physical_context: SystemBoard
+    - index: 0
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- board_chassis_voltageregulator_0_input_voltage
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Chassis
+    - parental_index: None
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: Input
+    - message_id: Voltage
+    - device_specific_context: None
+- board_chassis_voltageregulator_0_output_current
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Chassis
+    - parental_index: None
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: Output
+    - message_id: Current
+    - device_specific_context: None
+- board_chassis_voltageregulator_0_output_voltage
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Chassis
+    - parental_index: None
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: Output
+    - message_id: Voltage
+    - device_specific_context: None
+- board_chassis_voltageregulator_0_temperature
+    - type: DOUBLE
+    - location_type: board
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Chassis
+    - parental_index: None
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- node_accelerator_0_voltageregulator_0_input_current
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Accelerator
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: Input
+    - message_id: Current
+    - device_specific_context: None
+- node_accelerator_0_voltageregulator_0_input_voltage
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Accelerator
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: Input
+    - message_id: Voltage
+    - device_specific_context: None
+- node_accelerator_0_voltageregulator_0_output_voltage
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Accelerator
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: Output
+    - message_id: Voltage
+    - device_specific_context: None
+- node_accelerator_0_voltageregulator_0_temperature
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Accelerator
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- node_accelerator_1_voltageregulator_0_input_current
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Accelerator
+    - parental_index: 1
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: Input
+    - message_id: Current
+    - device_specific_context: None
+- node_accelerator_1_voltageregulator_0_input_voltage
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Accelerator
+    - parental_index: 1
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: Input
+    - message_id: Voltage
+    - device_specific_context: None
+- node_accelerator_1_voltageregulator_0_output_voltage
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Accelerator
+    - parental_index: 1
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: Output
+    - message_id: Voltage
+    - device_specific_context: None
+- node_accelerator_1_voltageregulator_0_temperature
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Accelerator
+    - parental_index: 1
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- node_accelerator_2_voltageregulator_0_input_current
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Accelerator
+    - parental_index: 2
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: Input
+    - message_id: Current
+    - device_specific_context: None
+- node_accelerator_2_voltageregulator_0_input_voltage
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Accelerator
+    - parental_index: 2
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: Input
+    - message_id: Voltage
+    - device_specific_context: None
+- node_accelerator_2_voltageregulator_0_output_voltage
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Accelerator
+    - parental_index: 2
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: Output
+    - message_id: Voltage
+    - device_specific_context: None
+- node_accelerator_2_voltageregulator_0_temperature
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Accelerator
+    - parental_index: 2
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- node_accelerator_3_voltageregulator_0_input_current
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Accelerator
+    - parental_index: 3
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: Input
+    - message_id: Current
+    - device_specific_context: None
+- node_accelerator_3_voltageregulator_0_input_voltage
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Accelerator
+    - parental_index: 3
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: Input
+    - message_id: Voltage
+    - device_specific_context: None
+- node_accelerator_3_voltageregulator_0_output_voltage
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Accelerator
+    - parental_index: 3
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: Output
+    - message_id: Voltage
+    - device_specific_context: None
+- node_accelerator_3_voltageregulator_0_temperature
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Accelerator
+    - parental_index: 3
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- node_chassis_gpusubsystem_0_temperature
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Chassis
+    - parental_index: None
+    - physical_context: GPUSubsystem
+    - index: 0
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- node_chassis_gpusubsystem_1_temperature
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Chassis
+    - parental_index: None
+    - physical_context: GPUSubsystem
+    - index: 1
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- node_chassis_gpusubsystem_2_temperature
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Chassis
+    - parental_index: None
+    - physical_context: GPUSubsystem
+    - index: 2
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- node_chassis_gpusubsystem_3_temperature
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Chassis
+    - parental_index: None
+    - physical_context: GPUSubsystem
+    - index: 3
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- node_chassis_gpusubsystem_4_temperature
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Chassis
+    - parental_index: None
+    - physical_context: GPUSubsystem
+    - index: 4
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- node_chassis_gpusubsystem_5_temperature
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Chassis
+    - parental_index: None
+    - physical_context: GPUSubsystem
+    - index: 5
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- node_chassis_gpusubsystem_6_temperature
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Chassis
+    - parental_index: None
+    - physical_context: GPUSubsystem
+    - index: 6
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- node_chassis_gpusubsystem_7_temperature
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Chassis
+    - parental_index: None
+    - physical_context: GPUSubsystem
+    - index: 7
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- node_chassis_voltageregulator_0_input_voltage
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Chassis
+    - parental_index: None
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: Input
+    - message_id: Voltage
+    - device_specific_context: None
+- node_chassis_voltageregulator_0_output_current
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Chassis
+    - parental_index: None
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: Output
+    - message_id: Current
+    - device_specific_context: None
+- node_chassis_voltageregulator_0_output_voltage
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Chassis
+    - parental_index: None
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: Output
+    - message_id: Voltage
+    - device_specific_context: None
+- node_chassis_voltageregulator_0_temperature
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Chassis
+    - parental_index: None
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- node_chassis_voltageregulator_1_temperature
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Chassis
+    - parental_index: None
+    - physical_context: VoltageRegulator
+    - index: 1
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- node_chassis_voltageregulator_2_input_current
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Chassis
+    - parental_index: None
+    - physical_context: VoltageRegulator
+    - index: 2
+    - physical_sub_context: Input
+    - message_id: Current
+    - device_specific_context: None
+- node_chassis_voltageregulator_2_input_voltage
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Chassis
+    - parental_index: None
+    - physical_context: VoltageRegulator
+    - index: 2
+    - physical_sub_context: Input
+    - message_id: Voltage
+    - device_specific_context: None
+- node_chassis_voltageregulator_2_output_voltage
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Chassis
+    - parental_index: None
+    - physical_context: VoltageRegulator
+    - index: 2
+    - physical_sub_context: Output
+    - message_id: Voltage
+    - device_specific_context: None
+- node_chassis_voltageregulator_2_temperature
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Chassis
+    - parental_index: None
+    - physical_context: VoltageRegulator
+    - index: 2
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- node_chassis_voltageregulator_3_input_voltage
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Chassis
+    - parental_index: None
+    - physical_context: VoltageRegulator
+    - index: 3
+    - physical_sub_context: Input
+    - message_id: Voltage
+    - device_specific_context: None
+- node_chassis_voltageregulator_3_output_current
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Chassis
+    - parental_index: None
+    - physical_context: VoltageRegulator
+    - index: 3
+    - physical_sub_context: Output
+    - message_id: Current
+    - device_specific_context: None
+- node_chassis_voltageregulator_3_output_voltage
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Chassis
+    - parental_index: None
+    - physical_context: VoltageRegulator
+    - index: 3
+    - physical_sub_context: Output
+    - message_id: Voltage
+    - device_specific_context: None
+- node_chassis_voltageregulator_3_temperature
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Chassis
+    - parental_index: None
+    - physical_context: VoltageRegulator
+    - index: 3
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- node_chassis_voltageregulator_4_input_voltage
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Chassis
+    - parental_index: None
+    - physical_context: VoltageRegulator
+    - index: 4
+    - physical_sub_context: Input
+    - message_id: Voltage
+    - device_specific_context: None
+- node_chassis_voltageregulator_4_output_current
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Chassis
+    - parental_index: None
+    - physical_context: VoltageRegulator
+    - index: 4
+    - physical_sub_context: Output
+    - message_id: Current
+    - device_specific_context: None
+- node_chassis_voltageregulator_4_output_voltage
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Chassis
+    - parental_index: None
+    - physical_context: VoltageRegulator
+    - index: 4
+    - physical_sub_context: Output
+    - message_id: Voltage
+    - device_specific_context: None
+- node_chassis_voltageregulator_4_temperature
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Chassis
+    - parental_index: None
+    - physical_context: VoltageRegulator
+    - index: 4
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- node_chassis_voltageregulator_5_input_voltage
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Chassis
+    - parental_index: None
+    - physical_context: VoltageRegulator
+    - index: 5
+    - physical_sub_context: Input
+    - message_id: Voltage
+    - device_specific_context: None
+- node_chassis_voltageregulator_5_output_current
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Chassis
+    - parental_index: None
+    - physical_context: VoltageRegulator
+    - index: 5
+    - physical_sub_context: Output
+    - message_id: Current
+    - device_specific_context: None
+- node_chassis_voltageregulator_5_output_voltage
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Chassis
+    - parental_index: None
+    - physical_context: VoltageRegulator
+    - index: 5
+    - physical_sub_context: Output
+    - message_id: Voltage
+    - device_specific_context: None
+- node_chassis_voltageregulator_5_temperature
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Chassis
+    - parental_index: None
+    - physical_context: VoltageRegulator
+    - index: 5
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- node_chassis_voltageregulator_6_temperature
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Chassis
+    - parental_index: None
+    - physical_context: VoltageRegulator
+    - index: 6
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- node_cpu_0_0_energy_synthesized
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: CPU
+    - parental_index: 0
+    - physical_context: None
+    - index: 0
+    - physical_sub_context: None
+    - message_id: Energy
+    - device_specific_context: Synthesized
+- node_cpu_0_1_energy_synthesized
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: CPU
+    - parental_index: 0
+    - physical_context: None
+    - index: 1
+    - physical_sub_context: None
+    - message_id: Energy
+    - device_specific_context: Synthesized
+- node_cpu_0_temperature
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: None
+    - parental_index: None
+    - physical_context: CPU
+    - index: 0
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- node_cpu_0_voltageregulator_0_input_voltage
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: CPU
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: Input
+    - message_id: Voltage
+    - device_specific_context: None
+- node_cpu_0_voltageregulator_0_output_current
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: CPU
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: Output
+    - message_id: Current
+    - device_specific_context: None
+- node_cpu_0_voltageregulator_0_output_voltage
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: CPU
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: Output
+    - message_id: Voltage
+    - device_specific_context: None
+- node_cpu_0_voltageregulator_0_temperature
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: CPU
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- node_cpu_0_voltageregulator_1_input_voltage
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: CPU
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 1
+    - physical_sub_context: Input
+    - message_id: Voltage
+    - device_specific_context: None
+- node_cpu_0_voltageregulator_1_output_current
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: CPU
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 1
+    - physical_sub_context: Output
+    - message_id: Current
+    - device_specific_context: None
+- node_cpu_0_voltageregulator_1_output_voltage
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: CPU
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 1
+    - physical_sub_context: Output
+    - message_id: Voltage
+    - device_specific_context: None
+- node_cpu_0_voltageregulator_1_temperature
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: CPU
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 1
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- node_cpu_0_voltageregulator_4_input_current
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: CPU
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 4
+    - physical_sub_context: Input
+    - message_id: Current
+    - device_specific_context: None
+- node_cpu_0_voltageregulator_4_input_voltage
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: CPU
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 4
+    - physical_sub_context: Input
+    - message_id: Voltage
+    - device_specific_context: None
+- node_cpu_0_voltageregulator_4_output_current
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: CPU
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 4
+    - physical_sub_context: Output
+    - message_id: Current
+    - device_specific_context: None
+- node_cpu_0_voltageregulator_4_output_voltage
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: CPU
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 4
+    - physical_sub_context: Output
+    - message_id: Voltage
+    - device_specific_context: None
+- node_cpu_0_voltageregulator_4_temperature
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: CPU
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 4
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- node_cpu_0_voltageregulator_5_input_voltage
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: CPU
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 5
+    - physical_sub_context: Input
+    - message_id: Voltage
+    - device_specific_context: None
+- node_cpu_0_voltageregulator_5_output_current
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: CPU
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 5
+    - physical_sub_context: Output
+    - message_id: Current
+    - device_specific_context: None
+- node_cpu_0_voltageregulator_5_output_voltage
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: CPU
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 5
+    - physical_sub_context: Output
+    - message_id: Voltage
+    - device_specific_context: None
+- node_cpu_0_voltageregulator_5_temperature
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: CPU
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 5
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- node_cpu_0_voltageregulator_6_input_current
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: CPU
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 6
+    - physical_sub_context: Input
+    - message_id: Current
+    - device_specific_context: None
+- node_cpu_0_voltageregulator_6_input_voltage
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: CPU
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 6
+    - physical_sub_context: Input
+    - message_id: Voltage
+    - device_specific_context: None
+- node_cpu_0_voltageregulator_6_output_current
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: CPU
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 6
+    - physical_sub_context: Output
+    - message_id: Current
+    - device_specific_context: None
+- node_cpu_0_voltageregulator_6_output_voltage
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: CPU
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 6
+    - physical_sub_context: Output
+    - message_id: Voltage
+    - device_specific_context: None
+- node_cpu_0_voltageregulator_6_temperature
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: CPU
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 6
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- node_gpusubsystem_gpu_0_temperature
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: GPUSubsystem
+    - parental_index: None
+    - physical_context: GPU
+    - index: 0
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- node_gpusubsystem_gpu_1_temperature
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: GPUSubsystem
+    - parental_index: None
+    - physical_context: GPU
+    - index: 1
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- node_gpusubsystem_gpu_2_temperature
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: GPUSubsystem
+    - parental_index: None
+    - physical_context: GPU
+    - index: 2
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- node_gpusubsystem_gpu_3_temperature
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: GPUSubsystem
+    - parental_index: None
+    - physical_context: GPU
+    - index: 3
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- node_gpusubsystem_gpu_4_temperature
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: GPUSubsystem
+    - parental_index: None
+    - physical_context: GPU
+    - index: 4
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- node_gpusubsystem_gpu_5_temperature
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: GPUSubsystem
+    - parental_index: None
+    - physical_context: GPU
+    - index: 5
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- node_gpusubsystem_gpu_6_temperature
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: GPUSubsystem
+    - parental_index: None
+    - physical_context: GPU
+    - index: 6
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- node_gpusubsystem_gpu_7_temperature
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: GPUSubsystem
+    - parental_index: None
+    - physical_context: GPU
+    - index: 7
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- node_memorysubsystem_0_voltageregulator_2_input_voltage
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: MemorySubsystem
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 2
+    - physical_sub_context: Input
+    - message_id: Voltage
+    - device_specific_context: None
+- node_memorysubsystem_0_voltageregulator_2_output_current
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: MemorySubsystem
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 2
+    - physical_sub_context: Output
+    - message_id: Current
+    - device_specific_context: None
+- node_memorysubsystem_0_voltageregulator_2_output_voltage
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: MemorySubsystem
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 2
+    - physical_sub_context: Output
+    - message_id: Voltage
+    - device_specific_context: None
+- node_memorysubsystem_0_voltageregulator_2_temperature
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: MemorySubsystem
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 2
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- node_memorysubsystem_0_voltageregulator_3_input_voltage
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: MemorySubsystem
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 3
+    - physical_sub_context: Input
+    - message_id: Voltage
+    - device_specific_context: None
+- node_memorysubsystem_0_voltageregulator_3_output_current
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: MemorySubsystem
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 3
+    - physical_sub_context: Output
+    - message_id: Current
+    - device_specific_context: None
+- node_memorysubsystem_0_voltageregulator_3_output_voltage
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: MemorySubsystem
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 3
+    - physical_sub_context: Output
+    - message_id: Voltage
+    - device_specific_context: None
+- node_memorysubsystem_0_voltageregulator_3_temperature
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: MemorySubsystem
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 3
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- node_memorysubsystem_0_voltageregulator_7_input_current
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: MemorySubsystem
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 7
+    - physical_sub_context: Input
+    - message_id: Current
+    - device_specific_context: None
+- node_memorysubsystem_0_voltageregulator_7_input_voltage
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: MemorySubsystem
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 7
+    - physical_sub_context: Input
+    - message_id: Voltage
+    - device_specific_context: None
+- node_memorysubsystem_0_voltageregulator_7_output_current
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: MemorySubsystem
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 7
+    - physical_sub_context: Output
+    - message_id: Current
+    - device_specific_context: None
+- node_memorysubsystem_0_voltageregulator_7_output_voltage
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: MemorySubsystem
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 7
+    - physical_sub_context: Output
+    - message_id: Voltage
+    - device_specific_context: None
+- node_memorysubsystem_0_voltageregulator_7_temperature
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: MemorySubsystem
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 7
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- node_memorysubsystem_0_voltageregulator_8_input_current
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: MemorySubsystem
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 8
+    - physical_sub_context: Input
+    - message_id: Current
+    - device_specific_context: None
+- node_memorysubsystem_0_voltageregulator_8_input_voltage
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: MemorySubsystem
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 8
+    - physical_sub_context: Input
+    - message_id: Voltage
+    - device_specific_context: None
+- node_memorysubsystem_0_voltageregulator_8_output_current
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: MemorySubsystem
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 8
+    - physical_sub_context: Output
+    - message_id: Current
+    - device_specific_context: None
+- node_memorysubsystem_0_voltageregulator_8_output_voltage
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: MemorySubsystem
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 8
+    - physical_sub_context: Output
+    - message_id: Voltage
+    - device_specific_context: None
+- node_memorysubsystem_0_voltageregulator_8_temperature
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: MemorySubsystem
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 8
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- node_accelerator_0_voltageregulator_0_energy
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Accelerator
+    - parental_index: 0
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: None
+    - message_id: Energy
+    - device_specific_context: None
+- node_accelerator_1_voltageregulator_0_energy
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Accelerator
+    - parental_index: 1
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: None
+    - message_id: Energy
+    - device_specific_context: None
+- node_accelerator_2_voltageregulator_0_energy
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Accelerator
+    - parental_index: 2
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: None
+    - message_id: Energy
+    - device_specific_context: None
+- node_accelerator_3_voltageregulator_0_energy
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Accelerator
+    - parental_index: 3
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: None
+    - message_id: Energy
+    - device_specific_context: None
+- node_chassis_cpusubsystem_0_output_energy
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Chassis
+    - parental_index: None
+    - physical_context: CPUSubsystem
+    - index: 0
+    - physical_sub_context: Output
+    - message_id: Energy
+    - device_specific_context: None
+- node_chassis_memorysubsystem_0_output_energy
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Chassis
+    - parental_index: None
+    - physical_context: MemorySubsystem
+    - index: 0
+    - physical_sub_context: Output
+    - message_id: Energy
+    - device_specific_context: None
+- node_chassis_voltageregulator_0_input_energy
+    - type: DOUBLE
+    - location_type: node
+    - telemetry_source: nC
+    - interval: 1 min
+    - parental_context: Chassis
+    - parental_index: None
+    - physical_context: VoltageRegulator
+    - index: 0
+    - physical_sub_context: Input
+    - message_id: Energy
+    - device_specific_context: None
+- allocation_id
+    - Allocation Id of the job associated with this record
+    - type: STRING
+- job_time_start
+    - Start time of the job associated with this record
+    - type: TIMESTAMP
+
+## Stats
+
+|name                                                    |min    |max          |mean        |median     |stddev        |
+|--------------------------------------------------------|-------|-------------|------------|-----------|--------------|
+|row                                                     |0      |6            |            |           |              |
+|col                                                     |0      |11           |            |           |              |
+|chassis                                                 |0      |7            |            |           |              |
+|blade                                                   |0      |7            |            |           |              |
+|node                                                    |0      |1            |            |           |              |
+|board_chassis_voltageregulator_0_input_power            |66.25  |117.29       |99.93       |100        |2.46          |
+|node_chassis_voltageregulator_0_input_power             |39     |64205        |635.96      |614.29     |179.25        |
+|node_chassis_voltageregulator_2_input_power             |73.73  |477.29       |206.45      |202.64     |18.44         |
+|board_board_0_voltageregulator_0_power                  |8      |11753        |12.92       |13         |11.54         |
+|board_board_0_voltageregulator_1_power                  |0      |11731        |8.32        |8          |10.05         |
+|board_board_1_voltageregulator_0_power                  |10     |18           |12.86       |13         |0.67          |
+|board_board_1_voltageregulator_1_power                  |0      |9            |8.3         |8          |0.46          |
+|node_accelerator_0_voltageregulator_0_input_power       |48.06  |889.16       |100.94      |94.14      |41.9          |
+|node_accelerator_1_voltageregulator_0_input_power       |4.61   |818.3        |99.32       |92.83      |41.36         |
+|node_accelerator_2_voltageregulator_0_input_power       |26.99  |824.23       |99.64       |92.83      |41.23         |
+|node_accelerator_3_voltageregulator_0_input_power       |26.33  |824.89       |98.9        |92.17      |40.86         |
+|node_chassis_cpusubsystem_0_output_power                |20     |357          |36.93       |34         |13.42         |
+|node_chassis_memorysubsystem_0_output_power             |10     |135          |67.95       |69         |5.54          |
+|node_chassis_voltageregulator_0_output_power            |0      |3515         |607.37      |590        |174.33        |
+|node_chassis_voltageregulator_3_output_power            |5.06   |6.88         |5.86        |5.91       |0.22          |
+|node_chassis_voltageregulator_4_output_power            |0      |22.38        |7.58        |7.45       |0.53          |
+|node_chassis_voltageregulator_5_output_power            |1.24   |1.72         |1.5         |1.48       |0.07          |
+|node_cpu_0_0_power_synthesized                          |18     |355          |35.43       |33         |13.42         |
+|node_cpu_0_1_power_synthesized                          |10     |135          |67.95       |69         |5.54          |
+|node_cpu_0_2_power_reported                             |0      |243.48       |96.76       |94.5       |13.58         |
+|node_cpu_0_3_power_reported                             |0      |330          |11.12       |8          |11.86         |
+|node_cpu_0_4_power_reported                             |14     |293          |145.92      |145        |11.91         |
+|node_cpu_0_voltageregulator_0_output_power              |0      |1.7          |0.82        |0.84       |0.12          |
+|node_cpu_0_voltageregulator_1_output_power              |0      |0.84         |0           |0          |0.01          |
+|node_cpu_0_voltageregulator_5_output_power              |0      |4.12         |2.04        |2.27       |0.41          |
+|node_cpu_0_voltageregulator_6_input_power               |11     |55           |21.49       |22         |4.09          |
+|node_cpu_0_voltageregulator_6_output_power              |11     |47           |19.94       |21         |3.52          |
+|node_gpusubsystem_accelerator_0_power                   |0      |688          |93.33       |90         |36.99         |
+|node_gpusubsystem_accelerator_1_power                   |0      |753          |91.69       |88         |36.22         |
+|node_gpusubsystem_accelerator_2_power                   |0      |657          |91.68       |88         |36.71         |
+|node_gpusubsystem_accelerator_3_power                   |0      |671          |91.11       |87         |36.08         |
+|node_memorysubsystem_0_power                            |0      |83.92        |62.23       |62.19      |3.37          |
+|node_memorysubsystem_0_voltageregulator_2_output_power  |0      |3.24         |0.11        |0          |0.29          |
+|node_memorysubsystem_0_voltageregulator_3_output_power  |0      |3.24         |0.14        |0          |0.31          |
+|node_memorysubsystem_0_voltageregulator_7_input_power   |7      |152          |72.96       |74         |6.34          |
+|node_memorysubsystem_0_voltageregulator_7_output_power  |5      |68           |31.38       |31         |2.42          |
+|node_memorysubsystem_0_voltageregulator_8_input_power   |7      |155          |72.96       |74         |6.33          |
+|node_memorysubsystem_0_voltageregulator_8_output_power  |5      |69           |36.27       |38         |4.21          |
+|board_board_0_asic_0_temperature                        |47     |111          |55.1        |55         |2.2           |
+|board_board_0_asic_1_temperature                        |8      |822          |54.71       |55         |2.44          |
+|board_board_0_dcbus_0_voltage                           |0      |11.89        |11.72       |11.72      |0.18          |
+|board_board_0_dcbus_1_voltage                           |0.01   |11.9         |11.72       |11.72      |0.12          |
+|board_board_0_networkingdevice_0_metric_pcscorrectedcw  |1865   |1054027859585|362392093.86|3094329    |14221099801.69|
+|board_board_0_networkingdevice_1_metric_pcsfeclerrors6  |0      |301554111870 |50046373.73 |21185      |3256101222.18 |
+|board_board_0_systemboard_0_temperature                 |39     |82           |43.9        |44         |1.31          |
+|board_board_0_systemboard_1_temperature                 |13     |82           |37.77       |38         |1.46          |
+|board_board_0_systemboard_2_voltage                     |0.05   |0.9          |0.88        |0.88       |0             |
+|board_board_0_systemboard_3_voltage                     |0.01   |0.91         |0.9         |0.9        |0             |
+|board_board_0_systemboard_4_voltage                     |0.01   |1.58         |0.9         |0.9        |0.01          |
+|board_board_0_systemboard_5_voltage                     |0.01   |1.1          |1.09        |1.09       |0.01          |
+|board_board_0_systemboard_6_voltage                     |0      |5.01         |2.49        |2.49       |0.03          |
+|board_board_0_voltage                                   |4.93   |5.08         |5           |4.99       |0.02          |
+|board_board_0_voltageregulator_0_current                |13.6   |22.1         |15.94       |15.9       |0.56          |
+|board_board_0_voltageregulator_0_temperature            |8      |902          |44.93       |45         |2.16          |
+|board_board_0_voltageregulator_0_voltage                |0.01   |0.87         |0.83        |0.82       |0.01          |
+|board_board_0_voltageregulator_1_current                |0.2    |13.2         |9.76        |9.8        |0.29          |
+|board_board_0_voltageregulator_1_temperature            |8      |11709        |46.8        |47         |17.06         |
+|board_board_0_voltageregulator_1_voltage                |0.9    |0.9          |0.9         |0.9        |0             |
+|board_board_1_asic_0_temperature                        |44     |106          |53.96       |54         |2.22          |
+|board_board_1_asic_1_temperature                        |44     |106          |53.64       |54         |2.24          |
+|board_board_1_dcbus_0_voltage                           |11.31  |22.52        |11.78       |11.78      |0.2           |
+|board_board_1_dcbus_1_voltage                           |4.16   |22.52        |11.79       |11.78      |0.21          |
+|board_board_1_networkingdevice_0_metric_pcscorrectedcw  |0      |402598884331 |208358489.96|3495890    |7150683451.8  |
+|board_board_1_networkingdevice_1_metric_pcsfeclerrors6  |0      |1297256323   |714759.85   |23173      |14311432.8    |
+|board_board_1_systemboard_0_temperature                 |36     |81           |42.53       |43         |1.27          |
+|board_board_1_systemboard_1_temperature                 |28     |81           |36.56       |37         |1.42          |
+|board_board_1_systemboard_2_voltage                     |0.88   |2.05         |0.88        |0.88       |0.02          |
+|board_board_1_systemboard_3_voltage                     |0.88   |2.05         |0.9         |0.9        |0.02          |
+|board_board_1_systemboard_4_voltage                     |0      |2.05         |0.9         |0.9        |0.02          |
+|board_board_1_systemboard_5_voltage                     |1.08   |2.05         |1.09        |1.09       |0.02          |
+|board_board_1_systemboard_6_voltage                     |2.46   |4.09         |2.49        |2.49       |0.03          |
+|board_board_1_voltage                                   |4.93   |6.36         |5           |4.99       |0.03          |
+|board_board_1_voltageregulator_0_current                |12.8   |20.4         |15.9        |15.9       |0.56          |
+|board_board_1_voltageregulator_0_temperature            |37     |81           |43.74       |44         |1.8           |
+|board_board_1_voltageregulator_0_voltage                |0.79   |0.87         |0.83        |0.82       |0.01          |
+|board_board_1_voltageregulator_1_current                |0.1    |10.9         |9.76        |9.8        |0.28          |
+|board_board_1_voltageregulator_1_temperature            |33     |81           |45.23       |45         |1.93          |
+|board_board_1_voltageregulator_1_voltage                |0.9    |0.9          |0.9         |0.9        |0             |
+|board_chassis_0_temperature                             |32     |56           |37.54       |38         |0.75          |
+|board_chassis_systemboard_0_temperature                 |33     |62           |38.41       |38         |1.15          |
+|board_chassis_voltageregulator_0_input_voltage          |11.75  |12.19        |11.98       |12         |0.07          |
+|board_chassis_voltageregulator_0_output_current         |5.5    |9.81         |8.32        |8.31       |0.22          |
+|board_chassis_voltageregulator_0_output_voltage         |11.69  |12.22        |11.95       |11.94      |0.08          |
+|board_chassis_voltageregulator_0_temperature            |25     |46           |32.59       |33         |1.7           |
+|node_accelerator_0_voltageregulator_0_input_current     |1.23   |18.78        |2.11        |1.96       |0.9           |
+|node_accelerator_0_voltageregulator_0_input_voltage     |38.43  |48.4         |47.81       |47.79      |0.2           |
+|node_accelerator_0_voltageregulator_0_output_voltage    |36.94  |48.42        |47.85       |47.8       |0.23          |
+|node_accelerator_0_voltageregulator_0_temperature       |29.1   |49.6         |32.99       |32.9       |1.2           |
+|node_accelerator_1_voltageregulator_0_input_current     |0.48   |17.5         |2.08        |1.93       |0.89          |
+|node_accelerator_1_voltageregulator_0_input_voltage     |42.42  |48.42        |47.81       |47.79      |0.15          |
+|node_accelerator_1_voltageregulator_0_output_voltage    |42.05  |48.4         |47.84       |47.8       |0.16          |
+|node_accelerator_1_voltageregulator_0_temperature       |5.3    |75.5         |33.57       |33.6       |1.11          |
+|node_accelerator_2_voltageregulator_0_input_current     |0.6    |17.38        |2.09        |1.94       |0.88          |
+|node_accelerator_2_voltageregulator_0_input_voltage     |43.59  |50.28        |47.81       |47.79      |0.15          |
+|node_accelerator_2_voltageregulator_0_output_voltage    |42.83  |50.13        |47.85       |47.8       |0.16          |
+|node_accelerator_2_voltageregulator_0_temperature       |-49.1  |112.3        |33          |32.9       |1.12          |
+|node_accelerator_3_voltageregulator_0_input_current     |0.46   |18.23        |2.07        |1.92       |0.88          |
+|node_accelerator_3_voltageregulator_0_input_voltage     |42.7   |50.99        |47.81       |47.79      |0.15          |
+|node_accelerator_3_voltageregulator_0_output_voltage    |42.66  |51.06        |47.84       |47.8       |0.16          |
+|node_accelerator_3_voltageregulator_0_temperature       |-59.7  |109.9        |32.89       |32.9       |1.1           |
+|node_chassis_gpusubsystem_0_temperature                 |0      |84           |48.99       |49         |4.98          |
+|node_chassis_gpusubsystem_1_temperature                 |0      |83           |49.58       |50         |4.44          |
+|node_chassis_gpusubsystem_2_temperature                 |0      |75           |47.71       |48         |3.92          |
+|node_chassis_gpusubsystem_3_temperature                 |0      |72           |48.2        |48         |3.94          |
+|node_chassis_gpusubsystem_4_temperature                 |0      |84           |48.51       |49         |4.84          |
+|node_chassis_gpusubsystem_5_temperature                 |0      |83           |49.05       |49         |4.47          |
+|node_chassis_gpusubsystem_6_temperature                 |0      |72           |47.22       |47         |4.05          |
+|node_chassis_gpusubsystem_7_temperature                 |0      |73           |47.76       |48         |3.82          |
+|node_chassis_voltageregulator_0_input_voltage           |375.4  |389.3        |383.27      |383.3      |0.56          |
+|node_chassis_voltageregulator_0_output_current          |0      |75.91        |12.73       |12.34      |3.74          |
+|node_chassis_voltageregulator_0_output_voltage          |46.37  |48.1         |47.76       |47.76      |0.09          |
+|node_chassis_voltageregulator_0_temperature             |30     |84           |35.8        |36         |2.36          |
+|node_chassis_voltageregulator_1_temperature             |-179   |71           |38.36       |37.4       |2.28          |
+|node_chassis_voltageregulator_2_input_current           |1.59   |10.73        |4.33        |4.26       |0.45          |
+|node_chassis_voltageregulator_2_input_voltage           |46.27  |48.55        |47.81       |47.77      |0.15          |
+|node_chassis_voltageregulator_2_output_voltage          |46.18  |48.51        |47.84       |47.8       |0.16          |
+|node_chassis_voltageregulator_2_temperature             |28.4   |42.9         |32.86       |32.9       |1.02          |
+|node_chassis_voltageregulator_3_input_voltage           |11.25  |11.84        |11.69       |11.69      |0.05          |
+|node_chassis_voltageregulator_3_output_current          |5.94   |8.19         |7.04        |7.06       |0.24          |
+|node_chassis_voltageregulator_3_output_voltage          |0.84   |0.86         |0.85        |0.85       |0             |
+|node_chassis_voltageregulator_3_temperature             |44     |89           |49.98       |50         |2.24          |
+|node_chassis_voltageregulator_4_input_voltage           |11.28  |11.91        |11.71       |11.72      |0.05          |
+|node_chassis_voltageregulator_4_output_current          |0      |6.62         |2.39        |2.44       |0.16          |
+|node_chassis_voltageregulator_4_output_voltage          |3.28   |3.37         |3.32        |3.32       |0.01          |
+|node_chassis_voltageregulator_4_temperature             |38     |80           |43.28       |43         |2.09          |
+|node_chassis_voltageregulator_5_input_voltage           |11.28  |12           |11.72       |11.72      |0.05          |
+|node_chassis_voltageregulator_5_output_current          |1.5    |2.06         |1.9         |1.94       |0.08          |
+|node_chassis_voltageregulator_5_output_voltage          |0.84   |0.87         |0.85        |0.85       |0             |
+|node_chassis_voltageregulator_5_temperature             |38     |82           |43.56       |43         |2.12          |
+|node_chassis_voltageregulator_6_temperature             |48     |113          |51.21       |51         |1.82          |
+|node_cpu_0_0_energy_synthesized                         |969499 |221353557    |51401358.57 |52299636   |5736795.39    |
+|node_cpu_0_1_energy_synthesized                         |2012021|61966203     |55720963.66 |56330609   |4657521.93    |
+|node_cpu_0_temperature                                  |32.62  |63.38        |40.46       |39.75      |2.98          |
+|node_cpu_0_voltageregulator_0_input_voltage             |11.34  |12.28        |11.84       |11.81      |0.1           |
+|node_cpu_0_voltageregulator_0_output_current            |0.19   |0.56         |0.3         |0.25       |0.08          |
+|node_cpu_0_voltageregulator_0_output_voltage            |3.32   |3.43         |3.37        |3.37       |0.01          |
+|node_cpu_0_voltageregulator_0_temperature               |35     |70           |41.4        |41         |1.71          |
+|node_cpu_0_voltageregulator_1_input_voltage             |11.19  |12.16        |11.76       |11.75      |0.09          |
+|node_cpu_0_voltageregulator_1_output_current            |0      |0.25         |0           |0          |0             |
+|node_cpu_0_voltageregulator_1_output_voltage            |3.31   |3.42         |3.37        |3.36       |0.01          |
+|node_cpu_0_voltageregulator_1_temperature               |37     |64           |42.16       |42         |1.6           |
+|node_cpu_0_voltageregulator_4_input_current             |0      |292          |0.25        |0.12       |2.5           |
+|node_cpu_0_voltageregulator_4_input_voltage             |46     |51.5         |47.75       |47.75      |0.22          |
+|node_cpu_0_voltageregulator_4_output_current            |0.5    |291          |11.56       |8          |10.44         |
+|node_cpu_0_voltageregulator_4_output_voltage            |0      |2            |0.92        |0.81       |0.17          |
+|node_cpu_0_voltageregulator_4_temperature               |23     |255          |56.35       |56         |3.02          |
+|node_cpu_0_voltageregulator_5_input_voltage             |11.44  |12.03        |11.84       |11.84      |0.05          |
+|node_cpu_0_voltageregulator_5_output_current            |0.19   |2.25         |1.23        |1.25       |0.21          |
+|node_cpu_0_voltageregulator_5_output_voltage            |1.81   |1.84         |1.82        |1.82       |0             |
+|node_cpu_0_voltageregulator_5_temperature               |39     |65           |42.95       |43         |1.47          |
+|node_cpu_0_voltageregulator_6_input_current             |1.29   |4.76         |1.85        |1.91       |0.36          |
+|node_cpu_0_voltageregulator_6_input_voltage             |11.16  |11.91        |11.69       |11.7       |0.05          |
+|node_cpu_0_voltageregulator_6_output_current            |14.1   |49.4         |20.35       |20.9       |3.53          |
+|node_cpu_0_voltageregulator_6_output_voltage            |0.94   |1.09         |1           |1          |0.01          |
+|node_cpu_0_voltageregulator_6_temperature               |36     |56           |41.41       |41         |2.03          |
+|node_gpusubsystem_gpu_0_temperature                     |0      |80           |39.07       |39         |4.51          |
+|node_gpusubsystem_gpu_1_temperature                     |0      |79           |42          |42         |4.37          |
+|node_gpusubsystem_gpu_2_temperature                     |0      |66           |37.45       |37         |3.63          |
+|node_gpusubsystem_gpu_3_temperature                     |0      |68           |39.73       |40         |3.8           |
+|node_gpusubsystem_gpu_4_temperature                     |0      |78           |38.54       |38         |4.29          |
+|node_gpusubsystem_gpu_5_temperature                     |0      |78           |40.96       |41         |4.29          |
+|node_gpusubsystem_gpu_6_temperature                     |0      |66           |36.82       |37         |3.87          |
+|node_gpusubsystem_gpu_7_temperature                     |0      |67           |39.12       |39         |3.79          |
+|node_memorysubsystem_0_voltageregulator_2_input_voltage |11.22  |12.09        |11.74       |11.75      |0.08          |
+|node_memorysubsystem_0_voltageregulator_2_output_current|0      |1.12         |0.08        |0          |0.14          |
+|node_memorysubsystem_0_voltageregulator_2_output_voltage|2.55   |2.66         |2.6         |2.6        |0.01          |
+|node_memorysubsystem_0_voltageregulator_2_temperature   |35     |51           |39.77       |40         |1.45          |
+|node_memorysubsystem_0_voltageregulator_3_input_voltage |11.31  |12.19        |11.84       |11.84      |0.08          |
+|node_memorysubsystem_0_voltageregulator_3_output_current|0      |1.12         |0.1         |0          |0.14          |
+|node_memorysubsystem_0_voltageregulator_3_output_voltage|2.54   |2.66         |2.6         |2.6        |0.01          |
+|node_memorysubsystem_0_voltageregulator_3_temperature   |41     |61           |45.97       |46         |1.69          |
+|node_memorysubsystem_0_voltageregulator_7_input_current |0.82   |13.03        |6.23        |6.31       |0.55          |
+|node_memorysubsystem_0_voltageregulator_7_input_voltage |11.32  |12.06        |11.78       |11.78      |0.05          |
+|node_memorysubsystem_0_voltageregulator_7_output_current|4.2    |56.1         |26.61       |26.2       |2.01          |
+|node_memorysubsystem_0_voltageregulator_7_output_voltage|1.2    |1.2          |1.2         |1.2        |0             |
+|node_memorysubsystem_0_voltageregulator_7_temperature   |30     |59           |37.95       |38         |1.79          |
+|node_memorysubsystem_0_voltageregulator_8_input_current |0.83   |12.81        |6.23        |6.3        |0.55          |
+|node_memorysubsystem_0_voltageregulator_8_input_voltage |11.32  |12.06        |11.78       |11.78      |0.05          |
+|node_memorysubsystem_0_voltageregulator_8_output_current|4.9    |57           |30.69       |31.7       |3.5           |
+|node_memorysubsystem_0_voltageregulator_8_output_voltage|1.2    |1.2          |1.2         |1.2        |0             |
+|node_memorysubsystem_0_voltageregulator_8_temperature   |39     |66           |51.41       |51         |2.08          |
+|node_accelerator_0_voltageregulator_0_energy            |2867725|177548944    |130654375.56|130984712.5|15387863.93   |
+|node_accelerator_1_voltageregulator_0_energy            |2712785|172702477    |129106802.03|129459407  |15221702.17   |
+|node_accelerator_2_voltageregulator_0_energy            |2769090|178383842    |129707713.28|130016656.5|15327507.65   |
+|node_accelerator_3_voltageregulator_0_energy            |2806865|175116909    |128585437.76|128922821  |15188260.89   |
+|node_chassis_cpusubsystem_0_output_energy               |1024655|222397805    |52508056.78 |53429793   |5799817.45    |
+|node_chassis_memorysubsystem_0_output_energy            |2012021|61966203     |55720963.66 |56330609   |4657521.93    |
+|node_chassis_voltageregulator_0_input_energy            |4855090|1191424437   |747944349.43|752548297  |78753616.42   |

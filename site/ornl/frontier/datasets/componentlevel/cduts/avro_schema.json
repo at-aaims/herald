@@ -1,0 +1,436 @@
+{
+    "type": "record",
+    "name": "CrayexCDUTSSchema",
+    "fields": [
+        {
+            "name": "timestamp",
+            "type": {
+                "type": "long",
+                "logicalType": "timestamp-micros"
+            },
+            "doc": "Time of the measurement"
+        },
+        {
+            "name": "xname",
+            "type": "string",
+            "doc": "Unique identifier for the cdu of the measurement, e.g. x2509c4.\nNote that this is technically the hostname of the adjacent chassis."
+        },
+        {
+            "name": "row",
+            "type": "long",
+            "doc": "Row index of the node"
+        },
+        {
+            "name": "col",
+            "type": "long",
+            "doc": "Col index of the node"
+        },
+        {
+            "name": "cdu_coolingsubsystem_0_acinput_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: cdu, telemetry_source: cC, interval: 15 sec,\n    parental_context: CoolingSubsystem, parental_index: 0, physical_context: ACInput,\n    index: null, physical_sub_context: null, message_id: Power,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "cdu_coolingsubsystem_0_motor_1_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: cdu, telemetry_source: cC, interval: 15 sec,\n    parental_context: CoolingSubsystem, parental_index: 0, physical_context: Motor,\n    index: 1, physical_sub_context: null, message_id: Power,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "cdu_coolingsubsystem_0_motor_2_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: cdu, telemetry_source: cC, interval: 15 sec,\n    parental_context: CoolingSubsystem, parental_index: 0, physical_context: Motor,\n    index: 2, physical_sub_context: null, message_id: Power,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "cdu_coolingsubsystem_0_acinput_current_line3",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: cdu, telemetry_source: cC, interval: 1 min,\n    parental_context: CoolingSubsystem, parental_index: 0, physical_context: ACInput,\n    index: null, physical_sub_context: null, message_id: Current,\n    device_specific_context: Line3\n)"
+        },
+        {
+            "name": "cdu_coolingsubsystem_0_acinput_frequency",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: cdu, telemetry_source: cC, interval: 1 min,\n    parental_context: CoolingSubsystem, parental_index: 0, physical_context: ACInput,\n    index: null, physical_sub_context: null, message_id: Frequency,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "cdu_coolingsubsystem_0_acinput_voltage_line3toline1",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: cdu, telemetry_source: cC, interval: 1 min,\n    parental_context: CoolingSubsystem, parental_index: 0, physical_context: ACInput,\n    index: null, physical_sub_context: null, message_id: Voltage,\n    device_specific_context: Line3ToLine1\n)"
+        },
+        {
+            "name": "cdu_coolingsubsystem_0_actuator_1_percent",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: cdu, telemetry_source: cC, interval: 1 min,\n    parental_context: CoolingSubsystem, parental_index: 0, physical_context: Actuator,\n    index: 1, physical_sub_context: null, message_id: Percent,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "cdu_coolingsubsystem_0_actuator_2_percent",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: cdu, telemetry_source: cC, interval: 1 min,\n    parental_context: CoolingSubsystem, parental_index: 0, physical_context: Actuator,\n    index: 2, physical_sub_context: null, message_id: Percent,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "cdu_coolingsubsystem_0_actuator_input_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: cdu, telemetry_source: cC, interval: 1 min,\n    parental_context: CoolingSubsystem, parental_index: 0, physical_context: Actuator,\n    index: null, physical_sub_context: Input, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "cdu_coolingsubsystem_0_dcbus_1_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: cdu, telemetry_source: cC, interval: 1 min,\n    parental_context: CoolingSubsystem, parental_index: 0, physical_context: DCBus,\n    index: 1, physical_sub_context: null, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "cdu_coolingsubsystem_0_dcbus_2_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: cdu, telemetry_source: cC, interval: 1 min,\n    parental_context: CoolingSubsystem, parental_index: 0, physical_context: DCBus,\n    index: 2, physical_sub_context: null, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "cdu_coolingsubsystem_0_filter_1_pressure_secondary",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: cdu, telemetry_source: cC, interval: 1 min,\n    parental_context: CoolingSubsystem, parental_index: 0, physical_context: Filter,\n    index: 1, physical_sub_context: null, message_id: Pressure,\n    device_specific_context: Secondary\n)"
+        },
+        {
+            "name": "cdu_coolingsubsystem_0_filter_pressure_secondary",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: cdu, telemetry_source: cC, interval: 1 min,\n    parental_context: CoolingSubsystem, parental_index: 0, physical_context: Filter,\n    index: null, physical_sub_context: null, message_id: Pressure,\n    device_specific_context: Secondary\n)"
+        },
+        {
+            "name": "cdu_coolingsubsystem_0_liquidinlet_0_liquidflow_primary",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: cdu, telemetry_source: cC, interval: 1 min,\n    parental_context: CoolingSubsystem, parental_index: 0, physical_context: LiquidInlet,\n    index: 0, physical_sub_context: null, message_id: LiquidFlow,\n    device_specific_context: Primary\n)"
+        },
+        {
+            "name": "cdu_coolingsubsystem_0_liquidinlet_0_pressure_primary",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: cdu, telemetry_source: cC, interval: 1 min,\n    parental_context: CoolingSubsystem, parental_index: 0, physical_context: LiquidInlet,\n    index: 0, physical_sub_context: null, message_id: Pressure,\n    device_specific_context: Primary\n)"
+        },
+        {
+            "name": "cdu_coolingsubsystem_0_liquidinlet_0_temperature_primary",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: cdu, telemetry_source: cC, interval: 1 min,\n    parental_context: CoolingSubsystem, parental_index: 0, physical_context: LiquidInlet,\n    index: 0, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: Primary\n)"
+        },
+        {
+            "name": "cdu_coolingsubsystem_0_liquidinlet_1_pressure_secondary",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: cdu, telemetry_source: cC, interval: 1 min,\n    parental_context: CoolingSubsystem, parental_index: 0, physical_context: LiquidInlet,\n    index: 1, physical_sub_context: null, message_id: Pressure,\n    device_specific_context: Secondary\n)"
+        },
+        {
+            "name": "cdu_coolingsubsystem_0_liquidinlet_1_temperature_secondary",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: cdu, telemetry_source: cC, interval: 1 min,\n    parental_context: CoolingSubsystem, parental_index: 0, physical_context: LiquidInlet,\n    index: 1, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: Secondary\n)"
+        },
+        {
+            "name": "cdu_coolingsubsystem_0_liquidinlet_2_pressure_secondary",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: cdu, telemetry_source: cC, interval: 1 min,\n    parental_context: CoolingSubsystem, parental_index: 0, physical_context: LiquidInlet,\n    index: 2, physical_sub_context: null, message_id: Pressure,\n    device_specific_context: Secondary\n)"
+        },
+        {
+            "name": "cdu_coolingsubsystem_0_liquidinlet_2_temperature_secondary",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: cdu, telemetry_source: cC, interval: 1 min,\n    parental_context: CoolingSubsystem, parental_index: 0, physical_context: LiquidInlet,\n    index: 2, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: Secondary\n)"
+        },
+        {
+            "name": "cdu_coolingsubsystem_0_liquidoutlet_0_liquidflow_secondary",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: cdu, telemetry_source: cC, interval: 1 min,\n    parental_context: CoolingSubsystem, parental_index: 0, physical_context: LiquidOutlet,\n    index: 0, physical_sub_context: null, message_id: LiquidFlow,\n    device_specific_context: Secondary\n)"
+        },
+        {
+            "name": "cdu_coolingsubsystem_0_liquidoutlet_0_pressure_primary",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: cdu, telemetry_source: cC, interval: 1 min,\n    parental_context: CoolingSubsystem, parental_index: 0, physical_context: LiquidOutlet,\n    index: 0, physical_sub_context: null, message_id: Pressure,\n    device_specific_context: Primary\n)"
+        },
+        {
+            "name": "cdu_coolingsubsystem_0_liquidoutlet_0_temperature_primary",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: cdu, telemetry_source: cC, interval: 1 min,\n    parental_context: CoolingSubsystem, parental_index: 0, physical_context: LiquidOutlet,\n    index: 0, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: Primary\n)"
+        },
+        {
+            "name": "cdu_coolingsubsystem_0_liquidoutlet_1_pressure_secondary",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: cdu, telemetry_source: cC, interval: 1 min,\n    parental_context: CoolingSubsystem, parental_index: 0, physical_context: LiquidOutlet,\n    index: 1, physical_sub_context: null, message_id: Pressure,\n    device_specific_context: Secondary\n)"
+        },
+        {
+            "name": "cdu_coolingsubsystem_0_liquidoutlet_1_temperature_secondary",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: cdu, telemetry_source: cC, interval: 1 min,\n    parental_context: CoolingSubsystem, parental_index: 0, physical_context: LiquidOutlet,\n    index: 1, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: Secondary\n)"
+        },
+        {
+            "name": "cdu_coolingsubsystem_0_liquidoutlet_2_pressure_secondary",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: cdu, telemetry_source: cC, interval: 1 min,\n    parental_context: CoolingSubsystem, parental_index: 0, physical_context: LiquidOutlet,\n    index: 2, physical_sub_context: null, message_id: Pressure,\n    device_specific_context: Secondary\n)"
+        },
+        {
+            "name": "cdu_coolingsubsystem_0_liquidoutlet_2_temperature_secondary",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: cdu, telemetry_source: cC, interval: 1 min,\n    parental_context: CoolingSubsystem, parental_index: 0, physical_context: LiquidOutlet,\n    index: 2, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: Secondary\n)"
+        },
+        {
+            "name": "cdu_coolingsubsystem_0_motor_1_current",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: cdu, telemetry_source: cC, interval: 1 min,\n    parental_context: CoolingSubsystem, parental_index: 0, physical_context: Motor,\n    index: 1, physical_sub_context: null, message_id: Current,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "cdu_coolingsubsystem_0_motor_1_frequency",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: cdu, telemetry_source: cC, interval: 1 min,\n    parental_context: CoolingSubsystem, parental_index: 0, physical_context: Motor,\n    index: 1, physical_sub_context: null, message_id: Frequency,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "cdu_coolingsubsystem_0_motor_1_output_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: cdu, telemetry_source: cC, interval: 1 min,\n    parental_context: CoolingSubsystem, parental_index: 0, physical_context: Motor,\n    index: 1, physical_sub_context: Output, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "cdu_coolingsubsystem_0_motor_1_percent",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: cdu, telemetry_source: cC, interval: 1 min,\n    parental_context: CoolingSubsystem, parental_index: 0, physical_context: Motor,\n    index: 1, physical_sub_context: null, message_id: Percent,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "cdu_coolingsubsystem_0_motor_1_rotational",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: cdu, telemetry_source: cC, interval: 1 min,\n    parental_context: CoolingSubsystem, parental_index: 0, physical_context: Motor,\n    index: 1, physical_sub_context: null, message_id: Rotational,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "cdu_coolingsubsystem_0_motor_2_current",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: cdu, telemetry_source: cC, interval: 1 min,\n    parental_context: CoolingSubsystem, parental_index: 0, physical_context: Motor,\n    index: 2, physical_sub_context: null, message_id: Current,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "cdu_coolingsubsystem_0_motor_2_frequency",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: cdu, telemetry_source: cC, interval: 1 min,\n    parental_context: CoolingSubsystem, parental_index: 0, physical_context: Motor,\n    index: 2, physical_sub_context: null, message_id: Frequency,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "cdu_coolingsubsystem_0_motor_2_output_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: cdu, telemetry_source: cC, interval: 1 min,\n    parental_context: CoolingSubsystem, parental_index: 0, physical_context: Motor,\n    index: 2, physical_sub_context: Output, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "cdu_coolingsubsystem_0_motor_2_percent",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: cdu, telemetry_source: cC, interval: 1 min,\n    parental_context: CoolingSubsystem, parental_index: 0, physical_context: Motor,\n    index: 2, physical_sub_context: null, message_id: Percent,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "cdu_coolingsubsystem_0_motor_2_rotational",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: cdu, telemetry_source: cC, interval: 1 min,\n    parental_context: CoolingSubsystem, parental_index: 0, physical_context: Motor,\n    index: 2, physical_sub_context: null, message_id: Rotational,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "cdu_coolingsubsystem_0_motor_input_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: cdu, telemetry_source: cC, interval: 1 min,\n    parental_context: CoolingSubsystem, parental_index: 0, physical_context: Motor,\n    index: null, physical_sub_context: Input, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "cdu_coolingsubsystem_0_pump_1_input_pressure_secondary",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: cdu, telemetry_source: cC, interval: 1 min,\n    parental_context: CoolingSubsystem, parental_index: 0, physical_context: Pump,\n    index: 1, physical_sub_context: Input, message_id: Pressure,\n    device_specific_context: Secondary\n)"
+        },
+        {
+            "name": "cdu_coolingsubsystem_0_pump_2_input_pressure_secondary",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: cdu, telemetry_source: cC, interval: 1 min,\n    parental_context: CoolingSubsystem, parental_index: 0, physical_context: Pump,\n    index: 2, physical_sub_context: Input, message_id: Pressure,\n    device_specific_context: Secondary\n)"
+        },
+        {
+            "name": "cdu_coolingsubsystem_0_pump_pressure_secondary",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: cdu, telemetry_source: cC, interval: 1 min,\n    parental_context: CoolingSubsystem, parental_index: 0, physical_context: Pump,\n    index: null, physical_sub_context: null, message_id: Pressure,\n    device_specific_context: Secondary\n)"
+        },
+        {
+            "name": "cdu_coolingsubsystem_0_room_1_humidity",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: cdu, telemetry_source: cC, interval: 1 min,\n    parental_context: CoolingSubsystem, parental_index: 0, physical_context: Room,\n    index: 1, physical_sub_context: null, message_id: Humidity,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "cdu_coolingsubsystem_0_room_1_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: cdu, telemetry_source: cC, interval: 1 min,\n    parental_context: CoolingSubsystem, parental_index: 0, physical_context: Room,\n    index: 1, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "cdu_coolingsubsystem_0_system_pressure_secondary",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: cdu, telemetry_source: cC, interval: 1 min,\n    parental_context: CoolingSubsystem, parental_index: 0, physical_context: System,\n    index: null, physical_sub_context: null, message_id: Pressure,\n    device_specific_context: Secondary\n)"
+        },
+        {
+            "name": "cdu_coolingsubsystem_0_systemboard_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: cdu, telemetry_source: cC, interval: 1 min,\n    parental_context: CoolingSubsystem, parental_index: 0, physical_context: SystemBoard,\n    index: null, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        }
+    ],
+    "namespace": "base",
+    "doc": "Usage docs: https://docs.pydantic.dev/2.7/concepts/models/"
+}

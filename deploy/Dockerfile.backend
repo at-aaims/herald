@@ -1,0 +1,62 @@
+# deploy/Dockerfile.backend — dev container for the FastAPI backend.
+#
+# Dev-oriented: source is bind-mounted at runtime (see deploy/docker-compose.yml)
+# and uvicorn runs with --reload, so this mirrors `make api`'s live-editing
+# workflow rather than being an immutable production build.
+FROM python:3.12-slim
+
+# uv: drop-in replacement for pip, same requirements.txt / `-e .` workflow,
+# substantially faster resolution and installs. Copied from its official
+# distroless image rather than pip/curl-installed -- no bootstrap chicken-
+# and-egg, and the image pull goes through Docker's own registry client,
+# not pip, so it's unaffected by the proxy-cert handling below.
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /usr/local/bin/
+
+# make (for `make generate-data` in the entrypoint) + curl (healthchecks) +
+# ca-certificates (needed by the update-ca-certificates step below)
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    make curl ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
+
+# Trust the corporate TLS-inspecting proxy CA, if present in the build context
+# (deploy/ornl-netskope-ca.pem — not committed, see deploy/README.md). Without
+# this, every outbound HTTPS call from inside the container (Azure, PyPI,
+# HuggingFace, etc.) fails cert verification on networks that intercept TLS,
+# even though the host trusts it via its own (MDM-installed) system keychain.
+COPY deploy/ornl-netskope-ca.pem* /usr/local/share/ca-certificates/ornl-netskope-ca.crt
+RUN if [ -s /usr/local/share/ca-certificates/ornl-netskope-ca.crt ]; then \
+        update-ca-certificates; \
+    else \
+        rm -f /usr/local/share/ca-certificates/ornl-netskope-ca.crt; \
+    fi
+
+# Point Python's HTTP stack at the system bundle update-ca-certificates just
+# built, instead of (also) patching certifi's own bundle file directly.
+# Appending to certifi.where() used to be how this worked, but any later
+# step that reinstalls/upgrades certifi (e.g. `pip install -e .` below,
+# which can re-resolve deps) silently overwrites that file with a pristine
+# copy and erases the appended cert — happened in practice, not
+# hypothetical. Env vars aren't touched by any pip operation, so this is
+# robust to that regardless of step ordering.
+ENV SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
+ENV REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
+# uv's HTTP client (Rust/rustls) doesn't read SSL_CERT_FILE/REQUESTS_CA_BUNDLE
+# the way Python's requests/certifi do -- by default it trusts its own
+# bundled root list, not the OS trust store update-ca-certificates just
+# built. UV_SYSTEM_CERTS=1 switches it to the OS store instead, so it
+# actually sees the proxy CA trusted above.
+ENV UV_SYSTEM_CERTS=1
+
+WORKDIR /app
+
+COPY requirements.txt setup.py ./
+RUN uv pip install --system --no-cache -r requirements.txt
+
+COPY . .
+RUN uv pip install --system --no-cache -e .
+
+EXPOSE 8000
+# Invoked via `bash` rather than relying on the executable bit: the runtime
+# bind mount (see docker-compose.yml) shadows this image's files with the
+# host's, and a file written on the host isn't guaranteed to carry +x.
+ENTRYPOINT ["bash", "deploy/backend-entrypoint.sh"]

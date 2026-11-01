@@ -1,0 +1,615 @@
+# componentlevel/cduts
+This dataset is processed from crayextelemetry. It contains the crayextelemetry
+sensors for the 25 Frontier CDUs in wide format.
+
+- Saved: `s3a://<your-bucket>/tier1/frontier/componentlevel/cduts` as parquets
+- Stream: `src-ts-frontier-componentlevelcduts` as avro
+- Size: 5 MiB/day
+
+## Schema
+
+- timestamp
+    - Time of the measurement
+    - type: TIMESTAMP
+- xname
+    - Unique identifier for the cdu of the measurement, e.g. x2509c4.
+Note that this is technically the hostname of the adjacent chassis.
+    - type: STRING
+- row
+    - Row index of the node
+    - type: BIGINT
+- col
+    - Col index of the node
+    - type: BIGINT
+- cdu_coolingsubsystem_0_acinput_power
+    - type: DOUBLE
+    - location_type: cdu
+    - telemetry_source: cC
+    - interval: 15 sec
+    - parental_context: CoolingSubsystem
+    - parental_index: 0
+    - physical_context: ACInput
+    - index: None
+    - physical_sub_context: None
+    - message_id: Power
+    - device_specific_context: None
+- cdu_coolingsubsystem_0_motor_1_power
+    - type: DOUBLE
+    - location_type: cdu
+    - telemetry_source: cC
+    - interval: 15 sec
+    - parental_context: CoolingSubsystem
+    - parental_index: 0
+    - physical_context: Motor
+    - index: 1
+    - physical_sub_context: None
+    - message_id: Power
+    - device_specific_context: None
+- cdu_coolingsubsystem_0_motor_2_power
+    - type: DOUBLE
+    - location_type: cdu
+    - telemetry_source: cC
+    - interval: 15 sec
+    - parental_context: CoolingSubsystem
+    - parental_index: 0
+    - physical_context: Motor
+    - index: 2
+    - physical_sub_context: None
+    - message_id: Power
+    - device_specific_context: None
+- cdu_coolingsubsystem_0_acinput_current_line3
+    - type: DOUBLE
+    - location_type: cdu
+    - telemetry_source: cC
+    - interval: 1 min
+    - parental_context: CoolingSubsystem
+    - parental_index: 0
+    - physical_context: ACInput
+    - index: None
+    - physical_sub_context: None
+    - message_id: Current
+    - device_specific_context: Line3
+- cdu_coolingsubsystem_0_acinput_frequency
+    - type: DOUBLE
+    - location_type: cdu
+    - telemetry_source: cC
+    - interval: 1 min
+    - parental_context: CoolingSubsystem
+    - parental_index: 0
+    - physical_context: ACInput
+    - index: None
+    - physical_sub_context: None
+    - message_id: Frequency
+    - device_specific_context: None
+- cdu_coolingsubsystem_0_acinput_voltage_line3toline1
+    - type: DOUBLE
+    - location_type: cdu
+    - telemetry_source: cC
+    - interval: 1 min
+    - parental_context: CoolingSubsystem
+    - parental_index: 0
+    - physical_context: ACInput
+    - index: None
+    - physical_sub_context: None
+    - message_id: Voltage
+    - device_specific_context: Line3ToLine1
+- cdu_coolingsubsystem_0_actuator_1_percent
+    - type: DOUBLE
+    - location_type: cdu
+    - telemetry_source: cC
+    - interval: 1 min
+    - parental_context: CoolingSubsystem
+    - parental_index: 0
+    - physical_context: Actuator
+    - index: 1
+    - physical_sub_context: None
+    - message_id: Percent
+    - device_specific_context: None
+- cdu_coolingsubsystem_0_actuator_2_percent
+    - type: DOUBLE
+    - location_type: cdu
+    - telemetry_source: cC
+    - interval: 1 min
+    - parental_context: CoolingSubsystem
+    - parental_index: 0
+    - physical_context: Actuator
+    - index: 2
+    - physical_sub_context: None
+    - message_id: Percent
+    - device_specific_context: None
+- cdu_coolingsubsystem_0_actuator_input_voltage
+    - type: DOUBLE
+    - location_type: cdu
+    - telemetry_source: cC
+    - interval: 1 min
+    - parental_context: CoolingSubsystem
+    - parental_index: 0
+    - physical_context: Actuator
+    - index: None
+    - physical_sub_context: Input
+    - message_id: Voltage
+    - device_specific_context: None
+- cdu_coolingsubsystem_0_dcbus_1_voltage
+    - type: DOUBLE
+    - location_type: cdu
+    - telemetry_source: cC
+    - interval: 1 min
+    - parental_context: CoolingSubsystem
+    - parental_index: 0
+    - physical_context: DCBus
+    - index: 1
+    - physical_sub_context: None
+    - message_id: Voltage
+    - device_specific_context: None
+- cdu_coolingsubsystem_0_dcbus_2_voltage
+    - type: DOUBLE
+    - location_type: cdu
+    - telemetry_source: cC
+    - interval: 1 min
+    - parental_context: CoolingSubsystem
+    - parental_index: 0
+    - physical_context: DCBus
+    - index: 2
+    - physical_sub_context: None
+    - message_id: Voltage
+    - device_specific_context: None
+- cdu_coolingsubsystem_0_filter_1_pressure_secondary
+    - type: DOUBLE
+    - location_type: cdu
+    - telemetry_source: cC
+    - interval: 1 min
+    - parental_context: CoolingSubsystem
+    - parental_index: 0
+    - physical_context: Filter
+    - index: 1
+    - physical_sub_context: None
+    - message_id: Pressure
+    - device_specific_context: Secondary
+- cdu_coolingsubsystem_0_filter_pressure_secondary
+    - type: DOUBLE
+    - location_type: cdu
+    - telemetry_source: cC
+    - interval: 1 min
+    - parental_context: CoolingSubsystem
+    - parental_index: 0
+    - physical_context: Filter
+    - index: None
+    - physical_sub_context: None
+    - message_id: Pressure
+    - device_specific_context: Secondary
+- cdu_coolingsubsystem_0_liquidinlet_0_liquidflow_primary
+    - type: DOUBLE
+    - location_type: cdu
+    - telemetry_source: cC
+    - interval: 1 min
+    - parental_context: CoolingSubsystem
+    - parental_index: 0
+    - physical_context: LiquidInlet
+    - index: 0
+    - physical_sub_context: None
+    - message_id: LiquidFlow
+    - device_specific_context: Primary
+- cdu_coolingsubsystem_0_liquidinlet_0_pressure_primary
+    - type: DOUBLE
+    - location_type: cdu
+    - telemetry_source: cC
+    - interval: 1 min
+    - parental_context: CoolingSubsystem
+    - parental_index: 0
+    - physical_context: LiquidInlet
+    - index: 0
+    - physical_sub_context: None
+    - message_id: Pressure
+    - device_specific_context: Primary
+- cdu_coolingsubsystem_0_liquidinlet_0_temperature_primary
+    - type: DOUBLE
+    - location_type: cdu
+    - telemetry_source: cC
+    - interval: 1 min
+    - parental_context: CoolingSubsystem
+    - parental_index: 0
+    - physical_context: LiquidInlet
+    - index: 0
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: Primary
+- cdu_coolingsubsystem_0_liquidinlet_1_pressure_secondary
+    - type: DOUBLE
+    - location_type: cdu
+    - telemetry_source: cC
+    - interval: 1 min
+    - parental_context: CoolingSubsystem
+    - parental_index: 0
+    - physical_context: LiquidInlet
+    - index: 1
+    - physical_sub_context: None
+    - message_id: Pressure
+    - device_specific_context: Secondary
+- cdu_coolingsubsystem_0_liquidinlet_1_temperature_secondary
+    - type: DOUBLE
+    - location_type: cdu
+    - telemetry_source: cC
+    - interval: 1 min
+    - parental_context: CoolingSubsystem
+    - parental_index: 0
+    - physical_context: LiquidInlet
+    - index: 1
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: Secondary
+- cdu_coolingsubsystem_0_liquidinlet_2_pressure_secondary
+    - type: DOUBLE
+    - location_type: cdu
+    - telemetry_source: cC
+    - interval: 1 min
+    - parental_context: CoolingSubsystem
+    - parental_index: 0
+    - physical_context: LiquidInlet
+    - index: 2
+    - physical_sub_context: None
+    - message_id: Pressure
+    - device_specific_context: Secondary
+- cdu_coolingsubsystem_0_liquidinlet_2_temperature_secondary
+    - type: DOUBLE
+    - location_type: cdu
+    - telemetry_source: cC
+    - interval: 1 min
+    - parental_context: CoolingSubsystem
+    - parental_index: 0
+    - physical_context: LiquidInlet
+    - index: 2
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: Secondary
+- cdu_coolingsubsystem_0_liquidoutlet_0_liquidflow_secondary
+    - type: DOUBLE
+    - location_type: cdu
+    - telemetry_source: cC
+    - interval: 1 min
+    - parental_context: CoolingSubsystem
+    - parental_index: 0
+    - physical_context: LiquidOutlet
+    - index: 0
+    - physical_sub_context: None
+    - message_id: LiquidFlow
+    - device_specific_context: Secondary
+- cdu_coolingsubsystem_0_liquidoutlet_0_pressure_primary
+    - type: DOUBLE
+    - location_type: cdu
+    - telemetry_source: cC
+    - interval: 1 min
+    - parental_context: CoolingSubsystem
+    - parental_index: 0
+    - physical_context: LiquidOutlet
+    - index: 0
+    - physical_sub_context: None
+    - message_id: Pressure
+    - device_specific_context: Primary
+- cdu_coolingsubsystem_0_liquidoutlet_0_temperature_primary
+    - type: DOUBLE
+    - location_type: cdu
+    - telemetry_source: cC
+    - interval: 1 min
+    - parental_context: CoolingSubsystem
+    - parental_index: 0
+    - physical_context: LiquidOutlet
+    - index: 0
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: Primary
+- cdu_coolingsubsystem_0_liquidoutlet_1_pressure_secondary
+    - type: DOUBLE
+    - location_type: cdu
+    - telemetry_source: cC
+    - interval: 1 min
+    - parental_context: CoolingSubsystem
+    - parental_index: 0
+    - physical_context: LiquidOutlet
+    - index: 1
+    - physical_sub_context: None
+    - message_id: Pressure
+    - device_specific_context: Secondary
+- cdu_coolingsubsystem_0_liquidoutlet_1_temperature_secondary
+    - type: DOUBLE
+    - location_type: cdu
+    - telemetry_source: cC
+    - interval: 1 min
+    - parental_context: CoolingSubsystem
+    - parental_index: 0
+    - physical_context: LiquidOutlet
+    - index: 1
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: Secondary
+- cdu_coolingsubsystem_0_liquidoutlet_2_pressure_secondary
+    - type: DOUBLE
+    - location_type: cdu
+    - telemetry_source: cC
+    - interval: 1 min
+    - parental_context: CoolingSubsystem
+    - parental_index: 0
+    - physical_context: LiquidOutlet
+    - index: 2
+    - physical_sub_context: None
+    - message_id: Pressure
+    - device_specific_context: Secondary
+- cdu_coolingsubsystem_0_liquidoutlet_2_temperature_secondary
+    - type: DOUBLE
+    - location_type: cdu
+    - telemetry_source: cC
+    - interval: 1 min
+    - parental_context: CoolingSubsystem
+    - parental_index: 0
+    - physical_context: LiquidOutlet
+    - index: 2
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: Secondary
+- cdu_coolingsubsystem_0_motor_1_current
+    - type: DOUBLE
+    - location_type: cdu
+    - telemetry_source: cC
+    - interval: 1 min
+    - parental_context: CoolingSubsystem
+    - parental_index: 0
+    - physical_context: Motor
+    - index: 1
+    - physical_sub_context: None
+    - message_id: Current
+    - device_specific_context: None
+- cdu_coolingsubsystem_0_motor_1_frequency
+    - type: DOUBLE
+    - location_type: cdu
+    - telemetry_source: cC
+    - interval: 1 min
+    - parental_context: CoolingSubsystem
+    - parental_index: 0
+    - physical_context: Motor
+    - index: 1
+    - physical_sub_context: None
+    - message_id: Frequency
+    - device_specific_context: None
+- cdu_coolingsubsystem_0_motor_1_output_voltage
+    - type: DOUBLE
+    - location_type: cdu
+    - telemetry_source: cC
+    - interval: 1 min
+    - parental_context: CoolingSubsystem
+    - parental_index: 0
+    - physical_context: Motor
+    - index: 1
+    - physical_sub_context: Output
+    - message_id: Voltage
+    - device_specific_context: None
+- cdu_coolingsubsystem_0_motor_1_percent
+    - type: DOUBLE
+    - location_type: cdu
+    - telemetry_source: cC
+    - interval: 1 min
+    - parental_context: CoolingSubsystem
+    - parental_index: 0
+    - physical_context: Motor
+    - index: 1
+    - physical_sub_context: None
+    - message_id: Percent
+    - device_specific_context: None
+- cdu_coolingsubsystem_0_motor_1_rotational
+    - type: DOUBLE
+    - location_type: cdu
+    - telemetry_source: cC
+    - interval: 1 min
+    - parental_context: CoolingSubsystem
+    - parental_index: 0
+    - physical_context: Motor
+    - index: 1
+    - physical_sub_context: None
+    - message_id: Rotational
+    - device_specific_context: None
+- cdu_coolingsubsystem_0_motor_2_current
+    - type: DOUBLE
+    - location_type: cdu
+    - telemetry_source: cC
+    - interval: 1 min
+    - parental_context: CoolingSubsystem
+    - parental_index: 0
+    - physical_context: Motor
+    - index: 2
+    - physical_sub_context: None
+    - message_id: Current
+    - device_specific_context: None
+- cdu_coolingsubsystem_0_motor_2_frequency
+    - type: DOUBLE
+    - location_type: cdu
+    - telemetry_source: cC
+    - interval: 1 min
+    - parental_context: CoolingSubsystem
+    - parental_index: 0
+    - physical_context: Motor
+    - index: 2
+    - physical_sub_context: None
+    - message_id: Frequency
+    - device_specific_context: None
+- cdu_coolingsubsystem_0_motor_2_output_voltage
+    - type: DOUBLE
+    - location_type: cdu
+    - telemetry_source: cC
+    - interval: 1 min
+    - parental_context: CoolingSubsystem
+    - parental_index: 0
+    - physical_context: Motor
+    - index: 2
+    - physical_sub_context: Output
+    - message_id: Voltage
+    - device_specific_context: None
+- cdu_coolingsubsystem_0_motor_2_percent
+    - type: DOUBLE
+    - location_type: cdu
+    - telemetry_source: cC
+    - interval: 1 min
+    - parental_context: CoolingSubsystem
+    - parental_index: 0
+    - physical_context: Motor
+    - index: 2
+    - physical_sub_context: None
+    - message_id: Percent
+    - device_specific_context: None
+- cdu_coolingsubsystem_0_motor_2_rotational
+    - type: DOUBLE
+    - location_type: cdu
+    - telemetry_source: cC
+    - interval: 1 min
+    - parental_context: CoolingSubsystem
+    - parental_index: 0
+    - physical_context: Motor
+    - index: 2
+    - physical_sub_context: None
+    - message_id: Rotational
+    - device_specific_context: None
+- cdu_coolingsubsystem_0_motor_input_voltage
+    - type: DOUBLE
+    - location_type: cdu
+    - telemetry_source: cC
+    - interval: 1 min
+    - parental_context: CoolingSubsystem
+    - parental_index: 0
+    - physical_context: Motor
+    - index: None
+    - physical_sub_context: Input
+    - message_id: Voltage
+    - device_specific_context: None
+- cdu_coolingsubsystem_0_pump_1_input_pressure_secondary
+    - type: DOUBLE
+    - location_type: cdu
+    - telemetry_source: cC
+    - interval: 1 min
+    - parental_context: CoolingSubsystem
+    - parental_index: 0
+    - physical_context: Pump
+    - index: 1
+    - physical_sub_context: Input
+    - message_id: Pressure
+    - device_specific_context: Secondary
+- cdu_coolingsubsystem_0_pump_2_input_pressure_secondary
+    - type: DOUBLE
+    - location_type: cdu
+    - telemetry_source: cC
+    - interval: 1 min
+    - parental_context: CoolingSubsystem
+    - parental_index: 0
+    - physical_context: Pump
+    - index: 2
+    - physical_sub_context: Input
+    - message_id: Pressure
+    - device_specific_context: Secondary
+- cdu_coolingsubsystem_0_pump_pressure_secondary
+    - type: DOUBLE
+    - location_type: cdu
+    - telemetry_source: cC
+    - interval: 1 min
+    - parental_context: CoolingSubsystem
+    - parental_index: 0
+    - physical_context: Pump
+    - index: None
+    - physical_sub_context: None
+    - message_id: Pressure
+    - device_specific_context: Secondary
+- cdu_coolingsubsystem_0_room_1_humidity
+    - type: DOUBLE
+    - location_type: cdu
+    - telemetry_source: cC
+    - interval: 1 min
+    - parental_context: CoolingSubsystem
+    - parental_index: 0
+    - physical_context: Room
+    - index: 1
+    - physical_sub_context: None
+    - message_id: Humidity
+    - device_specific_context: None
+- cdu_coolingsubsystem_0_room_1_temperature
+    - type: DOUBLE
+    - location_type: cdu
+    - telemetry_source: cC
+    - interval: 1 min
+    - parental_context: CoolingSubsystem
+    - parental_index: 0
+    - physical_context: Room
+    - index: 1
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+- cdu_coolingsubsystem_0_system_pressure_secondary
+    - type: DOUBLE
+    - location_type: cdu
+    - telemetry_source: cC
+    - interval: 1 min
+    - parental_context: CoolingSubsystem
+    - parental_index: 0
+    - physical_context: System
+    - index: None
+    - physical_sub_context: None
+    - message_id: Pressure
+    - device_specific_context: Secondary
+- cdu_coolingsubsystem_0_systemboard_temperature
+    - type: DOUBLE
+    - location_type: cdu
+    - telemetry_source: cC
+    - interval: 1 min
+    - parental_context: CoolingSubsystem
+    - parental_index: 0
+    - physical_context: SystemBoard
+    - index: None
+    - physical_sub_context: None
+    - message_id: Temperature
+    - device_specific_context: None
+
+## Stats
+
+|name                                                       |min  |max  |mean   |median|stddev |
+|-----------------------------------------------------------|-----|-----|-------|------|-------|
+|row                                                        |0    |6    |       |      |       |
+|col                                                        |2    |9    |       |      |       |
+|cdu_coolingsubsystem_0_acinput_power                       |900  |9600 |7991.4 |9000  |2552.59|
+|cdu_coolingsubsystem_0_motor_1_power                       |1300 |4400 |3492.2 |3500  |527.09 |
+|cdu_coolingsubsystem_0_motor_2_power                       |3100 |4700 |3882.95|3900  |326.63 |
+|cdu_coolingsubsystem_0_acinput_current_line3               |10.3 |15.8 |14.38  |14.9  |1.36   |
+|cdu_coolingsubsystem_0_acinput_frequency                   |59.9 |60   |59.96  |60    |0.05   |
+|cdu_coolingsubsystem_0_acinput_voltage_line3toline1        |480.2|494.2|488.88 |490.5 |4.22   |
+|cdu_coolingsubsystem_0_actuator_1_percent                  |2    |50   |15.93  |15    |6.89   |
+|cdu_coolingsubsystem_0_actuator_2_percent                  |2    |50   |15.96  |15    |6.87   |
+|cdu_coolingsubsystem_0_actuator_input_voltage              |2.1  |6.1  |3.3    |3.2   |0.55   |
+|cdu_coolingsubsystem_0_dcbus_1_voltage                     |653  |678  |663.83 |664   |6.48   |
+|cdu_coolingsubsystem_0_dcbus_2_voltage                     |649  |676  |662.35 |663   |6.76   |
+|cdu_coolingsubsystem_0_filter_1_pressure_secondary         |48.2 |55.8 |52.94  |53.2  |1.7    |
+|cdu_coolingsubsystem_0_filter_pressure_secondary           |1.4  |3    |2.46   |2.5   |0.25   |
+|cdu_coolingsubsystem_0_liquidinlet_0_liquidflow_primary    |18.3 |74.7 |52.97  |53.1  |8.46   |
+|cdu_coolingsubsystem_0_liquidinlet_0_pressure_primary      |61.3 |63.3 |62.2   |62.2  |0.34   |
+|cdu_coolingsubsystem_0_liquidinlet_0_temperature_primary   |11.9 |13.7 |12.82  |12.8  |0.32   |
+|cdu_coolingsubsystem_0_liquidinlet_1_pressure_secondary    |19.1 |25.8 |22.98  |23.1  |1.65   |
+|cdu_coolingsubsystem_0_liquidinlet_1_temperature_secondary |29.8 |34.1 |31.93  |31.9  |0.68   |
+|cdu_coolingsubsystem_0_liquidinlet_2_pressure_secondary    |19.2 |25.7 |22.97  |23.1  |1.62   |
+|cdu_coolingsubsystem_0_liquidinlet_2_temperature_secondary |30   |34   |31.93  |31.9  |0.68   |
+|cdu_coolingsubsystem_0_liquidoutlet_0_liquidflow_secondary |172  |283  |264.91 |269   |19.2   |
+|cdu_coolingsubsystem_0_liquidoutlet_0_pressure_primary     |39.8 |40.6 |40.21  |40.2  |0.12   |
+|cdu_coolingsubsystem_0_liquidoutlet_0_temperature_primary  |29.9 |34   |31.96  |32    |0.7    |
+|cdu_coolingsubsystem_0_liquidoutlet_1_pressure_secondary   |46.7 |53.2 |50.48  |50.6  |1.64   |
+|cdu_coolingsubsystem_0_liquidoutlet_1_temperature_secondary|25.5 |30.4 |27.99  |28    |0.75   |
+|cdu_coolingsubsystem_0_liquidoutlet_2_pressure_secondary   |46.8 |53.4 |50.64  |50.7  |1.64   |
+|cdu_coolingsubsystem_0_liquidoutlet_2_temperature_secondary|25.4 |30.2 |27.93  |27.9  |0.78   |
+|cdu_coolingsubsystem_0_motor_1_current                     |6.6  |12.4 |10.68  |10.7  |0.97   |
+|cdu_coolingsubsystem_0_motor_1_frequency                   |36.1 |39.6 |38.92  |39    |0.6    |
+|cdu_coolingsubsystem_0_motor_1_output_voltage              |185  |304  |291.83 |298   |21.43  |
+|cdu_coolingsubsystem_0_motor_1_percent                     |14.6 |44.7 |36.13  |36.4  |5.27   |
+|cdu_coolingsubsystem_0_motor_1_rotational                  |2139 |2343 |2303.47|2311  |34.97  |
+|cdu_coolingsubsystem_0_motor_2_current                     |10.1 |12.8 |11.43  |11.4  |0.57   |
+|cdu_coolingsubsystem_0_motor_2_frequency                   |36.3 |40   |39.1   |39.2  |0.65   |
+|cdu_coolingsubsystem_0_motor_2_output_voltage              |278  |306  |299.2  |300   |5.5    |
+|cdu_coolingsubsystem_0_motor_2_percent                     |32.9 |47.4 |40.08  |40.1  |3.05   |
+|cdu_coolingsubsystem_0_motor_2_rotational                  |2143 |2362 |2312.05|2318  |37.51  |
+|cdu_coolingsubsystem_0_motor_input_voltage                 |6    |6.6  |6.42   |6.4   |0.11   |
+|cdu_coolingsubsystem_0_pump_1_input_pressure_secondary     |11   |17   |14.61  |14.9  |1.47   |
+|cdu_coolingsubsystem_0_pump_2_input_pressure_secondary     |11   |17   |14.65  |14.9  |1.48   |
+|cdu_coolingsubsystem_0_pump_pressure_secondary             |31   |37   |35.87  |36.1  |1.02   |
+|cdu_coolingsubsystem_0_room_1_humidity                     |20.3 |24.4 |22.06  |21.8  |1.15   |
+|cdu_coolingsubsystem_0_room_1_temperature                  |26.3 |29.6 |27.98  |28    |0.76   |
+|cdu_coolingsubsystem_0_system_pressure_secondary           |27.2 |27.8 |27.5   |27.5  |0.1    |
+|cdu_coolingsubsystem_0_systemboard_temperature             |33.5 |38.5 |34.89  |34.8  |0.94   |

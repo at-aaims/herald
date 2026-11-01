@@ -1,0 +1,30 @@
+/.env
+/.venv
+/deploy/ornl-netskope-ca.pem
+/public/dist
+.cache
+**/logs/
+**/huggingface_cache/
+
+.ipynb_checkpoints
+.*.swp
+*.swp
+__pycache__
+*.pyc
+*.egg-info
+/site/_current.sh
+.files
+
+# Localdev volumes
+/.scratch
+/.shared
+/.data
+
+# RAG vector index — regenerable build artifact, not source of truth.
+# Run scripts/ingest_rag_corpus.py after cloning to rebuild it.
+/src/rag/chroma_db
+
+# Metaflow
+/.metaflow
+/metaflow_card_cache
+/metaflow.s3*

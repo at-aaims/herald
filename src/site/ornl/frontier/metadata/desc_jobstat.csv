@@ -1,0 +1,74 @@
+Column,Description,Type,Anonymized,isPrimary,isForeign
+allocation_id,Allocation ID is the unique job id or workload id.,number,false,true,false
+account,It is unique for each project. Science domain or project domain can be extracted by initial english characters substring from alphanumeric string.,string,false,false,FOREIGN KEY (account) REFERENCES project_description(account)
+user,The username of the user submitting the job,string,false,false,FOREIGN KEY (user) REFERENCES users(user))
+time_start,Time when the execution of a job begins or jobs actually start.,timestamp,false,false,false
+time_end,Time when a job is completed.,timestamp,false,false,false
+time_elapsed,Duration of the job execution in seconds,number,false,false,false
+time_submission,Time when the job is submitted in the job queue.,timestamp,false,false,false
+node_count,Number of nodes requested for the job. For job size: Leadership jobs are the ones that have more than 5645 nodes. Large jobs have more than 1882 nodes but less than 5645 nodes. Medium Jobs run on 92 nodes or more but less than 1882 nodes. Small jobs have less than 92 nodes.,number,false,false,false
+state_current,Status of the job when completed. Successfule jobs have 'COMPLETED' status. Use <> 'COMPLETED' for failed or incomplete jobs.,array,false,false,false
+state_reason,Reason of the status of the jobs,string,false,false,false
+node_hours,Node Hours used,number,false,false,false
+stats_node_power_measurement_min,Min of node_power across all nodes and measurements taken,number,false,false,false
+stats_node_power_measurement_max,Max of node_power across all nodes and measurements taken,number,false,false,false
+stats_node_power_measurement_mean,Mean of node_power across all nodes and measurements taken,number,false,false,false
+stats_cpu0_power_measurement_min,Min of cpu0_power across all nodes and measurements taken. Idle CPU power is 100 W.,number,false,false,false
+stats_cpu0_power_measurement_max,Max of cpu0_power across all nodes and measurements takenIdle CPU power is 100 W.,number,false,false,false
+stats_cpu0_power_measurement_mean,Mean of cpu0_power across all nodes and measurements taken,number,false,false,false
+stats_cpu_memory_power_measurement_min,Min of cpu_memory_power across all nodes and measurements taken,number,false,false,false
+stats_cpu_memory_power_measurement_max,Max of cpu_memory_power across all nodes and measurements taken,number,false,false,false
+stats_cpu_memory_power_measurement_mean,Mean of cpu_memory_power across all nodes and measurements taken,number,false,false,false
+stats_gpu_power_measurement_min,Min of gpu_power across all nodes and measurements taken. Idle GPU power is 100 W.,number,false,false,false
+stats_gpu_power_measurement_max,Max of gpu_power across all nodes and measurements taken. Idle GPU power is 100 W.,number,false,false,false
+stats_gpu_power_measurement_mean,Mean of gpu_power across all nodes and measurements taken. Idle GPU power is 100 W.,number,false,false,false
+stats_gpu0_power_measurement_min,Min of gpu0_power across all nodes and measurements taken,number,false,false,false
+stats_gpu0_power_measurement_max,Max of gpu0_power across all nodes and measurements taken,number,false,false,false
+stats_gpu0_power_measurement_mean,Mean of gpu0_power,number,false,false,false
+stats_gpu1_power_measurement_min,Min of gpu1_power,number,false,false,false
+stats_gpu1_power_measurement_max,Max of gpu1_power,number,false,false,false
+stats_gpu1_power_measurement_mean,Mean of gpu1_power,number,false,false,false
+stats_gpu2_power_measurement_min,Min of gpu2_power,number,false,false,false
+stats_gpu2_power_measurement_max,Max of gpu2_power,number,false,false,false
+stats_gpu2_power_measurement_mean,Mean of gpu2_power,number,false,false,false
+stats_gpu3_power_measurement_min,Min of gpu3_power,number,false,false,false
+stats_gpu3_power_measurement_max,Max of gpu3_power,number,false,false,false
+stats_gpu3_power_measurement_mean,Mean of gpu3_power,number,false,false,false
+stats_node_power_node_mean,Mean of the average node_power of each node,number,false,false,false
+stats_cpu0_power_node_mean,Mean of the average cpu0_power of each node,number,false,false,false
+stats_cpu_memory_power_node_mean,Mean of the average cpu_memory_power of each node,number,false,false,false
+stats_gpu_power_node_mean,Mean of the average gpu_power of each node,number,false,false,false
+stats_gpu0_power_node_mean,Mean of the average gpu0_power of each node,number,false,false,false
+stats_gpu1_power_node_mean,Mean of the average gpu1_power of each node,number,false,false,false
+stats_gpu2_power_node_mean,Mean of the average gpu2_power of each node,number,false,false,false
+stats_gpu3_power_node_mean,Mean of the average gpu3_power of each node,number,false,false,false
+stats_total_node_energy,Total Node Energy consumed,number,false,false,false
+stats_total_node_energy_node_mean,Mean of the total node_energy of each node,number,false,false,false
+stats_total_cpu0_energy,Total Cpu0 Energy consumed,number,false,false,false
+stats_total_cpu0_energy_node_mean,Mean of the total cpu0_energy of each node,number,false,false,false
+stats_total_cpu_memory_energy,Total Cpu Memory Energy consumed,number,false,false,false
+stats_total_cpu_memory_energy_node_mean,Mean of the total cpu_memory_energy of each node,number,false,false,false
+stats_total_gpu_energy,Total Gpu Energy consumed,number,false,false,false
+stats_total_gpu_energy_node_mean,Mean of the total gpu_energy of each node,number,false,false,false
+stats_total_gpu0_energy,Total Gpu0 Energy consumed,number,false,false,false
+stats_total_gpu0_energy_node_mean,Mean of the total gpu0_energy of each node,number,false,false,false
+stats_total_gpu1_energy,Total Gpu1 Energy consumed,number,false,false,false
+stats_total_gpu1_energy_node_mean,Mean of the total gpu1_energy of each node,number,false,false,false
+stats_total_gpu2_energy,Total Gpu2 Energy consumed,number,false,false,false
+stats_total_gpu2_energy_node_mean,Mean of the total gpu2_energy of each node,number,false,false,false
+stats_total_gpu3_energy,Total Gpu3 Energy consumed,number,false,false,false
+stats_total_gpu3_energy_node_mean,Mean of the total gpu3_energy of each node,number,false,false,false
+stats_node_power_measurement_stddev,Standard deviation of node_power across all nodes and measurements taken. It also shows swings or fluctutations or deviations in the measurement.,number,false,false,false
+stats_cpu0_power_measurement_stddev,Standard deviation of cpu0_power across all nodes and measurements taken. It also shows swings or fluctutations or deviations in the measurement.,number,false,false,false
+stats_gpu_power_measurement_stddev,Standard deviation of gpu_power across all nodes and measurements taken. It also shows swings or fluctutations or deviations in the measurement.,number,false,false,false
+stats_gpu0_power_measurement_stddev,Standard deviation of gpu0_power. Shows swings or fluctutations or deviations in the measurement.,number,false,false,false
+stats_gpu1_power_measurement_stddev,Standard deviation of gpu1_power. Shows swings or fluctutations or deviations in the measurement.,number,false,false,false
+stats_gpu2_power_measurement_stddev,Standard deviation of gpu2_power. Shows swings or fluctutations or deviations in the measurement.,number,false,false,false
+stats_gpu3_power_measurement_stddev,Standard deviation of gpu3_power. Shows swings or fluctutations or deviations in the measurement.,number,false,false,false
+stats_node_temp_node_mean,Mean of the avg. node_temp of each node,number,false,false,false
+stats_cpu0_temp_node_mean,Mean of the avg. cpu0_temp of each node,number,false,false,false
+stats_gpu_temp_node_mean,Mean of the avg. gpu_temp of each node,number,false,false,false
+stats_gpu0_temp_node_mean,Mean of the avg. gpu0_temp,number,false,false,false
+stats_gpu1_temp_node_mean,Mean of the avg. gpu1_temp,number,false,false,false
+stats_gpu2_temp_node_mean,Mean of the avg. gpu2_temp,number,false,false,false
+stats_gpu3_temp_node_mean,Mean of the avg. gpu3_temp,number,false,false,false

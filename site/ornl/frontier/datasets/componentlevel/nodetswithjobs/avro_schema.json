@@ -1,0 +1,1759 @@
+{
+    "type": "record",
+    "name": "CrayexNodeTSSchema",
+    "fields": [
+        {
+            "name": "timestamp",
+            "type": {
+                "type": "long",
+                "logicalType": "timestamp-micros"
+            },
+            "doc": "Time of the measurement, floored to 15 sec"
+        },
+        {
+            "name": "xname",
+            "type": "string",
+            "doc": "Unique identifier for the node of the measurement, e.g. x2509c4s4b1"
+        },
+        {
+            "name": "row",
+            "type": "long",
+            "doc": "Row index of the node"
+        },
+        {
+            "name": "col",
+            "type": "long",
+            "doc": "Col index of the node"
+        },
+        {
+            "name": "chassis",
+            "type": "long",
+            "doc": "Chassis index of the node"
+        },
+        {
+            "name": "blade",
+            "type": "long",
+            "doc": "Blade index of the node"
+        },
+        {
+            "name": "node",
+            "type": "long",
+            "doc": "Node index on blade, 0 or 1"
+        },
+        {
+            "name": "board_chassis_voltageregulator_0_input_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 2 sec,\n    parental_context: Chassis, parental_index: null, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: Input, message_id: Power,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_chassis_voltageregulator_0_input_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 2 sec,\n    parental_context: Chassis, parental_index: null, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: Input, message_id: Power,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_chassis_voltageregulator_2_input_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 2 sec,\n    parental_context: Chassis, parental_index: null, physical_context: VoltageRegulator,\n    index: 2, physical_sub_context: Input, message_id: Power,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "board_board_0_voltageregulator_0_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 15 sec, \n    parental_context: Board, parental_index: 0, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: null, message_id: Power,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "board_board_0_voltageregulator_1_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 15 sec, \n    parental_context: Board, parental_index: 0, physical_context: VoltageRegulator,\n    index: 1, physical_sub_context: null, message_id: Power,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "board_board_1_voltageregulator_0_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 15 sec, \n    parental_context: Board, parental_index: 1, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: null, message_id: Power,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "board_board_1_voltageregulator_1_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 15 sec, \n    parental_context: Board, parental_index: 1, physical_context: VoltageRegulator,\n    index: 1, physical_sub_context: null, message_id: Power,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_accelerator_0_voltageregulator_0_input_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 15 sec, \n    parental_context: Accelerator, parental_index: 0, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: Input, message_id: Power,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_accelerator_1_voltageregulator_0_input_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 15 sec, \n    parental_context: Accelerator, parental_index: 1, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: Input, message_id: Power,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_accelerator_2_voltageregulator_0_input_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 15 sec, \n    parental_context: Accelerator, parental_index: 2, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: Input, message_id: Power,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_accelerator_3_voltageregulator_0_input_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 15 sec, \n    parental_context: Accelerator, parental_index: 3, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: Input, message_id: Power,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_chassis_cpusubsystem_0_output_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 15 sec, \n    parental_context: Chassis, parental_index: null, physical_context: CPUSubsystem,\n    index: 0, physical_sub_context: Output, message_id: Power,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_chassis_memorysubsystem_0_output_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 15 sec, \n    parental_context: Chassis, parental_index: null, physical_context: MemorySubsystem,\n    index: 0, physical_sub_context: Output, message_id: Power,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_chassis_voltageregulator_0_output_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 15 sec, \n    parental_context: Chassis, parental_index: null, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: Output, message_id: Power,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_chassis_voltageregulator_3_output_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 15 sec, \n    parental_context: Chassis, parental_index: null, physical_context: VoltageRegulator,\n    index: 3, physical_sub_context: Output, message_id: Power,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_chassis_voltageregulator_4_output_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 15 sec, \n    parental_context: Chassis, parental_index: null, physical_context: VoltageRegulator,\n    index: 4, physical_sub_context: Output, message_id: Power,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_chassis_voltageregulator_5_output_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 15 sec, \n    parental_context: Chassis, parental_index: null, physical_context: VoltageRegulator,\n    index: 5, physical_sub_context: Output, message_id: Power,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_cpu_0_0_power_synthesized",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 15 sec, \n    parental_context: CPU, parental_index: 0, physical_context: null,\n    index: 0, physical_sub_context: null, message_id: Power,\n    device_specific_context: Synthesized\n)"
+        },
+        {
+            "name": "node_cpu_0_1_power_synthesized",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 15 sec, \n    parental_context: CPU, parental_index: 0, physical_context: null,\n    index: 1, physical_sub_context: null, message_id: Power,\n    device_specific_context: Synthesized\n)"
+        },
+        {
+            "name": "node_cpu_0_2_power_reported",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 15 sec, \n    parental_context: CPU, parental_index: 0, physical_context: null,\n    index: 2, physical_sub_context: null, message_id: Power,\n    device_specific_context: Reported\n)"
+        },
+        {
+            "name": "node_cpu_0_3_power_reported",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 15 sec, \n    parental_context: CPU, parental_index: 0, physical_context: null,\n    index: 3, physical_sub_context: null, message_id: Power,\n    device_specific_context: Reported\n)"
+        },
+        {
+            "name": "node_cpu_0_4_power_reported",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 15 sec, \n    parental_context: CPU, parental_index: 0, physical_context: null,\n    index: 4, physical_sub_context: null, message_id: Power,\n    device_specific_context: Reported\n)"
+        },
+        {
+            "name": "node_cpu_0_voltageregulator_0_output_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 15 sec, \n    parental_context: CPU, parental_index: 0, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: Output, message_id: Power,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_cpu_0_voltageregulator_1_output_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 15 sec, \n    parental_context: CPU, parental_index: 0, physical_context: VoltageRegulator,\n    index: 1, physical_sub_context: Output, message_id: Power,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_cpu_0_voltageregulator_5_output_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 15 sec, \n    parental_context: CPU, parental_index: 0, physical_context: VoltageRegulator,\n    index: 5, physical_sub_context: Output, message_id: Power,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_cpu_0_voltageregulator_6_input_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 15 sec, \n    parental_context: CPU, parental_index: 0, physical_context: VoltageRegulator,\n    index: 6, physical_sub_context: Input, message_id: Power,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_cpu_0_voltageregulator_6_output_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 15 sec, \n    parental_context: CPU, parental_index: 0, physical_context: VoltageRegulator,\n    index: 6, physical_sub_context: Output, message_id: Power,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_gpusubsystem_accelerator_0_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 15 sec, \n    parental_context: GPUSubsystem, parental_index: null, physical_context: Accelerator,\n    index: 0, physical_sub_context: null, message_id: Power,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_gpusubsystem_accelerator_1_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 15 sec, \n    parental_context: GPUSubsystem, parental_index: null, physical_context: Accelerator,\n    index: 1, physical_sub_context: null, message_id: Power,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_gpusubsystem_accelerator_2_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 15 sec, \n    parental_context: GPUSubsystem, parental_index: null, physical_context: Accelerator,\n    index: 2, physical_sub_context: null, message_id: Power,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_gpusubsystem_accelerator_3_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 15 sec, \n    parental_context: GPUSubsystem, parental_index: null, physical_context: Accelerator,\n    index: 3, physical_sub_context: null, message_id: Power,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_memorysubsystem_0_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 15 sec, \n    parental_context: null, parental_index: null, physical_context: MemorySubsystem,\n    index: 0, physical_sub_context: null, message_id: Power,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_memorysubsystem_0_voltageregulator_2_output_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 15 sec, \n    parental_context: MemorySubsystem, parental_index: 0, physical_context: VoltageRegulator,\n    index: 2, physical_sub_context: Output, message_id: Power,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_memorysubsystem_0_voltageregulator_3_output_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 15 sec, \n    parental_context: MemorySubsystem, parental_index: 0, physical_context: VoltageRegulator,\n    index: 3, physical_sub_context: Output, message_id: Power,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_memorysubsystem_0_voltageregulator_7_input_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 15 sec, \n    parental_context: MemorySubsystem, parental_index: 0, physical_context: VoltageRegulator,\n    index: 7, physical_sub_context: Input, message_id: Power,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_memorysubsystem_0_voltageregulator_7_output_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 15 sec, \n    parental_context: MemorySubsystem, parental_index: 0, physical_context: VoltageRegulator,\n    index: 7, physical_sub_context: Output, message_id: Power,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_memorysubsystem_0_voltageregulator_8_input_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 15 sec, \n    parental_context: MemorySubsystem, parental_index: 0, physical_context: VoltageRegulator,\n    index: 8, physical_sub_context: Input, message_id: Power,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_memorysubsystem_0_voltageregulator_8_output_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 15 sec, \n    parental_context: MemorySubsystem, parental_index: 0, physical_context: VoltageRegulator,\n    index: 8, physical_sub_context: Output, message_id: Power,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "board_board_0_asic_0_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 1 min,\n    parental_context: Board, parental_index: 0, physical_context: ASIC,\n    index: 0, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "board_board_0_asic_1_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 1 min,\n    parental_context: Board, parental_index: 0, physical_context: ASIC,\n    index: 1, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "board_board_0_dcbus_0_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 1 min,\n    parental_context: Board, parental_index: 0, physical_context: DCBus,\n    index: 0, physical_sub_context: null, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "board_board_0_dcbus_1_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 1 min,\n    parental_context: Board, parental_index: 0, physical_context: DCBus,\n    index: 1, physical_sub_context: null, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "board_board_0_networkingdevice_0_metric_pcscorrectedcw",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 1 min,\n    parental_context: Board, parental_index: 0, physical_context: NetworkingDevice,\n    index: 0, physical_sub_context: null, message_id: Metric,\n    device_specific_context: C_CNTR_HNI_PCS_CORRECTED_CW\n)"
+        },
+        {
+            "name": "board_board_0_networkingdevice_1_metric_pcsfeclerrors6",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 1 min,\n    parental_context: Board, parental_index: 0, physical_context: NetworkingDevice,\n    index: 1, physical_sub_context: null, message_id: Metric,\n    device_specific_context: C_CNTR_HNI_PCS_FECL_ERRORS_6\n)"
+        },
+        {
+            "name": "board_board_0_systemboard_0_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 1 min,\n    parental_context: Board, parental_index: 0, physical_context: SystemBoard,\n    index: 0, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "board_board_0_systemboard_1_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 1 min,\n    parental_context: Board, parental_index: 0, physical_context: SystemBoard,\n    index: 1, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "board_board_0_systemboard_2_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 1 min,\n    parental_context: Board, parental_index: 0, physical_context: SystemBoard,\n    index: 2, physical_sub_context: null, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "board_board_0_systemboard_3_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 1 min,\n    parental_context: Board, parental_index: 0, physical_context: SystemBoard,\n    index: 3, physical_sub_context: null, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "board_board_0_systemboard_4_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 1 min,\n    parental_context: Board, parental_index: 0, physical_context: SystemBoard,\n    index: 4, physical_sub_context: null, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "board_board_0_systemboard_5_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 1 min,\n    parental_context: Board, parental_index: 0, physical_context: SystemBoard,\n    index: 5, physical_sub_context: null, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "board_board_0_systemboard_6_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 1 min,\n    parental_context: Board, parental_index: 0, physical_context: SystemBoard,\n    index: 6, physical_sub_context: null, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "board_board_0_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 1 min,\n    parental_context: Board, parental_index: 0, physical_context: null,\n    index: null, physical_sub_context: null, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "board_board_0_voltageregulator_0_current",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 1 min,\n    parental_context: Board, parental_index: 0, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: null, message_id: Current,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "board_board_0_voltageregulator_0_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 1 min,\n    parental_context: Board, parental_index: 0, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "board_board_0_voltageregulator_0_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 1 min,\n    parental_context: Board, parental_index: 0, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: null, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "board_board_0_voltageregulator_1_current",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 1 min,\n    parental_context: Board, parental_index: 0, physical_context: VoltageRegulator,\n    index: 1, physical_sub_context: null, message_id: Current,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "board_board_0_voltageregulator_1_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 1 min,\n    parental_context: Board, parental_index: 0, physical_context: VoltageRegulator,\n    index: 1, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "board_board_0_voltageregulator_1_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 1 min,\n    parental_context: Board, parental_index: 0, physical_context: VoltageRegulator,\n    index: 1, physical_sub_context: null, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "board_board_1_asic_0_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 1 min,\n    parental_context: Board, parental_index: 1, physical_context: ASIC,\n    index: 0, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "board_board_1_asic_1_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 1 min,\n    parental_context: Board, parental_index: 1, physical_context: ASIC,\n    index: 1, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "board_board_1_dcbus_0_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 1 min,\n    parental_context: Board, parental_index: 1, physical_context: DCBus,\n    index: 0, physical_sub_context: null, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "board_board_1_dcbus_1_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 1 min,\n    parental_context: Board, parental_index: 1, physical_context: DCBus,\n    index: 1, physical_sub_context: null, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "board_board_1_networkingdevice_0_metric_pcscorrectedcw",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 1 min,\n    parental_context: Board, parental_index: 1, physical_context: NetworkingDevice,\n    index: 0, physical_sub_context: null, message_id: Metric,\n    device_specific_context: C_CNTR_HNI_PCS_CORRECTED_CW\n)"
+        },
+        {
+            "name": "board_board_1_networkingdevice_1_metric_pcsfeclerrors6",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 1 min,\n    parental_context: Board, parental_index: 1, physical_context: NetworkingDevice,\n    index: 1, physical_sub_context: null, message_id: Metric,\n    device_specific_context: C_CNTR_HNI_PCS_FECL_ERRORS_6\n)"
+        },
+        {
+            "name": "board_board_1_systemboard_0_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 1 min,\n    parental_context: Board, parental_index: 1, physical_context: SystemBoard,\n    index: 0, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "board_board_1_systemboard_1_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 1 min,\n    parental_context: Board, parental_index: 1, physical_context: SystemBoard,\n    index: 1, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "board_board_1_systemboard_2_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 1 min,\n    parental_context: Board, parental_index: 1, physical_context: SystemBoard,\n    index: 2, physical_sub_context: null, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "board_board_1_systemboard_3_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 1 min,\n    parental_context: Board, parental_index: 1, physical_context: SystemBoard,\n    index: 3, physical_sub_context: null, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "board_board_1_systemboard_4_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 1 min,\n    parental_context: Board, parental_index: 1, physical_context: SystemBoard,\n    index: 4, physical_sub_context: null, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "board_board_1_systemboard_5_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 1 min,\n    parental_context: Board, parental_index: 1, physical_context: SystemBoard,\n    index: 5, physical_sub_context: null, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "board_board_1_systemboard_6_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 1 min,\n    parental_context: Board, parental_index: 1, physical_context: SystemBoard,\n    index: 6, physical_sub_context: null, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "board_board_1_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 1 min,\n    parental_context: Board, parental_index: 1, physical_context: null,\n    index: null, physical_sub_context: null, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "board_board_1_voltageregulator_0_current",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 1 min,\n    parental_context: Board, parental_index: 1, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: null, message_id: Current,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "board_board_1_voltageregulator_0_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 1 min,\n    parental_context: Board, parental_index: 1, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "board_board_1_voltageregulator_0_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 1 min,\n    parental_context: Board, parental_index: 1, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: null, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "board_board_1_voltageregulator_1_current",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 1 min,\n    parental_context: Board, parental_index: 1, physical_context: VoltageRegulator,\n    index: 1, physical_sub_context: null, message_id: Current,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "board_board_1_voltageregulator_1_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 1 min,\n    parental_context: Board, parental_index: 1, physical_context: VoltageRegulator,\n    index: 1, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "board_board_1_voltageregulator_1_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 1 min,\n    parental_context: Board, parental_index: 1, physical_context: VoltageRegulator,\n    index: 1, physical_sub_context: null, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "board_chassis_0_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 1 min,\n    parental_context: null, parental_index: null, physical_context: Chassis,\n    index: 0, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "board_chassis_systemboard_0_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 1 min,\n    parental_context: Chassis, parental_index: null, physical_context: SystemBoard,\n    index: 0, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "board_chassis_voltageregulator_0_input_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 1 min,\n    parental_context: Chassis, parental_index: null, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: Input, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "board_chassis_voltageregulator_0_output_current",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 1 min,\n    parental_context: Chassis, parental_index: null, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: Output, message_id: Current,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "board_chassis_voltageregulator_0_output_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 1 min,\n    parental_context: Chassis, parental_index: null, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: Output, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "board_chassis_voltageregulator_0_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: board, telemetry_source: nC, interval: 1 min,\n    parental_context: Chassis, parental_index: null, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_accelerator_0_voltageregulator_0_input_current",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Accelerator, parental_index: 0, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: Input, message_id: Current,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_accelerator_0_voltageregulator_0_input_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Accelerator, parental_index: 0, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: Input, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_accelerator_0_voltageregulator_0_output_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Accelerator, parental_index: 0, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: Output, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_accelerator_0_voltageregulator_0_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Accelerator, parental_index: 0, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_accelerator_1_voltageregulator_0_input_current",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Accelerator, parental_index: 1, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: Input, message_id: Current,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_accelerator_1_voltageregulator_0_input_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Accelerator, parental_index: 1, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: Input, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_accelerator_1_voltageregulator_0_output_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Accelerator, parental_index: 1, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: Output, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_accelerator_1_voltageregulator_0_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Accelerator, parental_index: 1, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_accelerator_2_voltageregulator_0_input_current",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Accelerator, parental_index: 2, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: Input, message_id: Current,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_accelerator_2_voltageregulator_0_input_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Accelerator, parental_index: 2, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: Input, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_accelerator_2_voltageregulator_0_output_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Accelerator, parental_index: 2, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: Output, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_accelerator_2_voltageregulator_0_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Accelerator, parental_index: 2, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_accelerator_3_voltageregulator_0_input_current",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Accelerator, parental_index: 3, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: Input, message_id: Current,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_accelerator_3_voltageregulator_0_input_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Accelerator, parental_index: 3, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: Input, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_accelerator_3_voltageregulator_0_output_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Accelerator, parental_index: 3, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: Output, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_accelerator_3_voltageregulator_0_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Accelerator, parental_index: 3, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_chassis_gpusubsystem_0_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Chassis, parental_index: null, physical_context: GPUSubsystem,\n    index: 0, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_chassis_gpusubsystem_1_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Chassis, parental_index: null, physical_context: GPUSubsystem,\n    index: 1, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_chassis_gpusubsystem_2_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Chassis, parental_index: null, physical_context: GPUSubsystem,\n    index: 2, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_chassis_gpusubsystem_3_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Chassis, parental_index: null, physical_context: GPUSubsystem,\n    index: 3, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_chassis_gpusubsystem_4_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Chassis, parental_index: null, physical_context: GPUSubsystem,\n    index: 4, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_chassis_gpusubsystem_5_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Chassis, parental_index: null, physical_context: GPUSubsystem,\n    index: 5, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_chassis_gpusubsystem_6_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Chassis, parental_index: null, physical_context: GPUSubsystem,\n    index: 6, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_chassis_gpusubsystem_7_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Chassis, parental_index: null, physical_context: GPUSubsystem,\n    index: 7, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_chassis_voltageregulator_0_input_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Chassis, parental_index: null, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: Input, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_chassis_voltageregulator_0_output_current",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Chassis, parental_index: null, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: Output, message_id: Current,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_chassis_voltageregulator_0_output_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Chassis, parental_index: null, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: Output, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_chassis_voltageregulator_0_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Chassis, parental_index: null, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_chassis_voltageregulator_1_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Chassis, parental_index: null, physical_context: VoltageRegulator,\n    index: 1, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_chassis_voltageregulator_2_input_current",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Chassis, parental_index: null, physical_context: VoltageRegulator,\n    index: 2, physical_sub_context: Input, message_id: Current,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_chassis_voltageregulator_2_input_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Chassis, parental_index: null, physical_context: VoltageRegulator,\n    index: 2, physical_sub_context: Input, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_chassis_voltageregulator_2_output_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Chassis, parental_index: null, physical_context: VoltageRegulator,\n    index: 2, physical_sub_context: Output, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_chassis_voltageregulator_2_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Chassis, parental_index: null, physical_context: VoltageRegulator,\n    index: 2, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_chassis_voltageregulator_3_input_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Chassis, parental_index: null, physical_context: VoltageRegulator,\n    index: 3, physical_sub_context: Input, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_chassis_voltageregulator_3_output_current",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Chassis, parental_index: null, physical_context: VoltageRegulator,\n    index: 3, physical_sub_context: Output, message_id: Current,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_chassis_voltageregulator_3_output_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Chassis, parental_index: null, physical_context: VoltageRegulator,\n    index: 3, physical_sub_context: Output, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_chassis_voltageregulator_3_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Chassis, parental_index: null, physical_context: VoltageRegulator,\n    index: 3, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_chassis_voltageregulator_4_input_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Chassis, parental_index: null, physical_context: VoltageRegulator,\n    index: 4, physical_sub_context: Input, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_chassis_voltageregulator_4_output_current",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Chassis, parental_index: null, physical_context: VoltageRegulator,\n    index: 4, physical_sub_context: Output, message_id: Current,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_chassis_voltageregulator_4_output_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Chassis, parental_index: null, physical_context: VoltageRegulator,\n    index: 4, physical_sub_context: Output, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_chassis_voltageregulator_4_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Chassis, parental_index: null, physical_context: VoltageRegulator,\n    index: 4, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_chassis_voltageregulator_5_input_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Chassis, parental_index: null, physical_context: VoltageRegulator,\n    index: 5, physical_sub_context: Input, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_chassis_voltageregulator_5_output_current",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Chassis, parental_index: null, physical_context: VoltageRegulator,\n    index: 5, physical_sub_context: Output, message_id: Current,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_chassis_voltageregulator_5_output_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Chassis, parental_index: null, physical_context: VoltageRegulator,\n    index: 5, physical_sub_context: Output, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_chassis_voltageregulator_5_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Chassis, parental_index: null, physical_context: VoltageRegulator,\n    index: 5, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_chassis_voltageregulator_6_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Chassis, parental_index: null, physical_context: VoltageRegulator,\n    index: 6, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_cpu_0_0_energy_synthesized",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: CPU, parental_index: 0, physical_context: null,\n    index: 0, physical_sub_context: null, message_id: Energy,\n    device_specific_context: Synthesized\n)"
+        },
+        {
+            "name": "node_cpu_0_1_energy_synthesized",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: CPU, parental_index: 0, physical_context: null,\n    index: 1, physical_sub_context: null, message_id: Energy,\n    device_specific_context: Synthesized\n)"
+        },
+        {
+            "name": "node_cpu_0_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: null, parental_index: null, physical_context: CPU,\n    index: 0, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_cpu_0_voltageregulator_0_input_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: CPU, parental_index: 0, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: Input, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_cpu_0_voltageregulator_0_output_current",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: CPU, parental_index: 0, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: Output, message_id: Current,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_cpu_0_voltageregulator_0_output_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: CPU, parental_index: 0, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: Output, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_cpu_0_voltageregulator_0_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: CPU, parental_index: 0, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_cpu_0_voltageregulator_1_input_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: CPU, parental_index: 0, physical_context: VoltageRegulator,\n    index: 1, physical_sub_context: Input, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_cpu_0_voltageregulator_1_output_current",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: CPU, parental_index: 0, physical_context: VoltageRegulator,\n    index: 1, physical_sub_context: Output, message_id: Current,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_cpu_0_voltageregulator_1_output_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: CPU, parental_index: 0, physical_context: VoltageRegulator,\n    index: 1, physical_sub_context: Output, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_cpu_0_voltageregulator_1_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: CPU, parental_index: 0, physical_context: VoltageRegulator,\n    index: 1, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_cpu_0_voltageregulator_4_input_current",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: CPU, parental_index: 0, physical_context: VoltageRegulator,\n    index: 4, physical_sub_context: Input, message_id: Current,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_cpu_0_voltageregulator_4_input_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: CPU, parental_index: 0, physical_context: VoltageRegulator,\n    index: 4, physical_sub_context: Input, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_cpu_0_voltageregulator_4_output_current",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: CPU, parental_index: 0, physical_context: VoltageRegulator,\n    index: 4, physical_sub_context: Output, message_id: Current,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_cpu_0_voltageregulator_4_output_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: CPU, parental_index: 0, physical_context: VoltageRegulator,\n    index: 4, physical_sub_context: Output, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_cpu_0_voltageregulator_4_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: CPU, parental_index: 0, physical_context: VoltageRegulator,\n    index: 4, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_cpu_0_voltageregulator_5_input_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: CPU, parental_index: 0, physical_context: VoltageRegulator,\n    index: 5, physical_sub_context: Input, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_cpu_0_voltageregulator_5_output_current",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: CPU, parental_index: 0, physical_context: VoltageRegulator,\n    index: 5, physical_sub_context: Output, message_id: Current,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_cpu_0_voltageregulator_5_output_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: CPU, parental_index: 0, physical_context: VoltageRegulator,\n    index: 5, physical_sub_context: Output, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_cpu_0_voltageregulator_5_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: CPU, parental_index: 0, physical_context: VoltageRegulator,\n    index: 5, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_cpu_0_voltageregulator_6_input_current",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: CPU, parental_index: 0, physical_context: VoltageRegulator,\n    index: 6, physical_sub_context: Input, message_id: Current,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_cpu_0_voltageregulator_6_input_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: CPU, parental_index: 0, physical_context: VoltageRegulator,\n    index: 6, physical_sub_context: Input, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_cpu_0_voltageregulator_6_output_current",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: CPU, parental_index: 0, physical_context: VoltageRegulator,\n    index: 6, physical_sub_context: Output, message_id: Current,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_cpu_0_voltageregulator_6_output_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: CPU, parental_index: 0, physical_context: VoltageRegulator,\n    index: 6, physical_sub_context: Output, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_cpu_0_voltageregulator_6_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: CPU, parental_index: 0, physical_context: VoltageRegulator,\n    index: 6, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_gpusubsystem_gpu_0_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: GPUSubsystem, parental_index: null, physical_context: GPU,\n    index: 0, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_gpusubsystem_gpu_1_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: GPUSubsystem, parental_index: null, physical_context: GPU,\n    index: 1, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_gpusubsystem_gpu_2_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: GPUSubsystem, parental_index: null, physical_context: GPU,\n    index: 2, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_gpusubsystem_gpu_3_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: GPUSubsystem, parental_index: null, physical_context: GPU,\n    index: 3, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_gpusubsystem_gpu_4_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: GPUSubsystem, parental_index: null, physical_context: GPU,\n    index: 4, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_gpusubsystem_gpu_5_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: GPUSubsystem, parental_index: null, physical_context: GPU,\n    index: 5, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_gpusubsystem_gpu_6_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: GPUSubsystem, parental_index: null, physical_context: GPU,\n    index: 6, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_gpusubsystem_gpu_7_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: GPUSubsystem, parental_index: null, physical_context: GPU,\n    index: 7, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_memorysubsystem_0_voltageregulator_2_input_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: MemorySubsystem, parental_index: 0, physical_context: VoltageRegulator,\n    index: 2, physical_sub_context: Input, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_memorysubsystem_0_voltageregulator_2_output_current",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: MemorySubsystem, parental_index: 0, physical_context: VoltageRegulator,\n    index: 2, physical_sub_context: Output, message_id: Current,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_memorysubsystem_0_voltageregulator_2_output_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: MemorySubsystem, parental_index: 0, physical_context: VoltageRegulator,\n    index: 2, physical_sub_context: Output, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_memorysubsystem_0_voltageregulator_2_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: MemorySubsystem, parental_index: 0, physical_context: VoltageRegulator,\n    index: 2, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_memorysubsystem_0_voltageregulator_3_input_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: MemorySubsystem, parental_index: 0, physical_context: VoltageRegulator,\n    index: 3, physical_sub_context: Input, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_memorysubsystem_0_voltageregulator_3_output_current",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: MemorySubsystem, parental_index: 0, physical_context: VoltageRegulator,\n    index: 3, physical_sub_context: Output, message_id: Current,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_memorysubsystem_0_voltageregulator_3_output_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: MemorySubsystem, parental_index: 0, physical_context: VoltageRegulator,\n    index: 3, physical_sub_context: Output, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_memorysubsystem_0_voltageregulator_3_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: MemorySubsystem, parental_index: 0, physical_context: VoltageRegulator,\n    index: 3, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_memorysubsystem_0_voltageregulator_7_input_current",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: MemorySubsystem, parental_index: 0, physical_context: VoltageRegulator,\n    index: 7, physical_sub_context: Input, message_id: Current,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_memorysubsystem_0_voltageregulator_7_input_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: MemorySubsystem, parental_index: 0, physical_context: VoltageRegulator,\n    index: 7, physical_sub_context: Input, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_memorysubsystem_0_voltageregulator_7_output_current",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: MemorySubsystem, parental_index: 0, physical_context: VoltageRegulator,\n    index: 7, physical_sub_context: Output, message_id: Current,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_memorysubsystem_0_voltageregulator_7_output_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: MemorySubsystem, parental_index: 0, physical_context: VoltageRegulator,\n    index: 7, physical_sub_context: Output, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_memorysubsystem_0_voltageregulator_7_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: MemorySubsystem, parental_index: 0, physical_context: VoltageRegulator,\n    index: 7, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_memorysubsystem_0_voltageregulator_8_input_current",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: MemorySubsystem, parental_index: 0, physical_context: VoltageRegulator,\n    index: 8, physical_sub_context: Input, message_id: Current,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_memorysubsystem_0_voltageregulator_8_input_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: MemorySubsystem, parental_index: 0, physical_context: VoltageRegulator,\n    index: 8, physical_sub_context: Input, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_memorysubsystem_0_voltageregulator_8_output_current",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: MemorySubsystem, parental_index: 0, physical_context: VoltageRegulator,\n    index: 8, physical_sub_context: Output, message_id: Current,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_memorysubsystem_0_voltageregulator_8_output_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: MemorySubsystem, parental_index: 0, physical_context: VoltageRegulator,\n    index: 8, physical_sub_context: Output, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_memorysubsystem_0_voltageregulator_8_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: MemorySubsystem, parental_index: 0, physical_context: VoltageRegulator,\n    index: 8, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_accelerator_0_voltageregulator_0_energy",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Accelerator, parental_index: 0, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: null, message_id: Energy,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_accelerator_1_voltageregulator_0_energy",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Accelerator, parental_index: 1, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: null, message_id: Energy,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_accelerator_2_voltageregulator_0_energy",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Accelerator, parental_index: 2, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: null, message_id: Energy,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_accelerator_3_voltageregulator_0_energy",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Accelerator, parental_index: 3, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: null, message_id: Energy,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_chassis_cpusubsystem_0_output_energy",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Chassis, parental_index: null, physical_context: CPUSubsystem,\n    index: 0, physical_sub_context: Output, message_id: Energy,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_chassis_memorysubsystem_0_output_energy",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Chassis, parental_index: null, physical_context: MemorySubsystem,\n    index: 0, physical_sub_context: Output, message_id: Energy,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "node_chassis_voltageregulator_0_input_energy",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: node, telemetry_source: nC, interval: 1 min,\n    parental_context: Chassis, parental_index: null, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: Input, message_id: Energy,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "allocation_id",
+            "type": [
+                "null",
+                "string"
+            ],
+            "default": null,
+            "doc": "Allocation Id of the job associated with this record"
+        },
+        {
+            "name": "job_time_start",
+            "type": [
+                "null",
+                {
+                    "type": "long",
+                    "logicalType": "timestamp-micros"
+                }
+            ],
+            "default": null,
+            "doc": "Start time of the job associated with this record"
+        }
+    ],
+    "namespace": "base",
+    "doc": "Usage docs: https://docs.pydantic.dev/2.7/concepts/models/"
+}

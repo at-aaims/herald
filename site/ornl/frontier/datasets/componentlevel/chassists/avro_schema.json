@@ -1,0 +1,387 @@
+{
+    "type": "record",
+    "name": "CrayexChassisTSSchema",
+    "fields": [
+        {
+            "name": "timestamp",
+            "type": {
+                "type": "long",
+                "logicalType": "timestamp-micros"
+            },
+            "doc": "Time of the measurement"
+        },
+        {
+            "name": "xname",
+            "type": "string",
+            "doc": "Unique identifier for the chassis of the measurement, e.g. x2509c4"
+        },
+        {
+            "name": "row",
+            "type": "long",
+            "doc": "Row index of the node"
+        },
+        {
+            "name": "col",
+            "type": "long",
+            "doc": "Col index of the node"
+        },
+        {
+            "name": "chassis",
+            "type": "long",
+            "doc": "Chassis index of the node"
+        },
+        {
+            "name": "chassis_rectifier_0_input_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: chassis, telemetry_source: cC, interval: 15 sec, \n    parental_context: null, parental_index: null, physical_context: Rectifier,\n    index: 0, physical_sub_context: Input, message_id: Power,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "chassis_rectifier_0_output_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: chassis, telemetry_source: cC, interval: 15 sec, \n    parental_context: null, parental_index: null, physical_context: Rectifier,\n    index: 0, physical_sub_context: Output, message_id: Power,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "chassis_rectifier_1_input_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: chassis, telemetry_source: cC, interval: 15 sec, \n    parental_context: null, parental_index: null, physical_context: Rectifier,\n    index: 1, physical_sub_context: Input, message_id: Power,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "chassis_rectifier_1_output_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: chassis, telemetry_source: cC, interval: 15 sec,\n    parental_context: null, parental_index: null, physical_context: Rectifier,\n    index: 1, physical_sub_context: Output, message_id: Power,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "chassis_rectifier_2_input_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: chassis, telemetry_source: cC, interval: 15 sec,\n    parental_context: null, parental_index: null, physical_context: Rectifier,\n    index: 2, physical_sub_context: Input, message_id: Power,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "chassis_rectifier_2_output_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: chassis, telemetry_source: cC, interval: 15 sec, \n    parental_context: null, parental_index: null, physical_context: Rectifier,\n    index: 2, physical_sub_context: Output, message_id: Power,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "chassis_rectifier_3_input_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: chassis, telemetry_source: cC, interval: 15 sec, \n    parental_context: null, parental_index: null, physical_context: Rectifier,\n    index: 3, physical_sub_context: Input, message_id: Power,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "chassis_rectifier_3_output_power",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: chassis, telemetry_source: cC, interval: 15 sec, \n    parental_context: null, parental_index: null, physical_context: Rectifier,\n    index: 3, physical_sub_context: Output, message_id: Power,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "chassis_chassis_0_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: chassis, telemetry_source: cC, interval: 1 min,\n    parental_context: null, parental_index: null, physical_context: Chassis,\n    index: 0, physical_sub_context: null, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "chassis_chassis_1_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: chassis, telemetry_source: cC, interval: 1 min,\n    parental_context: null, parental_index: null, physical_context: Chassis,\n    index: 1, physical_sub_context: null, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "chassis_chassis_2_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: chassis, telemetry_source: cC, interval: 1 min,\n    parental_context: null, parental_index: null, physical_context: Chassis,\n    index: 2, physical_sub_context: null, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "chassis_chassis_liquidinlet_0_input_pressure",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: chassis, telemetry_source: cC, interval: 1 min,\n    parental_context: Chassis, parental_index: null, physical_context: LiquidInlet,\n    index: 0, physical_sub_context: Input, message_id: Pressure,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "chassis_chassis_liquidinlet_0_input_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: chassis, telemetry_source: cC, interval: 1 min,\n    parental_context: Chassis, parental_index: null, physical_context: LiquidInlet,\n    index: 0, physical_sub_context: Input, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "chassis_chassis_liquidoutlet_0_output_pressure",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: chassis, telemetry_source: cC, interval: 1 min,\n    parental_context: Chassis, parental_index: null, physical_context: LiquidOutlet,\n    index: 0, physical_sub_context: Output, message_id: Pressure,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "chassis_chassis_liquidoutlet_0_output_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: chassis, telemetry_source: cC, interval: 1 min,\n    parental_context: Chassis, parental_index: null, physical_context: LiquidOutlet,\n    index: 0, physical_sub_context: Output, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "chassis_chassis_system_pressure_secondary",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: chassis, telemetry_source: cC, interval: 1 min,\n    parental_context: Chassis, parental_index: null, physical_context: System,\n    index: null, physical_sub_context: null, message_id: Pressure,\n    device_specific_context: Secondary\n)"
+        },
+        {
+            "name": "chassis_chassis_voltageregulator_0_output_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: chassis, telemetry_source: cC, interval: 1 min,\n    parental_context: Chassis, parental_index: null, physical_context: VoltageRegulator,\n    index: 0, physical_sub_context: Output, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "chassis_chassis_voltageregulator_1_output_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: chassis, telemetry_source: cC, interval: 1 min,\n    parental_context: Chassis, parental_index: null, physical_context: VoltageRegulator,\n    index: 1, physical_sub_context: Output, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "chassis_chassis_voltageregulator_2_output_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: chassis, telemetry_source: cC, interval: 1 min,\n    parental_context: Chassis, parental_index: null, physical_context: VoltageRegulator,\n    index: 2, physical_sub_context: Output, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "chassis_rectifier_0_input_current_line3",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: chassis, telemetry_source: cC, interval: 1 min,\n    parental_context: null, parental_index: null, physical_context: Rectifier,\n    index: 0, physical_sub_context: Input, message_id: Current,\n    device_specific_context: Line3\n)"
+        },
+        {
+            "name": "chassis_rectifier_0_input_voltage_line3toline1",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: chassis, telemetry_source: cC, interval: 1 min,\n    parental_context: null, parental_index: null, physical_context: Rectifier,\n    index: 0, physical_sub_context: Input, message_id: Voltage,\n    device_specific_context: Line3ToLine1\n)"
+        },
+        {
+            "name": "chassis_rectifier_0_output_current",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: chassis, telemetry_source: cC, interval: 1 min,\n    parental_context: null, parental_index: null, physical_context: Rectifier,\n    index: 0, physical_sub_context: Output, message_id: Current,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "chassis_rectifier_0_output_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: chassis, telemetry_source: cC, interval: 1 min,\n    parental_context: null, parental_index: null, physical_context: Rectifier,\n    index: 0, physical_sub_context: Output, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "chassis_rectifier_0_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: chassis, telemetry_source: cC, interval: 1 min,\n    parental_context: null, parental_index: null, physical_context: Rectifier,\n    index: 0, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "chassis_rectifier_1_input_current_line3",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: chassis, telemetry_source: cC, interval: 1 min,\n    parental_context: null, parental_index: null, physical_context: Rectifier,\n    index: 1, physical_sub_context: Input, message_id: Current,\n    device_specific_context: Line3\n)"
+        },
+        {
+            "name": "chassis_rectifier_1_input_voltage_line3toline1",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: chassis, telemetry_source: cC, interval: 1 min,\n    parental_context: null, parental_index: null, physical_context: Rectifier,\n    index: 1, physical_sub_context: Input, message_id: Voltage,\n    device_specific_context: Line3ToLine1\n)"
+        },
+        {
+            "name": "chassis_rectifier_1_output_current",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: chassis, telemetry_source: cC, interval: 1 min,\n    parental_context: null, parental_index: null, physical_context: Rectifier,\n    index: 1, physical_sub_context: Output, message_id: Current,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "chassis_rectifier_1_output_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: chassis, telemetry_source: cC, interval: 1 min,\n    parental_context: null, parental_index: null, physical_context: Rectifier,\n    index: 1, physical_sub_context: Output, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "chassis_rectifier_1_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: chassis, telemetry_source: cC, interval: 1 min,\n    parental_context: null, parental_index: null, physical_context: Rectifier,\n    index: 1, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "chassis_rectifier_2_input_current_line3",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: chassis, telemetry_source: cC, interval: 1 min,\n    parental_context: null, parental_index: null, physical_context: Rectifier,\n    index: 2, physical_sub_context: Input, message_id: Current,\n    device_specific_context: Line3\n)"
+        },
+        {
+            "name": "chassis_rectifier_2_input_voltage_line3toline1",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: chassis, telemetry_source: cC, interval: 1 min,\n    parental_context: null, parental_index: null, physical_context: Rectifier,\n    index: 2, physical_sub_context: Input, message_id: Voltage,\n    device_specific_context: Line3ToLine1\n)"
+        },
+        {
+            "name": "chassis_rectifier_2_output_current",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: chassis, telemetry_source: cC, interval: 1 min,\n    parental_context: null, parental_index: null, physical_context: Rectifier,\n    index: 2, physical_sub_context: Output, message_id: Current,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "chassis_rectifier_2_output_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: chassis, telemetry_source: cC, interval: 1 min,\n    parental_context: null, parental_index: null, physical_context: Rectifier,\n    index: 2, physical_sub_context: Output, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "chassis_rectifier_2_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: chassis, telemetry_source: cC, interval: 1 min,\n    parental_context: null, parental_index: null, physical_context: Rectifier,\n    index: 2, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "chassis_rectifier_3_input_current_line3",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: chassis, telemetry_source: cC, interval: 1 min,\n    parental_context: null, parental_index: null, physical_context: Rectifier,\n    index: 3, physical_sub_context: Input, message_id: Current,\n    device_specific_context: Line3\n)"
+        },
+        {
+            "name": "chassis_rectifier_3_input_voltage_line3toline1",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: chassis, telemetry_source: cC, interval: 1 min,\n    parental_context: null, parental_index: null, physical_context: Rectifier,\n    index: 3, physical_sub_context: Input, message_id: Voltage,\n    device_specific_context: Line3ToLine1\n)"
+        },
+        {
+            "name": "chassis_rectifier_3_output_current",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: chassis, telemetry_source: cC, interval: 1 min,\n    parental_context: null, parental_index: null, physical_context: Rectifier,\n    index: 3, physical_sub_context: Output, message_id: Current,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "chassis_rectifier_3_output_voltage",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: chassis, telemetry_source: cC, interval: 1 min,\n    parental_context: null, parental_index: null, physical_context: Rectifier,\n    index: 3, physical_sub_context: Output, message_id: Voltage,\n    device_specific_context: null\n)"
+        },
+        {
+            "name": "chassis_rectifier_3_temperature",
+            "type": [
+                "null",
+                "double"
+            ],
+            "default": null,
+            "doc": "(\n    location_type: chassis, telemetry_source: cC, interval: 1 min,\n    parental_context: null, parental_index: null, physical_context: Rectifier,\n    index: 3, physical_sub_context: null, message_id: Temperature,\n    device_specific_context: null\n)"
+        }
+    ],
+    "namespace": "base",
+    "doc": "Usage docs: https://docs.pydantic.dev/2.7/concepts/models/"
+}
